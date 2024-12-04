@@ -1,0 +1,61 @@
+.none {
+  display: none;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  bottom: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+body {
+  width: 100%;
+  max-width: 1920px;
+}
+
+.container {
+  max-width: 1100px;
+  padding: auto 15px;
+  margin: 0 auto;
+}
+
+.header {
+  background: #080808;
+  height: 100px;
+}
+
+.header-nav .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-nav .nav .nav-item {
+  text-transform: uppercase;
+}/*# sourceMappingURL=style.css.map */
