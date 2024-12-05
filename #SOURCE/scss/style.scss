@@ -102,25 +102,24 @@ body {
   text-align: center;
   text-underline-position: from-font;
   position: relative;
+
+  &:hover:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #f4f4f4;
+    opacity: 1;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    transition: opacity .1s linear;
+  }
 }
 
-.item-link:hover:after,
-.item-link.active:after {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 3px;
-  background-color: #f4f4f4;
-  opacity: 0;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: 1;
-  transition: opacity .1s linear;
-
-  &:hover {
-    opacity: 1;
-  }
+.red {
+  background: #6D0602;
 }
 
 // Main
