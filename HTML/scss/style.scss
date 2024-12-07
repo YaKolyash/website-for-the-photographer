@@ -26,7 +26,7 @@
 }
 
 .none {
-    display: none;
+  display: none;
 }
     
 *,
@@ -75,9 +75,13 @@ body {
   background: #080808;
   height: 100px;
   display: flex;
-  justify-content: flex-start;
   align-items: center;
+  text-align: justify;
+  letter-spacing: 1px;
 } 
+.header-nav {
+  display: flex;
+}
 .nav {
   display: flex;
   align-items: center;
@@ -85,11 +89,10 @@ body {
   .nav-item {
     text-transform: uppercase;
   }
+}
 
-  .nav-item:not(:last-child) {
-    margin-right: 61px;
-  }
-  
+.nav-item:not(:last-child) {
+  margin-right: 3.177vw;
 }
 
 .item-link {
@@ -118,6 +121,8 @@ body {
   }
 }
 
+// Исправить код
+// ..................................................................
 .item-red {
   color: #f4f4f4;
   font-family: Gravity;
@@ -143,6 +148,77 @@ body {
     transition: opacity .1s linear;
   }
 } 
+// ..................................................................
+
+.header-link {
+  margin-left: 20.802vw;
+}
+.link-icon {
+}
+.icon-style {
+}
+.popup {
+  display: none;
+}
+
+@media (max-width: 795px) {
+  .header-nav {
+    display: none;
+  }
+  .popup {
+    display: block
+  }
+  .header-burger {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .navbar__hamb {
+    display: block;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 10px;
+  }
+  
+  .navbar__hamb-field {
+    cursor: pointer;
+    padding: 5px;
+  }
+  .navbar__hamb-bar {
+    display: block;
+    width: 30px;
+    height: 2px;
+    margin: 6px auto;
+    background-color: #f4f4f4;
+    transition: 0.2s;
+    line-height: 1;
+  }
+  .item__link {
+    width: 100%;
+  }
+  .nav__text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #222;
+  }
+  .active .navbar__hamb-bar:nth-child(2) {
+    opacity: 0;
+  }
+  .active .navbar__hamb-bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+ .active .navbar__hamb-bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  
+  .noscroll {
+    overflow: hidden;
+  }
+}
 
 // Main
 
