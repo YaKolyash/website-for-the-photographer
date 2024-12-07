@@ -166,9 +166,6 @@ body {
   .header-nav {
     display: none;
   }
-  .popup {
-    display: block;
-  }
   .header-burger {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -215,7 +212,7 @@ body {
     padding: 20px 0;
     font-size: 20px;
     font-weight: bold;
-    color: #222;
+    color: #f4f4f4;
   }
   .active .navbar__hamb-bar:nth-child(2) {
     opacity: 0;
