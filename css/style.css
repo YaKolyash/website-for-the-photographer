@@ -1,72 +1,3 @@
-@font-face {
-  font-family: "Gravity-Book";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/Gravity-Book.woff");
-  src: local(""), url("../fonts/Gravity-Book.woff") format("woff");
-}
-@font-face {
-  font-family: "Gravity-Regular";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/Gravity-Regular.woff");
-  src: local(""), url("../fonts/Gravity-Regular.woff") format("woff");
-}
-@font-face {
-  font-family: "Rounded Elegance";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/Rounded_Elegance.woff");
-  src: local(""), url("../fonts/Rounded_Elegance.woff") format("woff");
-}
-.none {
-  display: none;
-}
-
-*,
-*::before,
-*::after {
-  padding: 0;
-  margin: 0;
-  bottom: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-a {
-  text-decoration: none;
-}
-
-ul,
-ol,
-li {
-  list-style: none;
-}
-
-img {
-  vertical-align: top;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: inherit;
-  font-size: inherit;
-}
-
-body {
-  width: 100%;
-  max-width: 1920px;
-}
-
-.container {
-  width: 1100px;
-  margin: 0 auto;
-}
-
 .header {
   background: #080808;
   height: 100px;
@@ -78,6 +9,7 @@ body {
           align-items: center;
   text-align: justify;
   letter-spacing: 1px;
+  padding: 0 10px;
 }
 
 .header-nav {
@@ -163,6 +95,9 @@ body {
 }
 
 @media (max-width: 795px) {
+  .nav {
+    display: none;
+  }
   .header-nav {
     display: none;
   }
@@ -229,6 +164,20 @@ body {
     overflow: hidden;
   }
 }
+.main {
+  background: #080808;
+  position: relative;
+}
+
+.rectangle {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1440px;
+  height: 850px;
+  background-color: #0F0F0F;
+}
+
 .main-flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -236,6 +185,10 @@ body {
 }
 
 .main-title {
+  margin-top: 90px;
+}
+
+.title-text {
   color: #f4f4f4;
   font-size: 82px;
   font-style: normal;
@@ -244,4 +197,37 @@ body {
   line-height: 98px;
   text-align: left;
   text-transform: uppercase;
+}
+
+.title-subtext {
+  font-family: Gravity;
+  font-size: 30px;
+  font-weight: 350;
+  line-height: 42px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #F4F4F4;
+}
+
+.button {
+  width: 160px;
+  height: 160px;
+  top: 672px;
+  left: 381px;
+  gap: 0px;
+  border: 3px 0px 0px 0px;
+  opacity: 0px;
+}
+.button:p {
+  font-family: Gravity;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 30.8px;
+  text-align: center;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #F4F4F4;
 }
