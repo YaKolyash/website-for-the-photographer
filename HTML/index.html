@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 <body>
 <header class="header">
@@ -47,7 +48,7 @@
             </div>
         </div>
         <div class="popup" id="popup">
-            <ul class="popup__menu">
+            <ul class="popup-menu">
                 <li class="nav-item">
                     <a href="#page" class="item-link">
                         главная
@@ -69,7 +70,7 @@
                     </a>
                 </li>
             </ul>
-          </div>
+        </div>
     </div>
 </header><section class="main">
     <div class="container">
@@ -77,26 +78,50 @@
             <div class="main-text">
                 <div class="main-title">
                     <h1 class="title-text">
-                        фотосессии в стиле ню   
+                        Фотосессии в стиле ню   
                     </h1>
                 </div>
                 <div class="main-subtitle">
                     <p class="title-subtext">
-                        чувственные фотографии, которые раскроют красоту вашего тела
+                        Чувственные фотографии, которые раскроют красоту вашего тела
                     </p>
                 </div>
                 <div class="button-block">
                     <button class="button">
-                        <p>заказть съемку</p>
+                        <p >Заказать съемку</p>
                     </button>
                 </div>
             </div>
             <div class="main-swiper">
-                <img src="../img/girlandflowers.png" alt="">
-                <div class="swiper"></div>
+                <div class="swiper-container">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="image-slider__slide swiper-slide">
+                        <img class="image-slider__image" src="../img/girlandflowers.png" alt="#">
+                      </div>
+                      <div class="image-slider__slideswiper-slide">
+                        <img class="image-slider__image" src="../img/manbreast.png" alt="#">
+                      </div>
+                      <div class="image-slider__slide swiper-slide">
+                        <img class="image-slider__image" src="../img/handwoman.png" alt="#">
+                      </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                  
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                  
+                    <!-- If we need scrollbar -->
+                    <div class="swiper-scrollbar"></div>
+                </div>
             </div>
         </div>
     </div>  
-</section>    <script src="../js/script.js"></script>
+</section>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 </html>

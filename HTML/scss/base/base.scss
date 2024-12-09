@@ -2,25 +2,25 @@
     font-family: 'Gravity-Book';
     font-style: normal;
     font-weight: 400;
-    src: url('../fonts/Gravity-Book.woff');
+    src: url('../../../fonts/Gravity-Book.woff');
     src: local(''),
-        url('../fonts/Gravity-Book.woff') format('woff')
+        url('../../../fonts/Gravity-Book.woff') format('woff')
 }
 @font-face {
   font-family: 'Gravity-Regular';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/Gravity-Regular.woff');
+  src: url('../../../fonts/Gravity-Regular.woff');
   src: local(''),
-      url('../fonts/Gravity-Regular.woff') format('woff')
+      url('../../../fonts/Gravity-Regular.woff') format('woff')
 }
 @font-face {
   font-family: 'Rounded Elegance';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/Rounded_Elegance.woff');
+  src: url('../../../fonts/Rounded_Elegance.woff');
   src: local(''),
-      url('../fonts/Rounded_Elegance.woff') format('woff')
+      url('../../../fonts/Rounded_Elegance.woff') format('woff')
 }
 body {
   width: 100%;

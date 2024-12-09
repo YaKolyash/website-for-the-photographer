@@ -1,62 +1,60 @@
 .main {
-    background: #080808;
-    position: relative;
-  }
-  .rectangle {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 1440px;
-    height: 850px;
-    background-color: #0F0F0F;
-  }
-  .main-text {
-  }
-  .main-flex {
-    display: flex;
-  }
-  .main-title {
-    margin-top: 90px;
-  }
-  .title-text {
-    color: #f4f4f4;
-    font-size: 82px;
-    font-style: normal;
-    font-family: 'Rounded Elegance';
-    font-weight: 400;
-    line-height: 98px;
-    text-align: left;
-    text-transform: uppercase;
-  }
-  .main-subtitle {
-  }
-  .title-subtext {
-    font-family: Gravity;
-    font-size: 30px;
-    font-weight: 350;
-    line-height: 42px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    color: #F4F4F4;
-  }
-  .button {
-    width: 160px;
-    height: 160px;
-    top: 672px;
-    left: 381px;
-    gap: 0px;
-    border: 3px 0px 0px 0px;
-    opacity: 0px;
+  background: #080808;
+  position: relative;
+}
+
+.rectangle {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1440px;
+  height: 850px;
+  background-color: #0F0F0F;
+}
+.main-text {
+}
+
+.main-title {
+  margin-top: 90px;
+  width: 680px;
+  height: 196px;
+}
+.title-text {
+  color: #f4f4f4;
+  font-size: 82px;
+  font-style: normal;
+  font-family: 'Rounded Elegance';
+  font-weight: 400;
+  line-height: 98px;
+  text-align: left;
+  text-transform: uppercase;
+}
+.main-subtitle {
+  margin-top: 60px;
+  width: 522px;
+  height: 84px;
+}
+.title-subtext {
+  font-family: Gravity;
+  font-size: 30px;
+  font-weight: 350;
+  line-height: 42px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #F4F4F4;
+}
+
+.main-swiper {
+  position: absolute;
+  margin-top: -100px;
+  right: 18.5%;
+}
+
+.main-flex {
+  display: flex;
+}
+
+@media (max-width: 795px) {
+}
   
-    &:p {
-      font-family: Gravity;
-      font-size: 22px;
-      font-weight: 400;
-      line-height: 30.8px;
-      text-align: center;
-      text-underline-position: from-font;
-      text-decoration-skip-ink: none;
-      color: #F4F4F4;
-    }
-  }

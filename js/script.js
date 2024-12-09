@@ -20,7 +20,7 @@ const menu = document.querySelector("#nav").cloneNode(1);
 const body = document.body;
 
 menu.classList.remove(".nav");
-menu.classList.add(".popup__menu");
+menu.classList.add(".popup-menu");
 
 hamb.addEventListener("click", hambHandler);
 
@@ -48,3 +48,22 @@ function closeOnClick() {
   body.classList.remove("noscroll");
 };
 
+
+// SWIPER
+
+const swiper = new Swiper('.swiper-container', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
