@@ -1,6 +1,12 @@
-.swiper-container {
+.swiper {
     width: 600px;
     height: 900px;
+}
+
+.swiper-container {
+    
+
+    // min-width: none;
   }
   
   .image-slider__slide {
@@ -8,19 +14,194 @@
   .swiper-slide {
   }
   .image-slider__image {
+    width: 600px !important;
+    height: 900px;
     text-align: center;
+  }
+
+  .swiper-slide-active {
+    width: 600px !important;
   }
   .image-slider__image img {
     min-width: 100%;
   }
-  .swiper-button-next {
-  
+  .swiper-button-next::after {
+    display: none;
   }
   
-  .swiper-button-prev {
-    
+  .swiper-button-prev::after {
+    display: none;
   }
   
   .swiper-pagination {
     display: none;
   }
+
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+    display: none;
+}
+
+.slider-prev {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    outline: none;
+    background-color: inherit;
+    color: #ffffff;
+    border-radius: 50%;
+    border: none;   
+}
+
+.slider-next {
+    cursor: pointer;
+    z-index: 1;
+    outline: none;
+    background-color: inherit;
+    color: #ffffff;
+    border-radius: 50%;
+    border: none;
+}
+
+// .slider-prev2 {
+//     cursor: pointer;
+//     z-index: 1;
+//     position: absolute;
+//     top: -135px;
+//     right: -990px;
+//     outline: none;
+//     background-color: inherit;
+//     color: #ffffff;
+//     border-radius: 50%;
+//     border: none;
+// }
+
+// .slider-prev::after {
+//     position: absolute;
+//     content: '';
+//     top: -30px;
+//     left: -45px;
+//     width: 90px;
+//     height: 90px;
+//     border: 2px solid #f4f4f4;
+//     border-radius: 50%;
+//     transition-duration: .3s;
+// }
+
+// .slider-prev2::after {
+//     position: absolute;
+//     content: '';
+//     top: -28px;
+//     left: -45px;
+//     width: 90px;
+//     height: 90px;
+//     border: 2px solid #6D0602;
+//     border-radius: 50%;
+//     transition-duration: .3s;
+// }
+
+// .slider-prev:hover::after {
+//     top: -15px;
+//     left: -40px;
+//     transition-duration: .3s;
+// }
+
+// .slider-prev2:hover::after {
+//     top: -15px;
+//     left: -40px;
+//     transition-duration: .3s;
+// }
+
+// .slider-prev__text {
+//     position: relative;
+//     color: #f4f4f4;
+//     text-transform: uppercase;
+//     z-index: 1;
+//     margin-left: 65px;
+//     font-size: 22px;
+//     font-weight: 400;
+//     font-style: normal;
+//     line-height: 26.4px;
+// }
+
+// .swiper-button-next {
+//     margin-top: 56%;
+//     margin-right: -25%;
+//     z-index: 2;
+// }
+
+// .swiper-button-next::after {
+//     display: none;
+// }
+
+// .slider-next__block {
+//     cursor: pointer;
+//     position: absolute;
+//     top: 702px;
+//     right: 376px;
+//     z-index: 4;
+// }
+
+
+
+// .slider-next2 {
+//     cursor: pointer;
+//     z-index: 1;
+//     position: absolute;
+//     top: 20px;
+//     left: -160px;
+//     outline: none;
+//     background-color: inherit;
+//     color: #ffffff;
+//     border-radius: 50%;
+//     border: none;
+// }
+
+// .slider-next::after {
+//     position: absolute;
+//     content: '';
+//     top: -30px;
+//     left: 117px;
+//     width: 90px;
+//     height: 90px;
+//     border: 2px solid #f4f4f4;
+//     border-radius: 50%;
+//     transition-duration: .3s;
+// }
+
+// .slider-next2::after {
+//     position: absolute;
+//     content: '';
+//     top: -35px;
+//     left: 117px;
+//     width: 90px;
+//     height: 90px;
+//     border: 2px solid #6D0602;
+//     border-radius: 50%;
+//     transition-duration: .3s;
+// }
+
+// .slider-next:hover::after {
+//     top: -13px;
+//     left: 113px;
+//     transition-duration: .3s;
+// }
+
+// .slider-next2:hover::after {
+//     top: -13px;
+//     left: 113px;
+//     transition-duration: .3s;
+// }
+
+// .slider-next__text {
+//     position: relative;
+//     color: #f4f4f4;
+//     text-transform: uppercase;
+//     z-index: 4;
+//     margin-right: 60px;
+//     font-size: 22px;
+//     font-weight: 400;
+//     font-style: normal;
+//     line-height: 26.4px;
+// }
