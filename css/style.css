@@ -79,6 +79,7 @@ h6 {
   text-align: justify;
   letter-spacing: 1px;
   padding: 0 10px;
+  display: none;
 }
 
 .header-nav {
@@ -524,4 +525,8 @@ h6 {
   color: #ffffff;
   border-radius: 50%;
   border: none;
+}
+
+.author {
+  background: #080808;
 }
