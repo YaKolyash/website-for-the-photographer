@@ -79,6 +79,7 @@
     }
 
     .author-text {
+        width: 530px;
         padding-left: 35px;
     }
 
@@ -92,10 +93,11 @@
     }
     .author-subtitle {
         margin-top: 30px;
-        width: 520px;
+        width: 495px;
 
         & div {
-            font-size: calc(2px + 16 * (100vw / 1280));
+            width: 450px;
+            font-size: 18px;
         }
     }
     .button-block {
