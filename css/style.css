@@ -25,6 +25,7 @@ body {
 }
 
 .container {
+  min-width: 900px;
   width: 1100px;
   margin: 0 auto;
 }
@@ -531,6 +532,15 @@ h6 {
   background: #080808;
 }
 
+.author-photo {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.author-photo img {
+  width: 500px;
+  height: 600px;
+}
+
 .title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -542,7 +552,7 @@ h6 {
 }
 .title h1 {
   font-family: "RoundedElegance";
-  font-size: 82px;
+  font-size: 84px;
   font-weight: 400;
   line-height: 82px;
   text-align: left;
@@ -570,9 +580,6 @@ h6 {
   font-weight: 400;
   line-height: 48px;
   text-align: left;
-  text-underline-position: from-font;
-  -webkit-text-decoration-skip-ink: none;
-          text-decoration-skip-ink: none;
   color: #f4f4f4;
   text-transform: uppercase;
 }
@@ -581,13 +588,50 @@ h6 {
   margin-top: 60px;
 }
 .author-subtitle div {
-  font-family: Gravity;
+  font-family: "Gravity";
   font-size: 24px;
   font-weight: 350;
   line-height: 33.6px;
   text-align: left;
-  text-underline-position: from-font;
-  -webkit-text-decoration-skip-ink: none;
-          text-decoration-skip-ink: none;
   color: #f4f4f4;
+}
+
+@media (max-width: 1140px) {
+  .container {
+    max-width: 900px;
+  }
+  .title {
+    padding-bottom: 30px;
+  }
+  .title h1 {
+    font-size: 64px;
+  }
+  .author-photo {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .author-photo img {
+    width: 400px;
+    height: 500px;
+  }
+  .author-text {
+    padding-left: 35px;
+  }
+  .author-title {
+    margin-top: 10px;
+    width: 320px;
+  }
+  .author-title div {
+    font-size: 26px;
+  }
+  .author-subtitle {
+    margin-top: 30px;
+    width: 520px;
+  }
+  .author-subtitle div {
+    font-size: calc(2px + 1.25vw);
+  }
+  .button-block {
+    margin-top: 50px;
+  }
 }

@@ -1,32 +1,36 @@
 @font-face {
-    font-family: 'Gravity-Book';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../../../fonts/Gravity-Book.woff');
-    src: local(''),
-        url('../../../fonts/Gravity-Book.woff') format('woff')
-}
-@font-face {
-  font-family: 'Gravity-Regular';
+  font-family: "Gravity-Book";
   font-style: normal;
   font-weight: 400;
-  src: url('../../../fonts/Gravity-Regular.woff');
-  src: local(''),
-      url('../../../fonts/Gravity-Regular.woff') format('woff')
+  src: url("../../../fonts/Gravity-Book.woff");
+  src:
+    local(""),
+    url("../../../fonts/Gravity-Book.woff") format("woff");
 }
 @font-face {
-  font-family: 'RoundedElegance';
+  font-family: "Gravity-Regular";
   font-style: normal;
   font-weight: 400;
-  src: url('../../../fonts/Rounded_Elegance.woff');
-  src: local(''),
-      url('../../../fonts/Rounded_Elegance.woff') format('woff')
+  src: url("../../../fonts/Gravity-Regular.woff");
+  src:
+    local(""),
+    url("../../../fonts/Gravity-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "RoundedElegance";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../../fonts/Rounded_Elegance.woff");
+  src:
+    local(""),
+    url("../../../fonts/Rounded_Elegance.woff") format("woff");
 }
 body {
   width: 100%;
   max-width: 1920px;
 }
 .container {
+  min-width: 900px;
   width: 1100px;
   margin: 0 auto;
 }
