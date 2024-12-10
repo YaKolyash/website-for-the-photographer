@@ -79,13 +79,11 @@
     }
 
     .author-text {
-        width: 530px;
         padding-left: 35px;
     }
 
     .author-title {
         margin-top: 10px;
-        width: 320px;
 
         & div {
             font-size: 26px;
@@ -93,14 +91,33 @@
     }
     .author-subtitle {
         margin-top: 30px;
-        width: 495px;
 
         & div {
             width: 450px;
-            font-size: 18px;
+            font-size: calc(16px + (4 + 4 * 1.1) * ((100vw - 320px) / 1200));
+            line-height: 25px;
         }
     }
     .button-block {
-        margin-top: 50px;
+        margin-top: 70px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        max-width: 500px;
+    }
+
+    .title {
+        padding: 0 0 30px 30px;
+        display: block;
+        text-align: left;
+        & h1 {
+            font-size: 64px;
+        }
+    }
+
+    .author-photo {
+        display: none;
     }
 }
