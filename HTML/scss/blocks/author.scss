@@ -103,15 +103,15 @@
     }
 }
 
-@media (max-width: 480px) {
-    .container {
-        max-width: 500px;
+@media (max-width: 560px) {
+    .author-description {
+        display: block;
     }
-
     .title {
         padding: 0 0 30px 30px;
         display: block;
         text-align: left;
+
         & h1 {
             font-size: 64px;
         }
