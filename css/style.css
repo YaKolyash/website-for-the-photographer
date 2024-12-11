@@ -679,18 +679,23 @@ h6 {
 }
 
 .excerpt-text {
-  width: 900px;
+  width: 990px;
   text-align: center;
   margin: 0 auto;
 }
 .excerpt-text ::before {
   content: url(../../../img/svg/left.svg);
+  width: 42px;
+  height: 42px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 32px;
 }
 .excerpt-text p {
   text-transform: uppercase;
   padding-top: 300px;
   font-family: "RoundedElegance";
-  font-size: 36px;
+  font-size: 34px;
   font-weight: 400;
   line-height: 50.4px;
   text-align: left;
@@ -698,4 +703,9 @@ h6 {
 }
 .excerpt-text ::after {
   content: url(../../../img/svg/right.svg);
+  width: 42px;
+  height: 42px;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 95px 0 0 27px;
 }
