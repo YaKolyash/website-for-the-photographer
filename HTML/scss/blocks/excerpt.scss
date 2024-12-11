@@ -1,0 +1,26 @@
+.excerpt {
+    margin-top: 300px;
+    background: #080808;
+}
+.excerpt-wrapper {
+    display: flex;
+}
+.excerpt-img {
+    display: flex;
+    justify-content: flex-end;
+
+    & img {
+    }
+}
+.excerpt-text {
+    width: 400px;
+
+    & p {
+        font-family: "RoundedElegance";
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 50.4px;
+        text-align: left;
+        color: #f4f4f4;
+    }
+}

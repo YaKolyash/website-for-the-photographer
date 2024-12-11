@@ -656,3 +656,126 @@ h6 {
     display: none;
   }
 }
+.author {
+  background: #080808;
+}
+
+.author-photo {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.author-photo img {
+  width: 500px;
+  height: 600px;
+}
+
+.title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 60px;
+}
+.title h1 {
+  font-family: "RoundedElegance";
+  font-size: 84px;
+  font-weight: 400;
+  line-height: 82px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+}
+
+.author-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.author-text {
+  padding-left: 60px;
+}
+
+.author-title {
+  margin-top: 20px;
+}
+.author-title div {
+  font-family: "RoundedElegance";
+  font-size: 46px;
+  font-weight: 400;
+  line-height: 48px;
+  text-align: left;
+  color: #f4f4f4;
+  text-transform: uppercase;
+}
+
+.author-subtitle {
+  margin-top: 60px;
+}
+.author-subtitle div {
+  font-family: "Gravity";
+  font-size: 24px;
+  font-weight: 350;
+  line-height: 33.6px;
+  text-align: left;
+  color: #f4f4f4;
+}
+
+@media (max-width: 1140px) {
+  .container {
+    max-width: 900px;
+  }
+  .title {
+    padding-bottom: 30px;
+  }
+  .title h1 {
+    font-size: 64px;
+  }
+  .author-photo {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .author-photo img {
+    width: 400px;
+    height: 500px;
+  }
+  .author-text {
+    padding-left: 35px;
+  }
+  .author-title {
+    margin-top: 10px;
+  }
+  .author-title div {
+    font-size: 26px;
+  }
+  .author-subtitle {
+    margin-top: 30px;
+  }
+  .author-subtitle div {
+    width: 450px;
+    font-size: calc(16px + 8.4 * (100vw - 320px) / 1200);
+    line-height: 25px;
+  }
+  .button-block {
+    margin-top: 70px;
+  }
+}
+@media (max-width: 560px) {
+  .author-description {
+    display: block;
+  }
+  .title {
+    padding: 0 0 30px 30px;
+    display: block;
+    text-align: left;
+  }
+  .title h1 {
+    font-size: 64px;
+  }
+  .author-photo {
+    display: none;
+  }
+}
