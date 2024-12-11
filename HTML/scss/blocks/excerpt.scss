@@ -1,16 +1,6 @@
 .excerpt {
     background: #080808;
-}
-.excerpt-wrapper {
-    display: flex;
-}
-.excerpt-img {
-    display: flex;
-    justify-content: flex-end;
-
-    & img {
-        width: 42px;
-    }
+    padding-bottom: 200px;
 }
 .excerpt-text {
     width: 990px;
@@ -27,6 +17,9 @@
     }
 
     & p {
+        text-align: center;
+        display: flex;
+        justify-content: center;
         text-transform: uppercase;
         padding-top: 300px;
         font-family: "RoundedElegance";
@@ -44,5 +37,87 @@
         display: inline-bloc\k;
         vertical-align: middle;
         margin: 95px 0 0 27px;
+    }
+}
+
+@media (max-width: 1145px) {
+    .excerpt-text {
+        width: 860px;
+
+        & ::before {
+            width: 32px;
+            height: 32px;
+        }
+
+        & p {
+            width: 817px;
+            padding-top: 200px;
+            font-size: 28px;
+            line-height: 40px;
+        }
+
+        & ::after {
+            width: 32px;
+            height: 32px;
+        }
+    }
+}
+
+@media (max-width: 770px) {
+    .excerpt-text {
+        width: 660px;
+
+        & ::before {
+            transform: scale(0.8);
+            width: 22px;
+            height: 22px;
+            margin-top: -10px;
+        }
+
+        & p {
+            width: 600px;
+            padding-top: 200px;
+            font-size: 20px;
+            line-height: 30px;
+        }
+
+        & ::after {
+            transform: scale(0.8);
+            width: 22px;
+            height: 22px;
+            margin: 65px 0 0 27px;
+        }
+    }
+}
+
+@media (max-width: 562px) {
+    .excerpt {
+        width: 680px;
+    }
+    .container {
+        max-width: 550px;
+    }
+
+    .excerpt-text {
+        & ::before {
+            transform: scale(0.6);
+            width: 22px;
+            height: 22px;
+            margin-top: -10px;
+        }
+
+        & p {
+            width: 530px;
+            padding-top: 200px;
+            font-size: 18px;
+            line-height: 30px;
+        }
+
+        & ::after {
+            transform: scale(0.6);
+            width: 22px;
+            height: 22px;
+            margin: 65px 0 0 -27px;
+        }
     }
 }
