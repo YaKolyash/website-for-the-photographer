@@ -1,5 +1,4 @@
 .excerpt {
-    margin-top: 300px;
     background: #080808;
 }
 .excerpt-wrapper {
@@ -10,17 +9,30 @@
     justify-content: flex-end;
 
     & img {
+        width: 42px;
     }
 }
 .excerpt-text {
-    width: 400px;
+    width: 900px;
+    text-align: center;
+    margin: 0 auto;
+
+    & ::before {
+        content: url(../../../img/svg/left.svg);
+    }
 
     & p {
+        text-transform: uppercase;
+        padding-top: 300px;
         font-family: "RoundedElegance";
         font-size: 36px;
         font-weight: 400;
         line-height: 50.4px;
         text-align: left;
         color: #f4f4f4;
+    }
+
+    & ::after {
+        content: url(../../../img/svg/right.svg);
     }
 }
