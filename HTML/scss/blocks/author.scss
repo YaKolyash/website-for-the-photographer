@@ -104,7 +104,15 @@
 }
 
 @media (max-width: 560px) {
+    .author {
+        width: 543px;
+    }
+
+    .container {
+        width: 543px;
+    }
     .author-description {
+        width: 543px;
         display: block;
     }
     .title {
@@ -113,7 +121,7 @@
         text-align: left;
 
         & h1 {
-            font-size: 64px;
+            font-size: 30px;
         }
     }
 
