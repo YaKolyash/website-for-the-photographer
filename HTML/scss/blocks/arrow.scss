@@ -1,101 +1,79 @@
-.example__button-arrow {
-    position: absolute;
-    top: 195px;
-    right: -40px;
-}
-
-.example__img {
-    position: relative;
-    width: 700px;
-    height: 400px;
-    z-index: 2;
-}
-
-.arrow__btn {
+.arrow-block {
+    width: 100%;
     position: relative;
     top: -98px;
     left: 40px;
-    outline: none;
-    background-color: inherit;
-    color: #ffffff;
-    border-radius: 50%;
-    border: none;
     cursor: pointer;
     z-index: 5;
+
+    width: 300px;
+
+    & img {
+        position: absolute;
+        width: 201px;
+        top: -170px;
+    }
+
+    & ::after {
+        position: absolute;
+        content: "";
+        width: 80px;
+        height: 80px;
+        bottom: -20px;
+        right: 453px;
+        border: 2px solid #f4f4f4;
+        border-radius: 50%;
+        transition-duration: 0.3s;
+    }
+
+    & :hover::after {
+        bottom: -41px;
+        right: 462px;
+        transition-duration: 0.3s;
+    }
 }
 
-.arrow__btn2 {
+.arrow-red {
+    width: 100%;
     position: relative;
     top: -98px;
     left: 40px;
-    outline: none;
-    background-color: inherit;
+    cursor: pointer;
+    z-index: 5;
     color: #6d0602;
-    border-radius: 50%;
-    border: none;
-    cursor: pointer;
-    z-index: 5;
+
+    & img {
+        position: absolute;
+        width: 201px;
+        top: -170px;
+    }
+
+    & ::after {
+        position: absolute;
+        content: "";
+        width: 80px;
+        height: 80px;
+        bottom: -20px;
+        right: 453px;
+        border: 2px solid #f4f4f4;
+        border-radius: 50%;
+        transition-duration: 0.3s;
+    }
+
+    & :hover::after {
+        bottom: -41px;
+        right: 462px;
+        transition-duration: 0.3s;
+    }
 }
 
-.arrow__btn::after {
-    position: absolute;
-    content: "";
-    bottom: -6px;
-    right: 553px;
-    width: 80px;
-    height: 80px;
-    border: 2px solid #f4f4f4;
-    border-radius: 50%;
-    transition-duration: 0.3s;
-}
+// after элемент. Увеличить область нажатия
 
-.arrow__btn2::after {
-    position: absolute;
-    content: "";
-    bottom: -6px;
-    right: 553px;
-    width: 80px;
-    height: 80px;
-    border: 2px solid #6d0602;
-    border-radius: 50%;
-    transition-duration: 0.3s;
-}
-
-.arrow__btn:hover::after {
-    bottom: -27px;
-    right: 560px;
-    transition-duration: 0.3s;
-}
-
-.arrow__btn2:hover::after {
-    bottom: -27px;
-    right: 560px;
-    transition-duration: 0.3s;
-}
-
-.arrow__btn-text {
-    width: 140px;
-    position: relative;
-    color: #f4f4f4;
+.arrow-text {
     text-transform: uppercase;
-    z-index: 4;
-    font-size: 16px;
+    font-family: "Gravity";
+    font-size: 22px;
     font-weight: 400;
-    font-style: normal;
-    line-height: 26.4px;
-}
-
-.arrow__btn-img {
-    position: relative;
-    z-index: 4;
-    width: 140px;
-}
-
-.arrow__btn-img2 {
-    display: none;
-    width: 140px;
-    top: 1px;
-    left: 1px;
-    position: relative;
-    z-index: 4;
+    color: #ffffff;
+    // line-height: 26.4px;
 }
