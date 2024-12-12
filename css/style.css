@@ -389,6 +389,16 @@ h6 {
           transition-duration: 0.3s;
 }
 
+@media (max-width: 1250px) {
+  .button-block {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 980px) {
+  .button-block {
+    margin-top: 20px !important;
+  }
+}
 .order__item {
   cursor: pointer;
   width: 160px;
@@ -856,8 +866,84 @@ h6 {
   height: 400px;
 }
 
+@media (max-width: 1250px) {
+  .water-text {
+    padding-top: 120px;
+  }
+  .water-title h2 {
+    font-size: calc(30px + 1.28vw);
+  }
+  .water-subtitle {
+    margin-top: 23px;
+  }
+  .water-subtitle p {
+    font-size: calc(8px + 1.28vw);
+  }
+  .water-img {
+    padding-left: 40px;
+  }
+  .water-img img {
+    width: 500px;
+    height: 300px;
+  }
+  .photosession {
+    font-size: calc(84px + 2.1052631579vw);
+  }
+}
+@media (max-width: 980px) {
+  .water-text {
+    padding-top: 70px;
+  }
+  .water-title h2 {
+    font-size: calc(30px + 1.6326530612vw);
+  }
+  .water-subtitle {
+    margin-top: 23px;
+  }
+  .water-subtitle p {
+    font-size: calc(8px + 1.6326530612vw);
+  }
+  .water-img {
+    padding-left: 20px;
+  }
+  .water-img img {
+    width: 400px;
+    height: 250px;
+  }
+  .photosession {
+    font-size: calc(84px + 2.1052631579vw);
+  }
+}
+@media (max-width: 700px) {
+  .container {
+    max-width: 440px;
+  }
+  .water-wrapper {
+    display: block;
+  }
+  .water-text {
+    padding-top: 0;
+  }
+  .water-title {
+    width: 437px;
+    padding-bottom: 10px;
+  }
+  .water-title h2 {
+    font-size: calc(10px + 2.8070175439vw);
+    line-height: 30px;
+    padding-left: 20px;
+  }
+  .water-subtitle {
+    display: none;
+  }
+  .button-block {
+    display: none;
+  }
+  .photosession {
+    display: none;
+  }
+}
 .arrow-block {
-  width: 100%;
   position: relative;
   top: -98px;
   left: 40px;
@@ -868,7 +954,8 @@ h6 {
 .arrow-block img {
   position: absolute;
   width: 201px;
-  top: -170px;
+  top: -20px;
+  height: 100px;
 }
 .arrow-block ::after {
   position: absolute;
@@ -876,7 +963,7 @@ h6 {
   width: 80px;
   height: 80px;
   bottom: -20px;
-  right: 453px;
+  right: 53px;
   border: 2px solid #f4f4f4;
   border-radius: 50%;
   -webkit-transition-duration: 0.3s;
@@ -884,7 +971,7 @@ h6 {
 }
 .arrow-block :hover::after {
   bottom: -41px;
-  right: 462px;
+  right: 62px;
   -webkit-transition-duration: 0.3s;
           transition-duration: 0.3s;
 }
@@ -928,4 +1015,16 @@ h6 {
   font-size: 22px;
   font-weight: 400;
   color: #ffffff;
+}
+
+@media (max-width: 700px) {
+  .arrow-block {
+    top: -68px;
+    left: 140px;
+  }
+}
+@media (max-width: 450px) {
+  .arrow-block {
+    width: 100px;
+  }
 }

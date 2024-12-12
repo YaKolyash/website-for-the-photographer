@@ -1,5 +1,4 @@
 .arrow-block {
-    width: 100%;
     position: relative;
     top: -98px;
     left: 40px;
@@ -11,7 +10,8 @@
     & img {
         position: absolute;
         width: 201px;
-        top: -170px;
+        top: -20px;
+        height: 100px;
     }
 
     & ::after {
@@ -20,7 +20,7 @@
         width: 80px;
         height: 80px;
         bottom: -20px;
-        right: 453px;
+        right: 53px;
         border: 2px solid #f4f4f4;
         border-radius: 50%;
         transition-duration: 0.3s;
@@ -28,7 +28,7 @@
 
     & :hover::after {
         bottom: -41px;
-        right: 462px;
+        right: 62px;
         transition-duration: 0.3s;
     }
 }
@@ -76,4 +76,17 @@
     font-weight: 400;
     color: #ffffff;
     // line-height: 26.4px;
+}
+
+@media (max-width: 700px) {
+    .arrow-block {
+        top: -68px;
+        left: 140px;
+    }
+}
+
+@media (max-width: 450px) {
+    .arrow-block {
+        width: 100px;
+    }
 }
