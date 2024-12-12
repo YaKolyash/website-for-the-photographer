@@ -779,3 +779,23 @@ h6 {
     margin: 65px 0 0 -27px;
   }
 }
+.project-title {
+  display: none;
+  background: #080808;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "RoundedElegance";
+  font-size: calc(68px + 1.25vw);
+  font-weight: 400;
+  line-height: 82px;
+  text-align: left;
+  color: #f4f4f4;
+}
+
+@media (max-width: 561px) {
+  .project-title {
+    font-size: calc(24px + 2.1052631579vw);
+    line-height: 62px;
+  }
+}
