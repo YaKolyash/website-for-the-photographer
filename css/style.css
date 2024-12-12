@@ -929,7 +929,7 @@ h6 {
     padding-bottom: 10px;
   }
   .water-title h2 {
-    font-size: calc(10px + 2.8070175439vw);
+    font-size: calc(6px + 2.8070175439vw);
     line-height: 30px;
     padding-left: 20px;
   }
@@ -941,6 +941,35 @@ h6 {
   }
   .photosession {
     display: none;
+  }
+}
+@media (max-width: 700px) {
+  .water-title {
+    width: 237px;
+    padding-bottom: 10px;
+  }
+  .water-title h2 {
+    font-size: calc(6px + 2.8070175439vw);
+    line-height: 30px;
+    padding-left: 20px;
+  }
+}
+@media (max-width: 322px) {
+  .water-title {
+    width: 237px;
+    padding-bottom: 10px;
+  }
+  .water-title h2 {
+    font-size: calc(6px + 2.8070175439vw);
+    line-height: 30px;
+    padding-left: 20px;
+  }
+  .water-img {
+    padding-left: 0 !important;
+  }
+  .water-img img {
+    width: 400px;
+    height: 250px;
   }
 }
 .arrow-block {
@@ -1025,6 +1054,27 @@ h6 {
 }
 @media (max-width: 450px) {
   .arrow-block {
+    top: -68px;
+    left: 250px;
     width: 100px;
   }
+  .arrow-block img {
+    position: absolute;
+    width: 101px;
+    top: -20px;
+    height: 100px;
+  }
+  .arrow-block ::after {
+    width: 50px;
+    height: 50px;
+    bottom: -20px;
+    right: -30px;
+  }
+  .arrow-block :hover::after {
+    bottom: -35px;
+    right: -22px;
+  }
+}
+.arrow-text {
+  font-size: 16px;
 }
