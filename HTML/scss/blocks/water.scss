@@ -5,12 +5,47 @@
     display: flex;
 }
 .water-text {
+    padding-top: 170px;
 }
 .water-title {
+    & h2 {
+        font-family: "RoundedElegance";
+        font-size: 46px;
+        font-weight: 400;
+        line-height: 48px;
+        text-align: left;
+        color: #f4f4f4;
+        text-transform: uppercase;
+    }
 }
 .water-subtitle {
+    margin-top: 43px;
+
+    & p {
+        font-family: "Gravity";
+        font-size: 24px;
+        font-weight: 350;
+        line-height: 33.6px;
+        text-align: left;
+        color: #f4f4f4;
+    }
 }
-.button-block {
+.photosession {
+    margin-top: -110px;
+
+    font-family: "RoundedElegance";
+    font-size: 140px;
+    font-weight: 400;
+    line-height: 180px;
+    text-align: left;
+
+    color: black;
 }
 .water-img {
+    padding-left: 40px;
+
+    & img {
+        width: 700px;
+        height: 400px;
+    }
 }
