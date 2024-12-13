@@ -814,6 +814,7 @@ h6 {
 }
 .water {
   background: #080808;
+  display: none;
 }
 
 .water-wrapper {
@@ -1070,4 +1071,36 @@ h6 {
 }
 .arrow-text {
   font-size: 16px;
+}
+
+.studio {
+  background: #080808;
+}
+
+.studio-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.studio-title h2 {
+  font-family: "RoundedElegance";
+  font-size: 46px;
+  font-weight: 400;
+  line-height: 48px;
+  text-align: left;
+  color: #f4f4f4;
+  text-transform: uppercase;
+}
+
+.studio-subtitle {
+  margin-top: 43px;
+}
+.studio-subtitle p {
+  font-family: "Gravity";
+  font-size: 24px;
+  font-weight: 350;
+  line-height: 33.6px;
+  text-align: left;
+  color: #f4f4f4;
 }
