@@ -1007,7 +1007,7 @@ h6 {
 }
 .arrow-red img {
   position: absolute;
-  width: 201px;
+  width: 201 px;
   top: -170px;
 }
 .arrow-red ::after {
@@ -1075,6 +1075,7 @@ h6 {
 
 .studio {
   background: #080808;
+  padding: 20px 0;
 }
 
 .studio-wrapper {
@@ -1083,6 +1084,20 @@ h6 {
   display: flex;
 }
 
+.studio-img img {
+  width: 600px;
+  height: 900px;
+}
+
+.studio-text {
+  background: #0f0f0f;
+  width: 600px;
+  height: 760px;
+}
+
+.studio-title {
+  margin-left: 60px;
+}
 .studio-title h2 {
   font-family: "RoundedElegance";
   font-size: 46px;
@@ -1095,6 +1110,7 @@ h6 {
 
 .studio-subtitle {
   margin-top: 43px;
+  margin-left: 60px;
 }
 .studio-subtitle p {
   font-family: "Gravity";
@@ -1103,4 +1119,8 @@ h6 {
   line-height: 33.6px;
   text-align: left;
   color: #f4f4f4;
+}
+
+.studio-button {
+  margin-left: 60px;
 }

@@ -1,16 +1,24 @@
 .studio {
     background: #080808;
+    padding: 20px 0;
 }
 .studio-wrapper {
     display: flex;
 }
 .studio-img {
-}
-.arrow-text {
+    & img {
+        width: 600px;
+        height: 900px;
+    }
 }
 .studio-text {
+    background: #0f0f0f;
+    width: 600px;
+    height: 760px;
 }
 .studio-title {
+    margin-left: 60px;
+
     & h2 {
         font-family: "RoundedElegance";
         font-size: 46px;
@@ -23,6 +31,7 @@
 }
 .studio-subtitle {
     margin-top: 43px;
+    margin-left: 60px;
 
     & p {
         font-family: "Gravity";
@@ -32,4 +41,8 @@
         text-align: left;
         color: #f4f4f4;
     }
+}
+
+.studio-button {
+    margin-left: 60px;
 }
