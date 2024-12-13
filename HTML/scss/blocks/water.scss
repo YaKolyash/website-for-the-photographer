@@ -150,33 +150,4 @@
 }
 
 @media (max-width: 520px) {
-    .container {
-        max-width: 440px;
-    }
-
-    .water-wrapper {
-        display: block;
-    }
-    .water-text {
-        padding-top: 0;
-    }
-    .water-title {
-        width: 350px;
-        padding-bottom: 10px;
-
-        & h2 {
-            font-size: calc(6px + 16 * (100vw / 570));
-            line-height: 30px;
-            padding-left: 20px;
-        }
-    }
-    .water-subtitle {
-        display: none;
-    }
-    .button-block {
-        display: none;
-    }
-    .photosession {
-        display: none;
-    }
 }
