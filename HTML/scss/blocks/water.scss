@@ -43,6 +43,7 @@
 }
 .water-img {
     padding-left: 40px;
+    object-fit: cover;
 
     & img {
         width: 700px;
@@ -150,4 +151,21 @@
 }
 
 @media (max-width: 520px) {
+    .water {
+        width: 520px;
+    }
+
+    .water-wrapper {
+        padding: 0;
+    }
+
+    .water-title {
+        width: 270px;
+    }
+
+    .water-img {
+        & img {
+            width: 347px;
+        }
+    }
 }

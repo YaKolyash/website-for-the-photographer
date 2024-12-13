@@ -860,6 +860,8 @@ h6 {
 
 .water-img {
   padding-left: 40px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .water-img img {
   width: 700px;
@@ -944,6 +946,20 @@ h6 {
   }
   .photosession {
     display: none;
+  }
+}
+@media (max-width: 520px) {
+  .water {
+    width: 520px;
+  }
+  .water-wrapper {
+    padding: 0;
+  }
+  .water-title {
+    width: 270px;
+  }
+  .water-img img {
+    width: 347px;
   }
 }
 .arrow-block {
