@@ -1090,14 +1090,12 @@ h6 {
 }
 
 .studio-text {
+  margin-top: 70px;
   background: #0f0f0f;
   width: 600px;
   height: 760px;
 }
 
-.studio-title {
-  margin-left: 60px;
-}
 .studio-title h2 {
   font-family: "RoundedElegance";
   font-size: 46px;
@@ -1106,11 +1104,11 @@ h6 {
   text-align: left;
   color: #f4f4f4;
   text-transform: uppercase;
+  padding: 70px 60px 0 60px;
 }
 
 .studio-subtitle {
   margin-top: 43px;
-  margin-left: 60px;
 }
 .studio-subtitle p {
   font-family: "Gravity";
@@ -1119,8 +1117,14 @@ h6 {
   line-height: 33.6px;
   text-align: left;
   color: #f4f4f4;
+  padding: 43px 60px 0 60px;
 }
 
 .studio-button {
   margin-left: 60px;
+}
+
+.studio-arrow {
+  width: 201px;
+  height: 100px;
 }
