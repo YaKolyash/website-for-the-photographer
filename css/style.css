@@ -1083,6 +1083,10 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
 }
 
 .studio-img {
@@ -1141,6 +1145,9 @@ h6 {
 }
 
 @media (max-width: 1210px) {
+  .studio {
+    width: 940px;
+  }
   .studio-img picture img {
     height: 700px;
   }
@@ -1212,9 +1219,6 @@ h6 {
     width: 900px;
   }
   .studio-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
@@ -1230,7 +1234,7 @@ h6 {
     display: block;
   }
   .studio-img picture img {
-    width: 300px;
+    width: 390px;
     height: 200px;
   }
   .studio-text {
