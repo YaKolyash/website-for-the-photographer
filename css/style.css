@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Gravity-Book";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 350;
   src: url("../../../fonts/Gravity-Book.woff");
   src: local(""), url("../../../fonts/Gravity-Book.woff") format("woff");
 }
@@ -296,7 +296,7 @@ h6 {
   top: 0;
   width: 1440px;
   height: 850px;
-  background-color: #0F0F0F;
+  background-color: #0f0f0f;
 }
 
 .main-title {
@@ -323,7 +323,7 @@ h6 {
 }
 
 .title-subtext {
-  font-family: Gravity;
+  font-family: "Gravity-Book";
   font-size: 30px;
   font-weight: 350;
   line-height: 42px;
@@ -331,7 +331,7 @@ h6 {
   text-underline-position: from-font;
   -webkit-text-decoration-skip-ink: none;
           text-decoration-skip-ink: none;
-  color: #F4F4F4;
+  color: #f4f4f4;
 }
 
 .main-swiper {
@@ -606,7 +606,7 @@ h6 {
   margin-top: 60px;
 }
 .author-subtitle div {
-  font-family: "Gravity";
+  font-family: "Gravity-Book";
   font-size: 24px;
   font-weight: 350;
   line-height: 33.6px;
@@ -841,7 +841,7 @@ h6 {
   margin-top: 43px;
 }
 .water-subtitle p {
-  font-family: "Gravity";
+  font-family: "Gravity-Book";
   font-size: 24px;
   font-weight: 350;
   line-height: 33.6px;
@@ -973,17 +973,17 @@ h6 {
 }
 .arrow-block img {
   position: absolute;
-  width: 201px;
+  width: 160px;
   top: -20px;
   height: 100px;
 }
 .arrow-block ::after {
   position: absolute;
   content: "";
-  width: 80px;
-  height: 80px;
-  bottom: -20px;
-  right: 53px;
+  width: 90px;
+  height: 90px;
+  bottom: -40px;
+  right: 90px;
   border: 2px solid #f4f4f4;
   border-radius: 50%;
   -webkit-transition-duration: 0.3s;
@@ -1031,7 +1031,7 @@ h6 {
 
 .arrow-text {
   text-transform: uppercase;
-  font-family: "Gravity";
+  font-family: "Gravity-Regular";
   font-size: 22px;
   font-weight: 400;
   color: #ffffff;
@@ -1084,8 +1084,12 @@ h6 {
   display: flex;
 }
 
+.studio-img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .studio-img img {
-  width: 600px;
+  width: 100%;
   height: 900px;
 }
 
@@ -1111,7 +1115,7 @@ h6 {
   margin-top: 43px;
 }
 .studio-subtitle p {
-  font-family: "Gravity";
+  font-family: "Gravity-Book";
   font-size: 24px;
   font-weight: 350;
   line-height: 33.6px;
@@ -1124,7 +1128,12 @@ h6 {
   margin-left: 60px;
 }
 
-.studio-arrow {
-  width: 201px;
-  height: 100px;
+.studio-arrow__background p::after {
+  background: #0f0f0f !important;
+}
+
+@media (max-width: 1210px) {
+  .studio-img img {
+    height: 700px;
+  }
 }

@@ -6,8 +6,10 @@
     display: flex;
 }
 .studio-img {
+    object-fit: cover;
+
     & img {
-        width: 600px;
+        width: 100%;
         height: 900px;
     }
 }
@@ -33,7 +35,7 @@
     margin-top: 43px;
 
     & p {
-        font-family: "Gravity";
+        font-family: "Gravity-Book";
         font-size: 24px;
         font-weight: 350;
         line-height: 33.6px;
@@ -46,7 +48,17 @@
 .studio-button {
     margin-left: 60px;
 }
-.studio-arrow {
-    width: 201px;
-    height: 100px;
+
+.studio-arrow__background {
+    & p::after {
+        background: #0f0f0f !important;
+    }
+}
+
+@media (max-width: 1210px) {
+    .studio-img {
+        & img {
+            height: 700px;
+        }
+    }
 }

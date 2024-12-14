@@ -9,7 +9,7 @@
 
     & img {
         position: absolute;
-        width: 201px;
+        width: 160px;
         top: -20px;
         height: 100px;
     }
@@ -17,10 +17,10 @@
     & ::after {
         position: absolute;
         content: "";
-        width: 80px;
-        height: 80px;
-        bottom: -20px;
-        right: 53px;
+        width: 90px;
+        height: 90px;
+        bottom: -40px;
+        right: 90px;
         border: 2px solid #f4f4f4;
         border-radius: 50%;
         transition-duration: 0.3s;
@@ -44,7 +44,7 @@
 
     & img {
         position: absolute;
-        width: 201  px;
+        width: 201 px;
         top: -170px;
     }
 
@@ -71,7 +71,7 @@
 
 .arrow-text {
     text-transform: uppercase;
-    font-family: "Gravity";
+    font-family: "Gravity-Regular";
     font-size: 22px;
     font-weight: 400;
     color: #ffffff;
