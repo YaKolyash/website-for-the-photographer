@@ -4,12 +4,24 @@
       <div>
         <diiv class="studio-img">
           <picture>
-            <source srcset="../img/manbreast.png" media="" />
-            <img src="../img/manbreast.png" alt="" />
-            <source srcset="../img/manbreast.png" media="" />
-            <img src="../img/manbreast2.png" alt="" />
+            <source
+              media="(min-width: 705px)"
+              sizes="50vw"
+              srcset="../img/manbreast.png"
+              type=""
+            />
+            <source
+              sizes="(min-width: 704px)"
+              srcset="../img/manbreast2.png"
+              type=""
+            />
+            <img
+              src="../img/manbreast.png"
+              alt=""
+              sizes="(min-width: 704px)"
+              srcset="../img/manbreast.png"
+            />
           </picture>
-          <!-- <img src="../img/chest.png" alt="" /> -->
         </diiv>
         <div class="arrow-block studio-arrow__block">
           <p class="arrow-text">Подробнее</p>

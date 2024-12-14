@@ -1018,8 +1018,8 @@ h6 {
 .arrow-red ::after {
   position: absolute;
   content: "";
-  width: 80px;
-  height: 80px;
+  width: 90px;
+  height: 90px;
   bottom: -20px;
   right: 453px;
   border: 2px solid #f4f4f4;
@@ -1045,7 +1045,17 @@ h6 {
 @media (max-width: 700px) {
   .arrow-block {
     top: -68px;
-    left: 140px;
+    left: 90px;
+  }
+  .arrow-block ::after {
+    width: 50px;
+    height: 50px;
+    bottom: -20px;
+    right: 110px;
+  }
+  .arrow-block :hover::after {
+    bottom: -29px;
+    right: 113px;
   }
 }
 @media (max-width: 450px) {
@@ -1074,10 +1084,6 @@ h6 {
     right: -22px;
   }
 }
-.arrow-text {
-  font-size: 16px;
-}
-
 .studio {
   background: #080808;
   padding: 20px 0;
@@ -1156,13 +1162,35 @@ h6 {
   }
 }
 @media (max-width: 701px) {
+  .studio {
+    width: 900px;
+  }
+  .container {
+    max-width: 770px;
+  }
   .studio-img picture img {
-    height: 700px;
+    width: 300px;
+    height: 200px;
+  }
+  .studio-text {
+    margin-top: 0;
+    height: 205px;
+  }
+  .studio-title {
+    width: 190px;
   }
   .studio-title h2 {
-    font-size: calc(26px + 1.3223140496vw);
+    padding: 5px 0 0 20px;
+    font-size: calc(16px + 1.3223140496vw);
+    line-height: 25px;
+  }
+  .studio-subtitle {
+    width: 356px;
+    margin-top: 20px;
   }
   .studio-subtitle p {
+    padding: 0 10px 0 20px;
     font-size: calc(8px + 1.3223140496vw);
+    line-height: 25px;
   }
 }
