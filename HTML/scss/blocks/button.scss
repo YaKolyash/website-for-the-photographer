@@ -54,6 +54,12 @@
     }
 }
 
+@media (max-width: 705px) {
+    .button-block {
+        display: none;
+    }
+}
+
 // ======================
 .order__item {
     cursor: pointer;
