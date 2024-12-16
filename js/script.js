@@ -48,8 +48,7 @@ function closeOnClick() {
   body.classList.remove("noscroll");
 };
 
-
-// SWIPER
+// ---------------SWIPER----------------------------------------------------
 
 const swiper = new Swiper('.swiper-container', {
   // Optional parameters
