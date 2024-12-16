@@ -1250,32 +1250,30 @@ h6 {
   }
 }
 .arrow-all {
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding: 35px 0 35px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background: #080808;
   position: relative;
   cursor: pointer;
   z-index: 5;
-  background: #080808;
+  top: -18px;
 }
 .arrow-all img {
   position: absolute;
-  width: 268px;
-  top: -20px;
-  height: 150px;
+  width: 264px;
 }
 .arrow-all ::after {
   position: absolute;
+  top: -30px;
+  right: 55px;
   content: "";
   width: 90px;
   height: 90px;
-  bottom: -40px;
-  right: 90px;
   border: 2px solid #f4f4f4;
   border-radius: 50%;
   -webkit-transition-duration: 0.3s;
@@ -1294,4 +1292,5 @@ h6 {
   font-size: 22px;
   font-weight: 400;
   color: #ffffff;
+  margin-left: -66px;
 }

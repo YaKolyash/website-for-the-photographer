@@ -1,27 +1,25 @@
 .arrow-all {
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding: 35px 0 35px 0;
     display: flex;
     justify-content: center;
+    background: $background-block;
     position: relative;
     cursor: pointer;
     z-index: 5;
-    background: $background-block;
+    top: -18px;
 
     & img {
         position: absolute;
-        width: 268px;
-        top: -20px;
-        height: 150px;
+        width: 264px;
     }
 
     & ::after {
         position: absolute;
+        top: -30px;
+        right: 55px;
         content: "";
         width: 90px;
         height: 90px;
-        bottom: -40px;
-        right: 90px;
         border: 2px solid $smoke-white;
         border-radius: 50%;
         transition-duration: 0.3s;
@@ -40,6 +38,7 @@
     font-size: 22px;
     font-weight: 400;
     color: $white;
+    margin-left: -66px;
 }
 
 // .arrow-red {
