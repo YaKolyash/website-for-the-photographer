@@ -1,6 +1,8 @@
 .excerpt {
-    background: #080808;
+    background: $background-block;
     padding-bottom: 200px;
+
+    // display: none;
 }
 .excerpt-text {
     width: 990px;
@@ -34,7 +36,7 @@
         content: url(../../../img/svg/right.svg);
         width: 42px;
         height: 42px;
-        display: inline-bloc\k;
+        display: inline-block;
         vertical-align: middle;
         margin: 95px 0 0 27px;
     }

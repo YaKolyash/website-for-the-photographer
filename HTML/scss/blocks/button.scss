@@ -21,7 +21,7 @@
     }
 
     & p::after {
-        background: #080808;
+        background: $background-block;
         cursor: pointer;
         position: absolute;
         top: -25px;

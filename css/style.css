@@ -819,6 +819,7 @@ h6 {
 }
 .water {
   background: #080808;
+  display: none;
 }
 
 .water-wrapper {
@@ -1260,4 +1261,6 @@ h6 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  display: block;
+  background: #080808;
 }
