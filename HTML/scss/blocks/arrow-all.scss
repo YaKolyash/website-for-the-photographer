@@ -1,12 +1,115 @@
 .arrow-all {
+    padding-top: 25px;
+    padding-bottom: 25px;
     display: flex;
     justify-content: center;
+    position: relative;
+    cursor: pointer;
+    z-index: 5;
     background: $background-block;
+
+    & img {
+        position: absolute;
+        width: 268px;
+        top: -20px;
+        height: 150px;
+    }
+
+    & ::after {
+        position: absolute;
+        content: "";
+        width: 90px;
+        height: 90px;
+        bottom: -40px;
+        right: 90px;
+        border: 2px solid $color-border;
+        border-radius: 50%;
+        transition-duration: 0.3s;
+    }
+
+    & :hover::after {
+        bottom: -41px;
+        right: 62px;
+        transition-duration: 0.3s;
+    }
 }
 
-.arrow-block {
-}
-.all {
-}
 .arrow-text {
+    text-transform: uppercase;
+    font-family: "Gravity-Regular";
+    font-size: 22px;
+    font-weight: 400;
+    color: $color-text;
 }
+
+// .arrow-red {
+//     width: 100%;
+//     position: relative;
+//     top: -98px;
+//     left: 40px;
+//     cursor: pointer;
+//     z-index: 5;
+//     color: #6d0602;
+
+//     & img {
+//         position: absolute;
+//         width: 201 px;
+//         top: -170px;
+//     }
+
+//     & ::after {
+//         position: absolute;
+//         content: "";
+//         width: 90px;
+//         height: 90px;
+//         bottom: -20px;
+//         right: 453px;
+//         border: 2px solid #f4f4f4;
+//         border-radius: 50%;
+//         transition-duration: 0.3s;
+//     }
+
+//     & :hover::after {
+//         bottom: -41px;
+//         right: 462px;
+//         transition-duration: 0.3s;
+//     }
+// }
+
+// @media (max-width: 1210px) {
+//     .arrow-block {
+//         top: -78px;
+//         left: 190px;
+
+//         & ::after {
+//             width: 90px;
+//             height: 90px;
+//             bottom: -20px;
+//             right: 90px;
+//         }
+
+//         & :hover::after {
+//             bottom: -29px;
+//             right: 113px;
+//         }
+//     }
+// }
+
+// @media (max-width: 706px) {
+//     .arrow-block {
+//         top: -68px;
+//         left: 90px;
+
+//         & ::after {
+//             width: 50px;
+//             height: 50px;
+//             bottom: -20px;
+//             right: 110px;
+//         }
+
+//         & :hover::after {
+//             bottom: -29px;
+//             right: 113px;
+//         }
+//     }
+// }

@@ -328,9 +328,6 @@ h6 {
   font-weight: 350;
   line-height: 42px;
   text-align: left;
-  text-underline-position: from-font;
-  -webkit-text-decoration-skip-ink: none;
-          text-decoration-skip-ink: none;
   color: #f4f4f4;
 }
 
@@ -579,9 +576,6 @@ h6 {
   font-weight: 400;
   line-height: 82px;
   text-align: left;
-  text-underline-position: from-font;
-  -webkit-text-decoration-skip-ink: none;
-          text-decoration-skip-ink: none;
 }
 
 .author-description {
@@ -1077,6 +1071,7 @@ h6 {
 .studio {
   background: #080808;
   padding: 20px 0;
+  display: none;
 }
 
 .studio-wrapper {
@@ -1254,13 +1249,49 @@ h6 {
     display: none;
   }
 }
-.all {
+.arrow-all {
+  padding-top: 25px;
+  padding-bottom: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  display: block;
+  position: relative;
+  cursor: pointer;
+  z-index: 5;
   background: #080808;
+}
+.arrow-all img {
+  position: absolute;
+  width: 268px;
+  top: -20px;
+  height: 150px;
+}
+.arrow-all ::after {
+  position: absolute;
+  content: "";
+  width: 90px;
+  height: 90px;
+  bottom: -40px;
+  right: 90px;
+  border: 2px solid #f4f4f4;
+  border-radius: 50%;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+.arrow-all :hover::after {
+  bottom: -41px;
+  right: 62px;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.arrow-text {
+  text-transform: uppercase;
+  font-family: "Gravity-Regular";
+  font-size: 22px;
+  font-weight: 400;
+  color: #ffffff;
 }
