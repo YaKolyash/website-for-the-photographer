@@ -1,15 +1,14 @@
 .arrow-all {
     padding: 35px 0 35px 0;
     display: flex;
-    justify-content: center;
+    align-items: center;
     background: $background-block;
     position: relative;
     cursor: pointer;
     z-index: 5;
     top: -18px;
-
+    flex-direction: column;
     & img {
-        position: absolute;
         width: 264px;
     }
 
