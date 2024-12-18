@@ -1308,3 +1308,14 @@ h6 {
   color: #ffffff;
   margin-left: -65px;
 }
+
+.shooting-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.shooting-img img {
+  width: 600px;
+  height: 900px;
+}
