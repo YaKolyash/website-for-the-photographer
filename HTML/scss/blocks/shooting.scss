@@ -1,4 +1,5 @@
 .shooting {
+    background: $background-block;
 }
 .background {
 }
@@ -6,20 +7,62 @@
     display: flex;
 }
 .project-title {
+    color: $white;
 }
 .none {
 }
 .shooting-description {
 }
+.flex-title {
+    display: flex;
+    margin-top: 86px;
+}
 .circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    border: 3px solid $white;
 }
 .circle-item {
+    color: $white;
+
+    & p {
+        font-family: "Gravity-Book";
+        font-size: 64px;
+        font-weight: 400;
+        line-height: 89.6px;
+        text-align: center;
+    }
 }
 .circle-title {
 }
-.title {
+.water-title {
+    & h2 {
+        font-family: "RoundedElegance";
+        font-size: 46px;
+        font-weight: 400;
+        line-height: 48px;
+        text-align: left;
+        color: $smoke-white;
+        text-transform: uppercase;
+    }
 }
-.subtitle {
+.margin-subtitle {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.shooting-subtitle {
+    margin-top: 43px;
+
+    & p {
+        width: 480px;
+        font-family: "Gravity-Book";
+        font-size: 24px;
+        font-weight: 350;
+        line-height: 33.6px;
+        text-align: left;
+        color: $smoke-white;
+    }
 }
 .shooting-img {
     & img {

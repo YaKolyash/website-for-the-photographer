@@ -1309,10 +1309,71 @@ h6 {
   margin-left: -65px;
 }
 
+.shooting {
+  background: #080808;
+}
+
 .shooting-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.project-title {
+  color: #ffffff;
+}
+
+.flex-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 86px;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  border: 3px solid #ffffff;
+}
+
+.circle-item {
+  color: #ffffff;
+}
+.circle-item p {
+  font-family: "Gravity-Book";
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 89.6px;
+  text-align: center;
+}
+
+.water-title h2 {
+  font-family: "RoundedElegance";
+  font-size: 46px;
+  font-weight: 400;
+  line-height: 48px;
+  text-align: left;
+  color: #f4f4f4;
+  text-transform: uppercase;
+}
+
+.margin-subtitle {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.shooting-subtitle {
+  margin-top: 43px;
+}
+.shooting-subtitle p {
+  width: 480px;
+  font-family: "Gravity-Book";
+  font-size: 24px;
+  font-weight: 350;
+  line-height: 33.6px;
+  text-align: left;
+  color: #f4f4f4;
 }
 
 .shooting-img img {
