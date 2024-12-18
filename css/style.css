@@ -1249,7 +1249,17 @@ h6 {
     display: none;
   }
 }
+.arrow {
+  width: 100%;
+  overflow: hidden;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: none;
+}
+
 .arrow-all {
+  width: 1872px;
   padding: 35px 0 35px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1268,11 +1278,12 @@ h6 {
           flex-direction: column;
 }
 .arrow-all img {
-  width: 264px;
+  width: 228px;
 }
 .arrow-all ::after {
   position: absolute;
-  right: 737px;
+  top: 10px;
+  right: 648px;
   content: "";
   width: 90px;
   height: 90px;
@@ -1283,7 +1294,8 @@ h6 {
 }
 .arrow-all :hover::after {
   bottom: -41px;
-  right: 62px;
+  top: 23px;
+  right: 778px;
   -webkit-transition-duration: 0.3s;
           transition-duration: 0.3s;
 }
@@ -1294,5 +1306,5 @@ h6 {
   font-size: 22px;
   font-weight: 400;
   color: #ffffff;
-  margin-left: -100px;
+  margin-left: -65px;
 }

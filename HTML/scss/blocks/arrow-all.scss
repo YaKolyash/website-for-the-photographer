@@ -1,4 +1,12 @@
+.arrow {
+    width: 100%;
+    overflow: hidden;
+    // display: flex;
+    justify-content: center;
+    display: none;
+}
 .arrow-all {
+    width: 1872px;
     padding: 35px 0 35px 0;
     display: flex;
     align-items: center;
@@ -8,13 +16,15 @@
     z-index: 5;
     top: -18px;
     flex-direction: column;
+
     & img {
-        width: 264px;
+        width: 228px;
     }
 
     & ::after {
         position: absolute;
-        right: 737px;
+        top: 10px;
+        right: 648px;
         content: "";
         width: 90px;
         height: 90px;
@@ -25,7 +35,8 @@
 
     & :hover::after {
         bottom: -41px;
-        right: 62px;
+        top: 23px;
+        right: 778px;
         transition-duration: 0.3s;
     }
 }
@@ -36,7 +47,7 @@
     font-size: 22px;
     font-weight: 400;
     color: $white;
-    margin-left: -100px;
+    margin-left: -65px;
 }
 
 // .arrow-red {
