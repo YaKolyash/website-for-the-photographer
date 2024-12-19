@@ -1,19 +1,38 @@
 .shooting {
     background: $background-block;
-}
-.background {
+    position: relative;
+    height: 1420px;
 }
 .shooting-wrapper {
+    position: relative;
+    left: -58px;
+    z-index: 10;
+}
+.background {
+    background: $gray;
+    width: 64.583vw;
+    height: 1360px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.shooting-title {
     display: flex;
+    justify-content: center;
+    padding-top: 170px;
+    position: relative;
+    z-index: 10;
+
+    & p {
+        font-family: "RoundedElegance";
+        font-size: calc(68px + 16 * (100vw / 1280));
+        font-weight: 400;
+        line-height: 60px;
+        text-align: left;
+        color: $smoke-white;
+    }
 }
-.project-title {
-    color: $white;
-}
-.none {
-}
-.shooting-description {
-}
-.flex-title {
+.description-item {
     display: flex;
     margin-top: 86px;
 }
@@ -34,8 +53,6 @@
         text-align: center;
     }
 }
-.circle-title {
-}
 .water-title {
     & h2 {
         font-family: "RoundedElegance";
@@ -43,7 +60,7 @@
         font-weight: 400;
         line-height: 48px;
         text-align: left;
-        color: $smoke-white;
+        color: $white;
         text-transform: uppercase;
     }
 }
@@ -52,10 +69,10 @@
     margin-top: 20px;
 }
 .shooting-subtitle {
-    margin-top: 43px;
+    margin-top: 40px;
+    width: 480px;
 
     & p {
-        width: 480px;
         font-family: "Gravity-Book";
         font-size: 24px;
         font-weight: 350;
@@ -65,8 +82,41 @@
     }
 }
 .shooting-img {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    object-fit: cover;
+
     & img {
-        width: 600px;
-        height: 900px;
+        width: 46.875vw;
+        height: 1360px;
+    }
+}
+
+@media (max-width: 1880px) {
+    .shooting-img {
+        & img {
+            height: 1100px;
+        }
+    }
+}
+
+@media (max-width: 1405px) {
+    .shooting-img {
+        & img {
+            height: 900px;
+        }
+    }
+}
+
+@media (max-width: 1290px) {
+    .shooting-title {
+        padding-top: 100px;
+    }
+
+    .shooting-img {
+        & img {
+            height: 900px;
+        }
     }
 }
