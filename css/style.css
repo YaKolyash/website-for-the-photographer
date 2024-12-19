@@ -1505,13 +1505,8 @@ h6 {
     margin: 0 auto;
     width: 500px;
   }
-  .shooting-title__open p {
-    font-size: calc(48px + 1.25vw);
-  }
-  .shooting-subtitle p {
-    width: 320px;
-    font-size: 20px;
-    line-height: 24px;
+  .shooting-subtitle {
+    width: 300px;
   }
   .shooting-img {
     display: none;
