@@ -31,8 +31,11 @@ body {
   }
 }
 .container {
+  max-width: 1100px;
   width: 1100px;
   margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .none {
@@ -60,6 +63,7 @@ li {
 }
 
 img {
+  max-width: 1920px;
   vertical-align: top;
 }
 
@@ -1481,7 +1485,7 @@ h6 {
     padding-left: 20px;
   }
   .shooting-title__open p {
-    font-size: calc(48px + 1.25vw);
+    font-size: calc(38px + 1.25vw);
   }
   .shooting-subtitle p {
     width: 320px;
@@ -1501,9 +1505,20 @@ h6 {
   }
 }
 @media (max-width: 590px) {
+  .container {
+    max-width: 460px;
+  }
+  .shooting-wrapper {
+    width: 555px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   .shooting-description {
     margin: 0 auto;
     width: 500px;
+  }
+  .shooting-title__open p {
+    text-align: center;
   }
   .shooting-subtitle {
     width: 300px;

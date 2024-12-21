@@ -180,7 +180,7 @@
 
     .shooting-title__open {
         & p {
-            font-size: calc(48px + 16 * (100vw / 1280));
+            font-size: calc(38px + 16 * (100vw / 1280));
         }
     }
 
@@ -210,7 +210,13 @@
 
 @media (max-width: 590px) {
     .container {
-        
+        max-width: 460px;
+    }
+
+    .shooting-wrapper {
+        width: 555px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .shooting-description {
@@ -219,6 +225,9 @@
     }
 
     .shooting-title__open {
+        & p {
+            text-align: center;
+        }
     }
 
     .shooting-subtitle {
