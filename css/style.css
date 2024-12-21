@@ -1533,3 +1533,31 @@ h6 {
     display: none;
   }
 }
+.running-line {
+  background: #080808;
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.running-line h3::before {
+  border: 3px solid #f4f4f4;
+}
+.running-line h3 {
+  text-transform: uppercase;
+  font-family: "RoundedElegance";
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 48px;
+  text-align: left;
+  color: #f4f4f4;
+}
+.running-line h3::after {
+  border: 3px solid #f4f4f4;
+}
+.running-line point {
+  background: #ffffff;
+  width: 20px;
+  height: 20px;
+  border-radius: 100px;
+}

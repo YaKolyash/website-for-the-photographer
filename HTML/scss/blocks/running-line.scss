@@ -1,10 +1,31 @@
 .running-line {
-    & p {
+    background: $background-block;
+    // width: 2038px;
+    height: 48px;
+    display: flex;
+
+    & h3::before {
+        border: 3px solid $smoke-white;
+    }
+
+    & h3 {
+        text-transform: uppercase;
+        font-family: "RoundedElegance";
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 48px;
+        text-align: left;
+        color: $smoke-white;
+    }
+
+    & h3::after {
+        border: 3px solid $smoke-white;
     }
 
     & point {
         background: $white;
         width: 20px;
         height: 20px;
+        border-radius: 100px;
     }
 }
