@@ -1535,6 +1535,8 @@ h6 {
   }
 }
 .running-line {
+  border-top: 3px solid #f4f4f4;
+  border-bottom: 3px solid #f4f4f4;
   background: #080808;
   height: 88px;
   display: -webkit-box;
@@ -1542,7 +1544,7 @@ h6 {
   display: flex;
   position: relative;
   width: 100%;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 .running-line h3 {
   text-transform: uppercase;
@@ -1566,32 +1568,12 @@ h6 {
   display: -ms-flexbox;
   display: flex;
   margin-top: 20px;
-  -webkit-animation: marquee 32s linear infinite;
-          animation: marquee 32s linear infinite;
+  -webkit-animation: running-line 4s linear infinite;
+          animation: running-line 4s linear infinite;
 }
 
 .running-item:not(:first-child) {
   margin-left: 20px;
-}
-
-.running-item::before {
-  content: "";
-  width: 100%;
-  position: absolute;
-  border-top: 3px solid #f4f4f4;
-  display: block;
-  z-index: 1;
-  top: 0;
-}
-
-.running-line::after {
-  content: "";
-  width: 100%;
-  position: absolute;
-  border-bottom: 3px solid #f4f4f4;
-  display: block;
-  z-index: 1;
-  bottom: 0;
 }
 
 @-webkit-keyframes running-line {

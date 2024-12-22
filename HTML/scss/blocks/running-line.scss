@@ -1,10 +1,12 @@
 .running-line {
+    border-top: 3px solid $smoke-white;
+    border-bottom: 3px solid $smoke-white;
     background: $background-block;
     height: 88px;
     display: flex;
     position: relative;
     width: 100%;
-    overflow-x: hidden;
+    overflow: hidden;
 
     & h3 {
         text-transform: uppercase;
@@ -28,31 +30,11 @@
 .running-item {
     display: flex;
     margin-top: 20px;
-    animation: marquee 32s linear infinite;
+    animation: running-line 4s linear infinite;
 }
 
 .running-item:not(:first-child) {
     margin-left: 20px;
-}
-
-.running-item::before {
-    content: "";
-    width: 100%;
-    position: absolute;
-    border-top: 3px solid $smoke-white;
-    display: block;
-    z-index: 1;
-    top: 0;
-}
-
-.running-line::after {
-    content: "";
-    width: 100%;
-    position: absolute;
-    border-bottom: 3px solid $smoke-white;
-    display: block;
-    z-index: 1;
-    bottom: 0;
 }
 
 @keyframes running-line {
