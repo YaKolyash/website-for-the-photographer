@@ -1,14 +1,10 @@
 .running-line {
     background: $background-block;
-    // width: 2038px;
     height: 48px;
     display: flex;
 
-    & h3::before {
-        border: 3px solid $smoke-white;
-    }
-
     & h3 {
+        margin-left: 20px;
         text-transform: uppercase;
         font-family: "RoundedElegance";
         font-size: 48px;
@@ -17,15 +13,42 @@
         text-align: left;
         color: $smoke-white;
     }
+}
 
-    & h3::after {
-        border: 3px solid $smoke-white;
+@keyframes running-line {
+    0% {
+        transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+        -moz-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+        -o-transform: translateX(0%);
     }
 
-    & point {
-        background: $white;
-        width: 20px;
-        height: 20px;
-        border-radius: 100px;
+    100% {
+        transform: translatex(-100%);
+        -webkit-transform: translatex(-100%);
+        -moz-transform: translatex(-100%);
+        -ms-transform: translatex(-100%);
+        -o-transform: translatex(-100%);
     }
+}
+
+.running-line::before {
+    content: "";
+    border-top: 3px solid $smoke-white;
+    margin-bottom: 30px;
+}
+
+.running-line::after {
+    content: "";
+    border-bottom: 3px solid $smoke-white;
+}
+
+.point {
+    background: $white;
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    margin-top: 12px;
+    margin-left: 20px;
 }
