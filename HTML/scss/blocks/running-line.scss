@@ -1,7 +1,8 @@
 .running-line {
     background: $background-block;
-    height: 48px;
+    height: 88px;
     display: flex;
+    position: relative;
 
     & h3 {
         margin-left: 20px;
@@ -15,13 +16,46 @@
     }
 }
 
-@keyframes running-line {
+.running-item {
+    display: flex;
+    margin-top: 20px;
+}
+
+.running-point {
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    margin-top: 12px;
+    margin-left: 20px;
+}
+
+.running-item::before {
+    content: "";
+    width: 100%;
+    position: absolute;
+    border-top: 3px solid $smoke-white;
+    display: block;
+    z-index: 1;
+    top: 0;
+}
+
+.running-line::after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    border-bottom: 3px solid $smoke-white;
+    display: block;
+    z-index: 1;
+    bottom: 0;
+}
+
+@keyframes running-item {
     0% {
-        transform: translateX(0%);
-        -webkit-transform: translateX(0%);
-        -moz-transform: translateX(0%);
-        -ms-transform: translateX(0%);
-        -o-transform: translateX(0%);
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
     }
 
     100% {
@@ -31,24 +65,4 @@
         -ms-transform: translatex(-100%);
         -o-transform: translatex(-100%);
     }
-}
-
-.running-line::before {
-    content: "";
-    border-top: 3px solid $smoke-white;
-    margin-bottom: 30px;
-}
-
-.running-line::after {
-    content: "";
-    border-bottom: 3px solid $smoke-white;
-}
-
-.point {
-    background: $white;
-    width: 20px;
-    height: 20px;
-    border-radius: 100px;
-    margin-top: 12px;
-    margin-left: 20px;
 }
