@@ -1566,8 +1566,8 @@ h6 {
   display: -ms-flexbox;
   display: flex;
   margin-top: 20px;
-  animation: photography__item 4s linear infinite;
-  -webkit-animation: photography__item 4s linear infinite;
+  -webkit-animation: marquee 32s linear infinite;
+          animation: marquee 32s linear infinite;
 }
 
 .running-item:not(:first-child) {
@@ -1595,36 +1595,24 @@ h6 {
 }
 
 @-webkit-keyframes running-line {
-  0% {
-    transform: translateX(0%);
-    -webkit-transform: translateX(0%);
-    -moz-transform: translateX(0%);
-    -ms-transform: translateX(0%);
-    -o-transform: translateX(0%);
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
-  100% {
-    transform: translatex(-100%);
-    -webkit-transform: translatex(-100%);
-    -moz-transform: translatex(-100%);
-    -ms-transform: translatex(-100%);
-    -o-transform: translatex(-100%);
+  to {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
   }
 }
 
 @keyframes running-line {
-  0% {
-    transform: translateX(0%);
-    -webkit-transform: translateX(0%);
-    -moz-transform: translateX(0%);
-    -ms-transform: translateX(0%);
-    -o-transform: translateX(0%);
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
-  100% {
-    transform: translatex(-100%);
-    -webkit-transform: translatex(-100%);
-    -moz-transform: translatex(-100%);
-    -ms-transform: translatex(-100%);
-    -o-transform: translatex(-100%);
+  to {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
   }
 }
 @media (max-width: 800px) {

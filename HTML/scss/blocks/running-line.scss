@@ -28,8 +28,7 @@
 .running-item {
     display: flex;
     margin-top: 20px;
-    animation: photography__item 4s linear infinite;
-    -webkit-animation: photography__item 4s linear infinite;
+    animation: marquee 32s linear infinite;
 }
 
 .running-item:not(:first-child) {
@@ -57,20 +56,11 @@
 }
 
 @keyframes running-line {
-    0% {
-        transform: translateX(0%);
-        -webkit-transform: translateX(0%);
-        -moz-transform: translateX(0%);
-        -ms-transform: translateX(0%);
-        -o-transform: translateX(0%);
+    from {
+        transform: translateX(0);
     }
-
-    100% {
-        transform: translatex(-100%);
-        -webkit-transform: translatex(-100%);
-        -moz-transform: translatex(-100%);
-        -ms-transform: translatex(-100%);
-        -o-transform: translatex(-100%);
+    to {
+        transform: translateX(-100%);
     }
 }
 
