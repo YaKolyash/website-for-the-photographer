@@ -3,6 +3,8 @@
     height: 88px;
     display: flex;
     position: relative;
+    width: 100%;
+    overflow-x: hidden;
 
     & h3 {
         text-transform: uppercase;
@@ -26,6 +28,8 @@
 .running-item {
     display: flex;
     margin-top: 20px;
+    animation: photography__item 4s linear infinite;
+    -webkit-animation: photography__item 4s linear infinite;
 }
 
 .running-item:not(:first-child) {
@@ -40,8 +44,6 @@
     display: block;
     z-index: 1;
     top: 0;
-    // transform: translate(100%, 0);
-    animation: ticker 10s linear infinite;
 }
 
 .running-line::after {
@@ -56,15 +58,19 @@
 
 @keyframes running-line {
     0% {
-        transform: translate(100%, 0);
+        transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+        -moz-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+        -o-transform: translateX(0%);
     }
-    99% {
-        opacity: 1;
-        transform: translate(-100%, 0);
-    }
+
     100% {
-        opacity: 0;
-        transform: translate(-100%, 0);
+        transform: translatex(-100%);
+        -webkit-transform: translatex(-100%);
+        -moz-transform: translatex(-100%);
+        -ms-transform: translatex(-100%);
+        -o-transform: translatex(-100%);
     }
 }
 

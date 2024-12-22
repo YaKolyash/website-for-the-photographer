@@ -1541,6 +1541,8 @@ h6 {
   display: -ms-flexbox;
   display: flex;
   position: relative;
+  width: 100%;
+  overflow-x: hidden;
 }
 .running-line h3 {
   text-transform: uppercase;
@@ -1564,6 +1566,8 @@ h6 {
   display: -ms-flexbox;
   display: flex;
   margin-top: 20px;
+  animation: photography__item 4s linear infinite;
+  -webkit-animation: photography__item 4s linear infinite;
 }
 
 .running-item:not(:first-child) {
@@ -1578,8 +1582,6 @@ h6 {
   display: block;
   z-index: 1;
   top: 0;
-  -webkit-animation: ticker 10s linear infinite;
-          animation: ticker 10s linear infinite;
 }
 
 .running-line::after {
@@ -1594,35 +1596,35 @@ h6 {
 
 @-webkit-keyframes running-line {
   0% {
-    -webkit-transform: translate(100%, 0);
-            transform: translate(100%, 0);
-  }
-  99% {
-    opacity: 1;
-    -webkit-transform: translate(-100%, 0);
-            transform: translate(-100%, 0);
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
   }
   100% {
-    opacity: 0;
-    -webkit-transform: translate(-100%, 0);
-            transform: translate(-100%, 0);
+    transform: translatex(-100%);
+    -webkit-transform: translatex(-100%);
+    -moz-transform: translatex(-100%);
+    -ms-transform: translatex(-100%);
+    -o-transform: translatex(-100%);
   }
 }
 
 @keyframes running-line {
   0% {
-    -webkit-transform: translate(100%, 0);
-            transform: translate(100%, 0);
-  }
-  99% {
-    opacity: 1;
-    -webkit-transform: translate(-100%, 0);
-            transform: translate(-100%, 0);
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
   }
   100% {
-    opacity: 0;
-    -webkit-transform: translate(-100%, 0);
-            transform: translate(-100%, 0);
+    transform: translatex(-100%);
+    -webkit-transform: translatex(-100%);
+    -moz-transform: translatex(-100%);
+    -ms-transform: translatex(-100%);
+    -o-transform: translatex(-100%);
   }
 }
 @media (max-width: 800px) {
