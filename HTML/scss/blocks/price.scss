@@ -50,12 +50,11 @@
 }
 
 .article-group {
-    display: flex;
-    flex-direction: column;
+    margin-left: 80px;
 }
 .description-article {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 
     & span {
@@ -71,9 +70,154 @@
         font-size: 24px;
         font-weight: 350;
         line-height: 33.6px;
+        color: $smoke-white;
+    }
+}
+
+.description-article:not(:first-child) {
+    margin-top: 20px;
+}
+.item-value {
+    margin: 40px 0 0 80px;
+
+    & p {
+        font-family: "Gravity-Regular";
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 67.2px;
         text-align: left;
         color: $smoke-white;
     }
 }
-.item-value {
+
+.price-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 102px;
+}
+.arrow-block {
+    position: relative;
+    cursor: pointer;
+    z-index: 5;
+
+    width: 300px;
+
+    & p {
+        text-transform: uppercase;
+        font-family: "Gravity-Regular";
+        font-size: 22px;
+        font-weight: 400;
+        color: $white;
+        margin-left: -65px;
+    }
+
+    & img {
+        position: absolute;
+        width: 280px;
+        top: -20px;
+        left: -65px;
+        height: 100px;
+    }
+
+    & ::after {
+        position: absolute;
+        content: "";
+        width: 90px;
+        height: 90px;
+        bottom: -30px;
+        right: 45px;
+        border: 2px solid $smoke-white;
+        border-radius: 50%;
+        transition-duration: 0.3s;
+    }
+}
+
+.arrow-block:hover::after {
+    bottom: -45px;
+    right: 47px;
+    transition-duration: 0.3s;
+}
+
+.arrow-red {
+    width: 100%;
+    position: relative;
+    top: -98px;
+    left: 40px;
+    cursor: pointer;
+    z-index: 5;
+    color: #6d0602;
+
+    & img {
+        position: absolute;
+        width: 201 px;
+        top: -170px;
+    }
+
+    & ::after {
+        position: absolute;
+        content: "";
+        width: 90px;
+        height: 90px;
+        bottom: -20px;
+        right: 453px;
+        border: 2px solid $smoke-white;
+        border-radius: 50%;
+        transition-duration: 0.3s;
+    }
+
+    & :hover::after {
+        bottom: -41px;
+        right: 42px;
+        transition-duration: 0.3s;
+    }
+}
+
+// after элемент. Увеличить область нажатия
+
+.arrow-text {
+    text-transform: uppercase;
+    font-family: "Gravity-Regular";
+    font-size: 22px;
+    font-weight: 400;
+    color: $white;
+    // line-height: 26.4px;
+}
+
+@media (max-width: 1210px) {
+    .arrow-block {
+        top: -78px;
+        left: 190px;
+
+        & ::after {
+            width: 90px;
+            height: 90px;
+            bottom: -20px;
+            right: 90px;
+        }
+
+        & :hover::after {
+            bottom: -29px;
+            right: 113px;
+        }
+    }
+}
+
+@media (max-width: 706px) {
+    .arrow-block {
+        top: -68px;
+        left: 90px;
+
+        & ::after {
+            width: 50px;
+            height: 50px;
+            bottom: -20px;
+            right: 110px;
+        }
+
+        & :hover::after {
+            bottom: -29px;
+            right: 113px;
+        }
+    }
 }
