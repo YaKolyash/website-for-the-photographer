@@ -1545,6 +1545,7 @@ h6 {
   position: relative;
   width: 100%;
   overflow: hidden;
+  display: none;
 }
 .running-line h3 {
   text-transform: uppercase;
@@ -1601,4 +1602,108 @@ h6 {
   .running-line {
     display: none;
   }
+}
+.price {
+  background: #080808;
+}
+
+.price-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.price-title p {
+  font-family: "RoundedElegance";
+  font-size: 82px;
+  font-weight: 400;
+  line-height: 82px;
+  color: #f4f4f4;
+}
+
+.price-wrapper {
+  margin-top: 90px;
+}
+
+.price-item {
+  width: 557px;
+  height: 950px;
+  background: #0f0f0f;
+  border-right: 3px solid #6d0602;
+  border-bottom: 3px solid #6d0602;
+}
+
+.item-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 80px;
+}
+.item-title p {
+  font-family: "RoundedElegance";
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 48px;
+  color: #f4f4f4;
+}
+.item-title span {
+  border: 2px solid #6d0602;
+  margin-top: 15px;
+  width: 190px;
+}
+
+.item-description {
+  margin-top: 55px;
+}
+
+.article-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.description-article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.description-article span {
+  width: 8px;
+  height: 8px;
+  background: #6d0602;
+  border-radius: 100%;
+  margin-right: 13px;
+}
+.description-article p {
+  font-family: "Gravity-Regular";
+  font-size: 24px;
+  font-weight: 350;
+  line-height: 33.6px;
+  text-align: left;
+  color: #f4f4f4;
 }
