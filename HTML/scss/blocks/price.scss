@@ -16,9 +16,11 @@
 }
 .price-wrapper {
     margin-top: 90px;
+    display: flex;
+    justify-content: space-between;
 }
 .price-item {
-    width: 557px;
+    width: 520px;
     height: 950px;
     background: $gray;
     border-right: 3px solid $red;
@@ -42,7 +44,12 @@
     & span {
         border: 2px solid $red;
         margin-top: 15px;
-        width: 190px;
+        width: 200px;
+    }
+}
+.item-border {
+    & span {
+        width: 280px;
     }
 }
 .item-description {
@@ -50,7 +57,7 @@
 }
 
 .article-group {
-    margin-left: 80px;
+    margin-left: 70px;
 }
 .description-article {
     display: flex;
@@ -78,7 +85,7 @@
     margin-top: 20px;
 }
 .item-value {
-    margin: 40px 0 0 80px;
+    margin: 40px 0 0 70px;
 
     & p {
         font-family: "Gravity-Regular";
@@ -90,13 +97,18 @@
     }
 }
 
-.price-arrow {
+.arrow {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 102px;
 }
-.arrow-block {
+
+.price-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     position: relative;
     cursor: pointer;
     z-index: 5;
@@ -116,30 +128,30 @@
         position: absolute;
         width: 280px;
         top: -20px;
-        left: -65px;
+        left: 12px;
         height: 100px;
-    }
-
-    & ::after {
-        position: absolute;
-        content: "";
-        width: 90px;
-        height: 90px;
-        bottom: -30px;
-        right: 45px;
-        border: 2px solid $smoke-white;
-        border-radius: 50%;
-        transition-duration: 0.3s;
     }
 }
 
-.arrow-block:hover::after {
-    bottom: -45px;
-    right: 47px;
+.price-arrow::after {
+    position: absolute;
+    content: "";
+    width: 90px;
+    height: 90px;
+    bottom: -30px;
+    right: -33px;
+    border: 2px solid $smoke-white;
+    border-radius: 50%;
     transition-duration: 0.3s;
 }
 
-.arrow-red {
+.price-arrow:hover::after {
+    bottom: -45px;
+    right: -30px;
+    transition-duration: 0.3s;
+}
+
+.arrow-block .arrow-red {
     width: 100%;
     position: relative;
     top: -98px;
@@ -153,71 +165,61 @@
         width: 201 px;
         top: -170px;
     }
-
-    & ::after {
-        position: absolute;
-        content: "";
-        width: 90px;
-        height: 90px;
-        bottom: -20px;
-        right: 453px;
-        border: 2px solid $smoke-white;
-        border-radius: 50%;
-        transition-duration: 0.3s;
-    }
-
-    & :hover::after {
-        bottom: -41px;
-        right: 42px;
-        transition-duration: 0.3s;
-    }
 }
 
-// after элемент. Увеличить область нажатия
-
-.arrow-text {
-    text-transform: uppercase;
-    font-family: "Gravity-Regular";
-    font-size: 22px;
-    font-weight: 400;
-    color: $white;
-    // line-height: 26.4px;
+.arrow-block::after {
+    position: absolute;
+    content: "";
+    width: 90px;
+    height: 90px;
+    bottom: -20px;
+    right: 453px;
+    border: 2px solid $smoke-white;
+    border-radius: 50%;
+    transition-duration: 0.3s;
 }
 
-@media (max-width: 1210px) {
-    .arrow-block {
-        top: -78px;
-        left: 190px;
-
-        & ::after {
-            width: 90px;
-            height: 90px;
-            bottom: -20px;
-            right: 90px;
-        }
-
-        & :hover::after {
-            bottom: -29px;
-            right: 113px;
-        }
-    }
+.arrow-block:hover::after {
+    display: block;
+    bottom: -41px;
+    right: 42px;
+    transition-duration: 0.3s;
 }
 
-@media (max-width: 706px) {
-    .arrow-block {
-        top: -68px;
-        left: 90px;
+// @media (max-width: 1210px) {
+//     .arrow-block {
+//         top: -78px;
+//         left: 190px;
 
-        & ::after {
-            width: 50px;
-            height: 50px;
-            bottom: -20px;
-            right: 110px;
-        }
+//         & ::after {
+//             width: 90px;
+//             height: 90px;
+//             bottom: -20px;
+//             right: 90px;
+//         }
 
-        & :hover::after {
-            bottom: -29px;
-            right: 113px;
-        }
-    }
-}
+//         & :hover::after {
+//             bottom: -29px;
+//             right: 113px;
+//         }
+//     }
+// }
+
+// @media (max-width: 706px) {
+//     .arrow-block {
+//         top: -68px;
+//         left: 90px;
+
+//         & ::after {
+//             width: 50px;
+//             height: 50px;
+//             bottom: -20px;
+//             right: 110px;
+//         }
+
+//         & :hover::after {
+//             bottom: -29px;
+//             right: 113px;
+//         }
+//     }
+// }
