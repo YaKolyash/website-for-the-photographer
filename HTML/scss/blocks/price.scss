@@ -200,5 +200,28 @@
     }
     .arrow {
         justify-content: flex-start;
+        margin-left: 40px;
+    }
+}
+
+@media (max-width: 800px) {
+    .description-article {
+        & span {
+            display: none;
+        }
+    }
+
+    .item-title {
+        & span {
+            display: none;
+        }
+    }
+
+    .price-item {
+        width: 520px;
+        height: 950px;
+        background: $gray;
+        border-right: none;
+        border-bottom: none;
     }
 }
