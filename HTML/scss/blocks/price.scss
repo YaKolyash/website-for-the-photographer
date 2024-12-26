@@ -186,40 +186,19 @@
     transition-duration: 0.3s;
 }
 
-// @media (max-width: 1210px) {
-//     .arrow-block {
-//         top: -78px;
-//         left: 190px;
+@media (max-width: 1141px) {
+    .price-item {
+        margin-right: 15px;
+    }
 
-//         & ::after {
-//             width: 90px;
-//             height: 90px;
-//             bottom: -20px;
-//             right: 90px;
-//         }
+    .article-group {
+        margin-left: 15px;
+    }
 
-//         & :hover::after {
-//             bottom: -29px;
-//             right: 113px;
-//         }
-//     }
-// }
-
-// @media (max-width: 706px) {
-//     .arrow-block {
-//         top: -68px;
-//         left: 90px;
-
-//         & ::after {
-//             width: 50px;
-//             height: 50px;
-//             bottom: -20px;
-//             right: 110px;
-//         }
-
-//         & :hover::after {
-//             bottom: -29px;
-//             right: 113px;
-//         }
-//     }
-// }
+    .item-value {
+        margin: 40px 0 0 40px;
+    }
+    .arrow {
+        justify-content: flex-start;
+    }
+}

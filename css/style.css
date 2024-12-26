@@ -1660,3 +1660,20 @@ h6 {
   -webkit-transition-duration: 0.3s;
           transition-duration: 0.3s;
 }
+
+@media (max-width: 1141px) {
+  .price-item {
+    margin-right: 15px;
+  }
+  .article-group {
+    margin-left: 15px;
+  }
+  .item-value {
+    margin: 40px 0 0 40px;
+  }
+  .arrow {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
