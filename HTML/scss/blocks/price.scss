@@ -224,4 +224,17 @@
         border-right: none;
         border-bottom: none;
     }
+
+    .description-article {
+        & p {
+            font-size: calc(4px + 16 * (100vw / 760));
+        }
+    }
+
+    .article-group {
+        margin-left: 60px;
+    }
+}
+
+@media (max-width: 600px) {
 }

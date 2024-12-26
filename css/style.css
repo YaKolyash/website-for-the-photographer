@@ -1692,4 +1692,10 @@ h6 {
     border-right: none;
     border-bottom: none;
   }
+  .description-article p {
+    font-size: calc(4px + 2.1052631579vw);
+  }
+  .article-group {
+    margin-left: 60px;
+  }
 }
