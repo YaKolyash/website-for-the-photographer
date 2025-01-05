@@ -72,7 +72,7 @@ const swiper = new Swiper('.swiper-container', {
 
 // ---------------TABS-----------------------------------------------------
 const showTab = (elTabBtn) => {
-  const elTab = elTabBtn.closest('.tab');
+  const elTab = elTabBtn.closest('.wrapper-table');
   if (elTabBtn.classList.contains('tab-btn-active')) {
     return;
   }
@@ -89,10 +89,10 @@ const showTab = (elTabBtn) => {
 }
 
 document.addEventListener('click', (e) => {
-  if (e.target && !e.target.closest('.tab-btn')) {
+  if (e.target && !e.target.closest('.table-title')) {
     return;
   }
-  const elTabBtn = e.target.closest('.tab-btn');
+  const elTabBtn = e.target.closest('.table-title');
   showTab(elTabBtn);
 });
 

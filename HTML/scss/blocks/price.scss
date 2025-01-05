@@ -244,6 +244,16 @@
 }
 
 @media (max-width: 601px) {
+    .container {
+        max-width: 420px;
+    }
+
+    .price-title {
+        & p {
+            font-size: 30px;
+        }
+    }
+
     .price-wrapper {
         display: none;
     }
@@ -383,12 +393,22 @@
         pointer-events: none;
     }
 
-    .tab-btn-active {
+    .table-title-active {
         pointer-events: none;
         background: #6d0602;
     }
 
     .tab-pane:not(.tab-pane-show) {
         display: none;
+    }
+
+    a {
+        color: $smoke-white;
+    }
+}
+
+@media (max-width: 421px) {
+    .container {
+        max-width: 300px;
     }
 }
