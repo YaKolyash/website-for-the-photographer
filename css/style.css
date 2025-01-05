@@ -1706,7 +1706,7 @@ h6 {
     margin-left: 10px;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 601px) {
   .price-wrapper {
     display: none;
   }
@@ -1758,12 +1758,9 @@ h6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
     font-family: "Gravity-Regular";
     font-size: 16px;
     font-weight: 350;
@@ -1773,6 +1770,24 @@ h6 {
     -webkit-text-decoration-skip-ink: none;
             text-decoration-skip-ink: none;
     color: #f4f4f4;
+  }
+  .table-item-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 40px;
+    font-family: "Gravity-Regular";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25.2px;
+    text-align: left;
+    text-transform: uppercase;
   }
   .table-item {
     border-left: 2px solid #f4f4f4;
@@ -1789,7 +1804,54 @@ h6 {
     color: #f4f4f4;
   }
   .table-string:first-child {
-    margin-top: 40px;
+    margin-top: 20px;
+  }
+  .item-value {
+    margin-left: 10px;
+  }
+  .item-value p {
+    font-family: "Gravity-Regular";
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 50.4px;
+    text-align: left;
+  }
+  .arrow {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 40px 0 50px 0;
+  }
+  .price-arrow {
+    width: 138px;
+  }
+  .price-arrow p {
+    font-family: "Gravity-Regular";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    text-underline-position: from-font;
+    -webkit-text-decoration-skip-ink: none;
+            text-decoration-skip-ink: none;
+  }
+  .price-arrow img {
+    width: 164px;
+    margin-left: -43px;
+  }
+  .price-arrow::after {
+    width: 50px;
+    height: 50px;
+    bottom: -37px;
+    right: -15px;
+    pointer-events: none;
+  }
+  .price-arrow:hover::after {
+    pointer-events: none;
   }
   .tab-btn-active {
     pointer-events: none;
