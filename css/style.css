@@ -1661,8 +1661,12 @@ h6 {
           transition-duration: 0.3s;
 }
 
+.price-wrapper-mobile {
+  display: none;
+}
+
 @media (max-width: 1141px) {
-  .price-item {
+  .price-item:first-child {
     margin-right: 15px;
   }
   .article-group {
@@ -1697,5 +1701,18 @@ h6 {
   }
   .article-group {
     margin-left: 60px;
+  }
+}
+@media (max-width: 600px) {
+  .price-wrapper {
+    display: none;
+  }
+  .price-wrapper-mobile {
+    display: block;
+  }
+  .item-title-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
