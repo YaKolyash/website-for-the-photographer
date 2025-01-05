@@ -68,3 +68,51 @@ const swiper = new Swiper('.swiper-container', {
 
   slidesPerView: 1,
 });
+
+
+// ---------------TABS-----------------------------------------------------
+let tab = document.querySelectorAll('.table__title'),
+    tabContent = document.querySelectorAll('.section');
+
+tab.forEach(function (tab, i) {
+    tab.addEventListener('click', function () {
+        hideTab();
+        this.classList.add('active');
+        tabContent[i].classList.add('active');
+    });
+});
+
+function hideTab() {
+    tab.forEach((item) => {
+        item.classList.remove('active');
+    });
+    tabContent.forEach((item) => {
+        item.classList.remove('active');
+    });
+}
+
+
+if (document.documentElement.clientWidth < 325) {
+    $('.studio__block').click(function (event) {
+        event.preventDefault();
+        $('#svg__st3').toggle();
+        $('#svg__st4').toggle();
+    });
+}
+
+
+if (document.documentElement.clientWidth < 325) {
+    $('.rate__block').click(function (event) {
+        event.preventDefault();
+        $('#svg__lo3').toggle();
+        $('#svg__lo4').toggle();
+    });
+}
+
+
+$(document).on('touchstart', '.nav__link', function () {
+    $(this).removeClass('nav__link').addClass('nav__link2');
+});
+$(document).on('touchend', '.nav__link2', function () {
+    $(this).removeClass('nav__link2').addClass('nav__link');
+});
