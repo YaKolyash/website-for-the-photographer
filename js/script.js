@@ -108,32 +108,26 @@
 // });
 
 
-
-// Получаем все элементы вкладок и соответствующий контент
 const tabs = document.querySelectorAll('.table-title');
 const tabContents = document.querySelectorAll('.table-item');
 
-// Добавляем обработчик события для каждой вкладки
 tabs.forEach((tab, i) => {
-    tab.addEventListener('click', () => {
-        hideTab();
-        tab.classList.add('title-active');
-        tabContents[i].classList.add('title-active');
-    });
-});
-
-// Функция, которая скрывает все вкладки и контент
-const hideTab = () => {
+  tab.addEventListener('click', () => {
     tabs.forEach((item) => {
-        item.classList.remove('title-active');
+      item.classList.remove('title-active');
     });
     tabContents.forEach((item) => {
-        item.classList.remove('title-active');
+      item.classList.remove('title-hide');
     });
-}
+    
+    tab.classList.add('title-active');
+    tabContents[i].classList.add('title-hide');
+  });
+});
+
 
 // Проверяем ширину экрана для мобильных устройств
-// if (document.documentElement.clientWidth < 500) {
+// if (doacument.documentElement.clientWidth < 500) {
 //     const studioBlocks = document.querySelectorAll('.studio__block');
 //     studioBlocks.forEach((block) => {
 //         block.addEventListener('click', (event) => {

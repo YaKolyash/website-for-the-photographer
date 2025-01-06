@@ -339,6 +339,7 @@
         line-height: 22.4px;
         text-align: left;
         color: $smoke-white;
+        padding-left: 10px;
     }
     .table-string:first-child {
         margin-top: 20px;
@@ -371,8 +372,6 @@
             line-height: 16.8px;
             letter-spacing: 0.02em;
             text-align: center;
-            text-underline-position: from-font;
-            text-decoration-skip-ink: none;
         }
 
         & img {
@@ -398,7 +397,7 @@
         background: #6d0602;
     }
 
-    .tab-pane:not(.tab-pane-show) {
+    .title-hide {
         display: none;
     }
 
