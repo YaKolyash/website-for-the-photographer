@@ -1,123 +1,174 @@
-document.addEventListener('mousedown', function(e) {
-    if (e.target.matches('.item-link')) {
-        e.target.classList.toggle('item-link');
-        e.target.classList.toggle('item-red');
-    }
-});
+// document.addEventListener('mousedown', function(e) {
+//     if (e.target.matches('.item-link')) {
+//         e.target.classList.toggle('item-link');
+//         e.target.classList.toggle('item-red');
+//     }
+// });
 
-document.addEventListener('mouseup', function(e) {
-    if (e.target.matches('.item-red')) {
-        e.target.classList.toggle('item-link');
-        e.target.classList.toggle('item-red');
-    }
-});
+// document.addEventListener('mouseup', function(e) {
+//     if (e.target.matches('.item-red')) {
+//         e.target.classList.toggle('item-link');
+//         e.target.classList.toggle('item-red');
+//     }
+// });
 
 // ---------------BURGER----------------------------------------------------
 
-const hamb = document.querySelector("#navbar__hamb-field");
-const popup = document.querySelector("#popup");
-const menu = document.querySelector("#nav").cloneNode(1);
-const body = document.body;
+// const hamb = document.querySelector("#navbar__hamb-field");
+// const popup = document.querySelector("#popup");
+// const menu = document.querySelector("#nav").cloneNode(1);
+// const body = document.body;
 
-menu.classList.remove(".nav");
-menu.classList.add(".popup-menu");
+// menu.classList.remove(".nav");
+// menu.classList.add(".popup-menu");
 
-hamb.addEventListener("click", hambHandler);
+// hamb.addEventListener("click", hambHandler);
 
-function hambHandler(e) {
-  e.preventDefault();
-  popup.classList.toggle("open");
-  hamb.classList.toggle("active");
-  body.classList.toggle("noscroll");
-  renderPopup();
-};
+// function hambHandler(e) {
+//   e.preventDefault();
+//   popup.classList.toggle("open");
+//   hamb.classList.toggle("active");
+//   body.classList.toggle("noscroll");
+//   renderPopup();
+// };
 
-function renderPopup() {
-  popup.appendChild(menu);
-};
+// function renderPopup() {
+//   popup.appendChild(menu);
+// };
 
-const links = Array.from(menu.children);
+// const links = Array.from(menu.children);
 
-links.forEach((link) => {
-  link.addEventListener("click", closeOnClick);
-});
+// links.forEach((link) => {
+//   link.addEventListener("click", closeOnClick);
+// });
 
-function closeOnClick() {
-  popup.classList.remove("open");
-  hamb.classList.remove("active");
-  body.classList.remove("noscroll");
-};
+// function closeOnClick() {
+//   popup.classList.remove("open");
+//   hamb.classList.remove("active");
+//   body.classList.remove("noscroll");
+// };
 
 // ---------------SWIPER----------------------------------------------------
 
-const swiper = new Swiper('.swiper-container', {
-  // Optional parameters
-  direction: 'horizontal',
-  loop: true,
+// const swiper = new Swiper('.swiper-container', {
+//   // Optional parameters
+//   direction: 'horizontal',
+//   loop: true,
 
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
+//   // If we need pagination
+//   pagination: {
+//     el: '.swiper-pagination',
+//   },
 
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+//   // Navigation arrows
+//   navigation: {
+//     nextEl: '.swiper-button-next',
+//     prevEl: '.swiper-button-prev',
+//   },
 
-  slidesPerView: 1,
-});
+//   slidesPerView: 1,
+// });
 
 
 // ---------------TABS-----------------------------------------------------
-const showTab = (elTabBtn) => {
-  const elTab = elTabBtn.closest('.wrapper-table');
-  if (elTabBtn.classList.contains('tab-btn-active')) {
-    return;
-  }
-  const targetId = elTabBtn.dataset.targetId;
-  const elTabPane = elTab.querySelector(`.tab-pane[data-id="${targetId}"]`);
-  if (elTabPane) {
-    const elTabBtnActive = elTab.querySelector('.tab-btn-active');
-    elTabBtnActive.classList.remove('tab-btn-active');
-    const elTabPaneShow = elTab.querySelector('.tab-pane-show');
-    elTabPaneShow.classList.remove('tab-pane-show');
-    elTabBtn.classList.add('tab-btn-active');
-    elTabPane.classList.add('tab-pane-show');
-  }
-}
+// const showTab = (elTabBtn) => {
+//   const elTab = elTabBtn.closest('.wrapper-table');
+//   if (elTabBtn.classList.contains('tab-btn-active')) {
+//     return;
+//   }
+//   const targetId = elTabBtn.dataset.targetId;
+//   const elTabPane = elTab.querySelector(`.tab-pane[data-id="${targetId}"]`);
 
-document.addEventListener('click', (e) => {
-  if (e.target && !e.target.closest('.table-title')) {
-    return;
-  }
-  const elTabBtn = e.target.closest('.table-title');
-  showTab(elTabBtn);
+//   if (elTabPane) {
+//     const elTabBtnActive = elTab.querySelector('.tab-btn-active');
+    
+//     if (elTabBtnActive) {
+//       elTabBtnActive.classList.remove('tab-btn-active');
+//     }
+    
+//     const elTabPaneShow = elTab.querySelector('.tab-pane-show');
+    
+//     if (elTabPaneShow) {
+//       elTabPaneShow.classList.remove('tab-pane-show');
+//     }
+    
+//     elTabBtn.classList.add('tab-btn-active');
+//     elTabPane.classList.add('tab-pane-show');
+//   }
+// }
+
+// document.addEventListener('click', (e) => {
+//   const elTabBtn = e.target.closest('.table-title');
+  
+//   if (!elTabBtn) {
+//     return;
+//   }
+  
+//   showTab(elTabBtn);
+// });
+
+
+
+// Получаем все элементы вкладок и соответствующий контент
+const tabs = document.querySelectorAll('.table-title');
+const tabContents = document.querySelectorAll('.table-item');
+
+// Добавляем обработчик события для каждой вкладки
+tabs.forEach((tab, i) => {
+    tab.addEventListener('click', () => {
+        hideTab();
+        tab.classList.add('title-active');
+        tabContents[i].classList.add('title-active');
+    });
 });
 
+// Функция, которая скрывает все вкладки и контент
+const hideTab = () => {
+    tabs.forEach((item) => {
+        item.classList.remove('title-active');
+    });
+    tabContents.forEach((item) => {
+        item.classList.remove('title-active');
+    });
+}
 
-// if (document.documentElement.clientWidth < 325) {
-//     $('.studio__block').click(function (event) {
-//         event.preventDefault();
-//         $('#svg__st3').toggle();
-//         $('#svg__st4').toggle();
+// Проверяем ширину экрана для мобильных устройств
+// if (document.documentElement.clientWidth < 500) {
+//     const studioBlocks = document.querySelectorAll('.studio__block');
+//     studioBlocks.forEach((block) => {
+//         block.addEventListener('click', (event) => {
+//             event.preventDefault();
+//             const svgSt3 = document.getElementById('svg__st3');
+//             const svgSt4 = document.getElementById('svg__st4');
+//             svgSt3.style.display = (svgSt3.style.display === 'none' || svgSt3.style.display === '') ? 'block' : 'none';
+//             svgSt4.style.display = (svgSt4.style.display === 'none' || svgSt4.style.display === '') ? 'block' : 'none';
+//         });
 //     });
 // }
 
-
+// Проверяем ширину экрана для мобильных устройств
 // if (document.documentElement.clientWidth < 325) {
-//     $('.rate__block').click(function (event) {
-//         event.preventDefault();
-//         $('#svg__lo3').toggle();
-//         $('#svg__lo4').toggle();
+//     const rateBlocks = document.querySelectorAll('.rate__block');
+//     rateBlocks.forEach((block) => {
+//         block.addEventListener('click', (event) => {
+//             event.preventDefault();
+//             const svgLo3 = document.getElementById('svg__lo3');
+//             const svgLo4 = document.getElementById('svg__lo4');
+//             svgLo3.style.display = (svgLo3.style.display === 'none' || svgLo3.style.display === '') ? 'block' : 'none';
+//             svgLo4.style.display = (svgLo4.style.display === 'none' || svgLo4.style.display === '') ? 'block' : 'none';
+//         });
 //     });
 // }
 
-
-// $(document).on('touchstart', '.nav__link', function () {
-//     $(this).removeClass('nav__link').addClass('nav__link2');
-// });
-// $(document).on('touchend', '.nav__link2', function () {
-//     $(this).removeClass('nav__link2').addClass('nav__link');
+// Обработка событий касания для ссылок навигации
+// const navLinks = document.querySelectorAll('.nav__link');
+// navLinks.forEach((link) => {
+//     link.addEventListener('touchstart', () => {
+//         link.classList.remove('nav__link');
+//         link.classList.add('nav__link2');
+//     });
+//     link.addEventListener('touchend', () => {
+//         link.classList.remove('nav__link2');
+//         link.classList.add('nav__link');
+//     });
 // });

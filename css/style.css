@@ -1859,7 +1859,7 @@ h6 {
   .price-arrow:hover::after {
     pointer-events: none;
   }
-  .table-title-active {
+  .title-active {
     pointer-events: none;
     background: #6d0602;
   }
