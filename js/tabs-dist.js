@@ -1,0 +1,1 @@
+const tabs=document.querySelectorAll(".table-title"),tabContents=document.querySelectorAll(".table-item");tabs.forEach(((t,e)=>{t.addEventListener("click",(()=>{tabs.forEach((t=>{t.classList.remove("title-active")})),tabContents.forEach((t=>{t.classList.remove("title-hide")})),t.classList.add("title-active"),tabContents[e].classList.add("title-hide")}))}));
