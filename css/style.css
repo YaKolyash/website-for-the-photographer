@@ -358,7 +358,8 @@ h6 {
   background: inherit;
 }
 .button p {
-  font-family: "Gravity-Book";
+  text-transform: uppercase;
+  font-family: "Gravity-Regular";
   font-size: 22px;
   font-weight: 400;
   line-height: 30.8px;
@@ -371,7 +372,7 @@ h6 {
   background: #080808;
   cursor: pointer;
   position: absolute;
-  top: -25px;
+  top: -76px;
   left: -15px;
   content: "";
   width: 160px;
@@ -383,8 +384,8 @@ h6 {
   z-index: -2;
 }
 .button p:hover::after {
-  top: 0;
-  left: 47;
+  top: -54px;
+  left: -24px;
   -webkit-transition-duration: 0.3s;
           transition-duration: 0.3s;
 }
@@ -1439,6 +1440,7 @@ h6 {
 }
 .price {
   background: #080808;
+  display: none;
 }
 
 .price-title {
@@ -1872,4 +1874,52 @@ h6 {
   .container {
     max-width: 300px;
   }
+}
+.contacts {
+  background: #080808;
+}
+
+.contacts-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contackts-img img {
+  width: 600px;
+  height: 900px;
+}
+
+.contackts-content {
+  padding-top: 50px;
+}
+
+.contacts-list {
+  padding-left: 124px;
+  padding-top: 91px;
+}
+
+.list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.list-item img {
+  padding-right: 20px;
+}
+.list-item p {
+  font-family: "Gravity-Regular";
+  font-size: 30px;
+  font-weight: 350;
+  line-height: 42px;
+  text-align: left;
+  color: #f4f4f4;
+}
+
+.list-item:not(:first-child) {
+  padding-top: 40px;
+}
+
+.margin {
+  padding-left: 142px;
 }

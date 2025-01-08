@@ -10,7 +10,8 @@
     background: inherit;
 
     & p {
-        font-family: "Gravity-Book";
+        text-transform: uppercase;
+        font-family: "Gravity-Regular";
         font-size: 22px;
         font-weight: 400;
         line-height: 30.8px;
@@ -24,7 +25,7 @@
         background: $background-block;
         cursor: pointer;
         position: absolute;
-        top: -25px;
+        top: -76px;
         left: -15px;
         content: "";
         width: 160px;
@@ -36,8 +37,8 @@
     }
 
     & p:hover::after {
-        top: 0;
-        left: 47;
+        top: -54px;
+        left: -24px;
         transition-duration: 0.3s;
     }
 }

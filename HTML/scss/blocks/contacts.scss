@@ -1,0 +1,44 @@
+.contacts {
+    background: $background-block;
+}
+.contacts-wrapper {
+    display: flex;
+}
+.contackts-img {
+    & img {
+        width: 600px;
+        height: 900px;
+    }
+}
+.contackts-content {
+    padding-top: 50px;
+}
+.contacts-list {
+    padding-left: 124px;
+    padding-top: 91px;
+}
+.list-item {
+    display: flex;
+
+    & img {
+        padding-right: 20px;
+    }
+
+    & p {
+        font-family: "Gravity-Regular";
+        font-size: 30px;
+        font-weight: 350;
+        line-height: 42px;
+        text-align: left;
+        color: $smoke-white;
+    }
+}
+.list-item:not(:first-child) {
+    padding-top: 40px;
+}
+.contacts-title {
+}
+
+.margin {
+    padding-left: 142px;
+}
