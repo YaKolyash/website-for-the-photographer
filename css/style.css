@@ -115,7 +115,7 @@ h6 {
 
 .item-link {
   color: #f4f4f4;
-  font-family: "Gravity";
+  font-family: "Gravity-Regular";
   font-size: 22px;
   font-weight: 400;
   line-height: 26.4px;
@@ -1993,6 +1993,10 @@ h6 {
   padding-bottom: 100px;
 }
 
+.icon-mobile {
+  display: none;
+}
+
 .footer-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2027,11 +2031,46 @@ h6 {
   transition: opacity 0.1s linear;
 }
 
-.footer-item:not(:last-child) {
-  padding-right: 60px;
+.footer-item {
+  margin-right: 3.177vw;
 }
 
 .footer-img:not(:last-child) {
-  padding-left: 260px;
-  padding-right: 40px;
+  margin-left: 13.542vw;
+  margin-right: 2.083vw;
+}
+
+@media (max-width: 610px) {
+  .footer-img {
+    display: none;
+  }
+  .icon-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .icon-mobile img {
+    margin-right: 15px;
+  }
+  .footer-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer-item {
+    margin-top: 50px;
+  }
+  .footer-item:not(:first-child) {
+    margin-top: 10px;
+  }
 }
