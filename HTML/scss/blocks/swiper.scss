@@ -2,6 +2,7 @@
   width: 600px;
   height: 900px;
   top: -160px;
+  margin-right: 320px !important;
 }
 
 .swiper-container {
@@ -15,7 +16,6 @@
 .image-slider__image {
   width: 600px;
   height: 900px;
-  text-align: center;
 }
 
 .swiper-slide-active {
@@ -43,7 +43,7 @@
 
 .swiper-button-next,
 .swiper-rtl .swiper-button-prev {
-  right: var(--swiper-navigation-sides-offset, 164px);
+  right: var(--swiper-navigation-sides-offset, 164px) !important;
   left: auto;
 }
 
@@ -80,7 +80,7 @@
 
 .swiper-button-prev,
 .swiper-rtl .swiper-button-next {
-  left: var(--swiper-navigation-sides-offset, 162px);
+  left: var(--swiper-navigation-sides-offset, 162px) !important;
   right: auto;
 }
 
@@ -92,6 +92,7 @@
   color: $white;
   border-radius: 50%;
   border: none;
+  rotate: 180deg;
 
   & img {
     width: 161px;

@@ -9,6 +9,8 @@
 }
 .header-nav {
   display: flex;
+  position: relative;
+  z-index: 3;
 }
 .nav {
   display: flex;

@@ -94,6 +94,8 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
+  z-index: 3;
 }
 
 .nav {
@@ -497,12 +499,12 @@ h6 {
   width: 600px;
   height: 900px;
   top: -160px;
+  margin-right: 320px !important;
 }
 
 .image-slider__image {
   width: 600px;
   height: 900px;
-  text-align: center;
 }
 
 .swiper-slide-active {
@@ -532,7 +534,7 @@ h6 {
 
 .swiper-button-next,
 .swiper-rtl .swiper-button-prev {
-  right: var(--swiper-navigation-sides-offset, 164px);
+  right: var(--swiper-navigation-sides-offset, 164px) !important;
   left: auto;
 }
 
@@ -569,7 +571,7 @@ h6 {
 
 .swiper-button-prev,
 .swiper-rtl .swiper-button-next {
-  left: var(--swiper-navigation-sides-offset, 162px);
+  left: var(--swiper-navigation-sides-offset, 162px) !important;
   right: auto;
 }
 
@@ -581,6 +583,7 @@ h6 {
   color: #ffffff;
   border-radius: 50%;
   border: none;
+  rotate: 180deg;
 }
 .slider-prev img {
   width: 161px;

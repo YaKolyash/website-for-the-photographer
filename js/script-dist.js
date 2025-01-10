@@ -1,1 +1,1 @@
-const swiper=new Swiper(".swiper-container",{direction:"horizontal",loop:!0,pagination:{el:".swiper-pagination"},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"},slidesPerView:1});
+const swiper=new Swiper(".swiper-container",{direction:"horizontal",loop:!0,pagination:{el:".swiper-pagination"},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"},slidesPerView:1,watchSlidesProgress:!0});
