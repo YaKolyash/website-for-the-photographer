@@ -23,7 +23,7 @@
     }
 
     & p::after {
-        background: $background-block;
+        background: $rectangle-color;
         cursor: pointer;
         position: absolute;
         top: -76px;

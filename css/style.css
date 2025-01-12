@@ -308,7 +308,7 @@ h6 {
   position: absolute;
   left: 0;
   top: 99px;
-  width: 1440px;
+  width: 1050px;
   height: 850px;
   background-color: #0f0f0f;
 }
@@ -319,11 +319,29 @@ h6 {
   z-index: 10;
 }
 
+.main-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 60px;
+  width: 701px;
+}
+.main-title h1 {
+  font-family: "RoundedElegance";
+  font-size: 84px;
+  font-weight: 400;
+  line-height: 82px;
+  text-align: left;
+}
+
 .title-text {
   color: #f4f4f4;
   font-size: 82px;
   font-style: normal;
-  font-family: "Rounded Elegance";
+  font-family: "RoundedElegance";
   font-weight: 400;
   line-height: 98px;
   text-align: left;
@@ -369,7 +387,7 @@ h6 {
   z-index: 1;
 }
 .button p::after {
-  background: #080808;
+  background: #0f0f0f;
   cursor: pointer;
   position: absolute;
   top: -76px;
@@ -609,6 +627,18 @@ h6 {
 
 .author {
   background: #080808;
+  padding-top: 228px;
+  position: relative;
+  height: 1250px;
+}
+
+.author-rectangle {
+  position: absolute;
+  right: 0;
+  top: 360px;
+  width: 1100px;
+  height: 850px;
+  background-color: #0f0f0f;
 }
 
 .author-photo {
@@ -620,38 +650,54 @@ h6 {
   height: 600px;
 }
 
-.title {
+.author-title {
+  width: 596px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 0 auto;
   padding-bottom: 60px;
-  width: 7001px;
 }
-.title h1 {
+.author-title h1 {
+  text-transform: uppercase;
   font-family: "RoundedElegance";
-  font-size: 84px;
+  font-size: 82px;
   font-weight: 400;
   line-height: 82px;
   text-align: left;
+  color: #f4f4f4;
 }
 
 .author-description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
+  top: 60px;
+  z-index: 10;
 }
 
 .author-text {
-  padding-left: 60px;
+  padding: 0 0 0 60px;
 }
 
-.author-title {
+.author-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+}
+
+.author-name {
+  width: 596px;
   margin-top: 20px;
 }
-.author-title div {
+.author-name div {
   font-family: "RoundedElegance";
   font-size: 46px;
   font-weight: 400;
@@ -671,6 +717,10 @@ h6 {
   line-height: 33.6px;
   text-align: left;
   color: #f4f4f4;
+}
+
+.author-button {
+  margin-top: -74px !important;
 }
 
 @media (max-width: 1140px) {
@@ -694,10 +744,10 @@ h6 {
   .author-text {
     padding-left: 35px;
   }
-  .author-title {
+  .author-name {
     margin-top: 10px;
   }
-  .author-title div {
+  .author-name div {
     font-size: 26px;
   }
   .author-subtitle {
