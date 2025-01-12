@@ -1,11 +1,9 @@
 .excerpt {
     background: $background-block;
     padding-bottom: 200px;
-
-    // display: none;
 }
 .excerpt-text {
-    width: 990px;
+    width: 890px;
     text-align: center;
     margin: 0 auto;
 
@@ -23,9 +21,9 @@
         display: flex;
         justify-content: center;
         text-transform: uppercase;
-        padding-top: 300px;
+        padding-top: 130px;
         font-family: "RoundedElegance";
-        font-size: 34px;
+        font-size: 30px;
         font-weight: 400;
         line-height: 50.4px;
         text-align: left;

@@ -3,13 +3,15 @@
     padding-top: 228px;
     position: relative;
     height: 1250px;
+
+    display: none;
 }
 
 .author-rectangle {
     position: absolute;
     right: 0;
     top: 360px;
-    width: 1100px;
+    width: 1440px;
     height: 850px;
     background-color: $rectangle-color;
 }

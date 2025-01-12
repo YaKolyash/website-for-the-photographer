@@ -292,6 +292,7 @@ h6 {
 }
 .main {
   background: #080808;
+  height: 850px;
 }
 
 .main-swiper {
@@ -308,7 +309,7 @@ h6 {
   position: absolute;
   left: 0;
   top: 99px;
-  width: 1050px;
+  width: 1440px;
   height: 850px;
   background-color: #0f0f0f;
 }
@@ -373,7 +374,7 @@ h6 {
   height: 160px;
   border: none;
   background: inherit;
-  margin-top: 90px;
+  padding-top: 50px;
 }
 .button p {
   text-transform: uppercase;
@@ -630,13 +631,14 @@ h6 {
   padding-top: 228px;
   position: relative;
   height: 1250px;
+  display: none;
 }
 
 .author-rectangle {
   position: absolute;
   right: 0;
   top: 360px;
-  width: 1100px;
+  width: 1440px;
   height: 850px;
   background-color: #0f0f0f;
 }
@@ -791,7 +793,7 @@ h6 {
 }
 
 .excerpt-text {
-  width: 990px;
+  width: 890px;
   text-align: center;
   margin: 0 auto;
 }
@@ -812,9 +814,9 @@ h6 {
       -ms-flex-pack: center;
           justify-content: center;
   text-transform: uppercase;
-  padding-top: 300px;
+  padding-top: 130px;
   font-family: "RoundedElegance";
-  font-size: 34px;
+  font-size: 30px;
   font-weight: 400;
   line-height: 50.4px;
   text-align: left;
