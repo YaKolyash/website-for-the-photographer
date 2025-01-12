@@ -88,6 +88,8 @@ h6 {
   text-align: justify;
   letter-spacing: 1px;
   padding: 0 10px;
+  position: relative;
+  border-color: green;
 }
 
 .header-nav {
@@ -291,22 +293,31 @@ h6 {
 }
 .main {
   background: #080808;
-  position: relative;
+}
+
+.main-swiper {
+  position: absolute;
+  margin-top: -100px;
+  right: 18.5%;
+}
+
+.button p::after {
+  background: #0f0f0f !important;
 }
 
 .rectangle {
   position: absolute;
   left: 0;
-  top: 0;
+  top: 99px;
   width: 1440px;
   height: 850px;
   background-color: #0f0f0f;
 }
 
-.main-title {
-  margin-top: 90px;
-  width: 680px;
-  height: 196px;
+.main-text {
+  padding-top: 111px;
+  position: relative;
+  z-index: 10;
 }
 
 .title-text {
@@ -335,18 +346,6 @@ h6 {
   color: #f4f4f4;
 }
 
-.main-swiper {
-  position: absolute;
-  margin-top: -100px;
-  right: 18.5%;
-}
-
-.main-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .button-block {
   margin-top: 90px;
 }
@@ -357,6 +356,7 @@ h6 {
   height: 160px;
   border: none;
   background: inherit;
+  margin-top: 90px;
 }
 .button p {
   text-transform: uppercase;
@@ -498,8 +498,9 @@ h6 {
 .swiper {
   width: 600px;
   height: 900px;
+  position: absolute;
   top: -160px;
-  margin-right: 320px !important;
+  right: 15vw;
 }
 
 .image-slider__image {
@@ -628,6 +629,7 @@ h6 {
       -ms-flex-pack: center;
           justify-content: center;
   padding-bottom: 60px;
+  width: 7001px;
 }
 .title h1 {
   font-family: "RoundedElegance";

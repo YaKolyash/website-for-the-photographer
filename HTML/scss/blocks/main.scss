@@ -1,24 +1,38 @@
 .main {
   background: $background-block;
-  position: relative;
+}
+
+.main-swiper {
+  position: absolute;
+  margin-top: -100px;
+  right: 18.5%;
+}
+
+.main-flex {
+  // display: flex;
+  // margin-left: 18vw;
+}
+
+.button {
+  & p::after {
+    background: $rectangle-color !important;
+  }
 }
 
 .rectangle {
   position: absolute;
   left: 0;
-  top: 0;
+  top: 99px;
   width: 1440px;
   height: 850px;
-  background-color: #0f0f0f;
+  background-color: $rectangle-color;
 }
 .main-text {
+  padding-top: 111px;
+  position: relative;
+  z-index: 10;
 }
 
-.main-title {
-  margin-top: 90px;
-  width: 680px;
-  height: 196px;
-}
 .title-text {
   color: $smoke-white;
   font-size: 82px;
@@ -41,16 +55,6 @@
   line-height: 42px;
   text-align: left;
   color: $smoke-white;
-}
-
-.main-swiper {
-  position: absolute;
-  margin-top: -100px;
-  right: 18.5%;
-}
-
-.main-flex {
-  display: flex;
 }
 
 @media (max-width: 795px) {
