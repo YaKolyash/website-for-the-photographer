@@ -695,6 +695,11 @@ h6 {
   right: -40px;
 }
 
+@media (max-width: 1000px) {
+  .swiper {
+    top: 0;
+  }
+}
 .author {
   background: #080808;
   padding-top: 228px;

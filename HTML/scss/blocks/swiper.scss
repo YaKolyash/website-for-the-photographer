@@ -256,3 +256,9 @@
 //     font-style: normal;
 //     line-height: 26.4px;
 // }
+
+@media (max-width: 1000px) {
+  .swiper {
+    top: 0;
+  }
+}
