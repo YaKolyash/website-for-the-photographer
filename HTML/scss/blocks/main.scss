@@ -85,7 +85,7 @@
   }
 
   .container {
-    max-width: 820px !important;
+    max-width: 820px;
   }
 
   .main-text {
@@ -117,14 +117,14 @@
   }
 
   .container {
-    width: 460px !important;
+    width: 460px;
   }
 
   .main-title {
     width: 425px;
 
     & h1 {
-      font-size: 45px;
+      font-size: calc(29px + 16 * (100vw / 700));
     }
   }
 
@@ -132,7 +132,34 @@
     width: 425px;
 
     & p {
-      font-size: 24px;
+      font-size: calc(8px + 16 * (100vw / 700));
+    }
+  }
+}
+
+@media (max-width: 380px) {
+  .main-text {
+    width: 280px;
+  }
+
+  .container {
+    width: 300px;
+  }
+
+  .main-title {
+    width: 280px;
+
+    & h1 {
+      font-size: calc(29px + 16 * (100vw / 700));
+    }
+  }
+
+  .main-subtitle {
+    width: 280px;
+    margin-top: 5px;
+
+    & p {
+      font-size: calc(8px + 16 * (100vw / 700));
     }
   }
 }

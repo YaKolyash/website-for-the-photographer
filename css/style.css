@@ -370,7 +370,7 @@ h6 {
     display: none;
   }
   .container {
-    max-width: 820px !important;
+    max-width: 820px;
   }
   .main-text {
     padding-top: 20px;
@@ -395,19 +395,40 @@ h6 {
     width: 425px;
   }
   .container {
-    width: 460px !important;
+    width: 460px;
   }
   .main-title {
     width: 425px;
   }
   .main-title h1 {
-    font-size: 45px;
+    font-size: calc(29px + 2.2857142857vw);
   }
   .main-subtitle {
     width: 425px;
   }
   .main-subtitle p {
-    font-size: 24px;
+    font-size: calc(8px + 2.2857142857vw);
+  }
+}
+@media (max-width: 380px) {
+  .main-text {
+    width: 280px;
+  }
+  .container {
+    width: 300px;
+  }
+  .main-title {
+    width: 280px;
+  }
+  .main-title h1 {
+    font-size: calc(29px + 2.2857142857vw);
+  }
+  .main-subtitle {
+    width: 280px;
+    margin-top: 5px;
+  }
+  .main-subtitle p {
+    font-size: calc(8px + 2.2857142857vw);
   }
 }
 .button-block {
