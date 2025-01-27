@@ -89,6 +89,17 @@
         max-width: 900px;
     }
 
+    .author-name {
+        width: 470px;
+
+        & div {
+        }
+    }
+
+    .author-text {
+        width: 500px;
+    }
+
     .title {
         padding-bottom: 30px;
 

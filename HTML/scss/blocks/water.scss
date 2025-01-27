@@ -80,7 +80,7 @@
     & img {
         position: absolute;
         width: 201px;
-        top: -110px;
+        top: -170px;
     }
 }
 
@@ -147,7 +147,7 @@
         & img {
             position: absolute;
             width: 201px;
-            top: -110px;
+            top: -95px;
         }
     }
 
@@ -166,7 +166,7 @@
     }
 
     .rectangle-water {
-        height: 150vh;
+        height: 80vh;
     }
 }
 
@@ -198,6 +198,26 @@
             width: 400px;
             height: 250px;
         }
+    }
+
+    .arrow-water {
+        & img {
+            width: 201px;
+        }
+    }
+
+    .arrow-water::after {
+        width: 90px;
+        height: 90px;
+        bottom: -27px;
+        right: 150px;
+    }
+
+    .arrow-water:hover::after {
+        display: block;
+        bottom: -44px;
+        right: 160px;
+        transition-duration: 0.3s;
     }
 
     .photosession {
@@ -256,17 +276,3 @@
         }
     }
 }
-
-// @media (max-width: 1210px) {
-//     .arrow-water {
-//         top: -78px;
-//         left: 190px;
-//     }
-// }
-
-// @media (max-width: 706px) {
-//     .arrow-water {
-//         top: -68px;
-//         left: 90px;
-//     }
-// }

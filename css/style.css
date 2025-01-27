@@ -804,6 +804,12 @@ h6 {
   .container {
     max-width: 900px;
   }
+  .author-name {
+    width: 470px;
+  }
+  .author-text {
+    width: 500px;
+  }
   .title {
     padding-bottom: 30px;
   }
@@ -1089,7 +1095,7 @@ h6 {
 .arrow-water img {
   position: absolute;
   width: 201px;
-  top: -110px;
+  top: -170px;
 }
 
 .arrow-text {
@@ -1149,7 +1155,7 @@ h6 {
   .arrow-water img {
     position: absolute;
     width: 201px;
-    top: -110px;
+    top: -95px;
   }
   .arrow-water::after {
     width: 90px;
@@ -1165,7 +1171,7 @@ h6 {
             transition-duration: 0.3s;
   }
   .rectangle-water {
-    height: 150vh;
+    height: 80vh;
   }
 }
 @media (max-width: 980px) {
@@ -1190,6 +1196,22 @@ h6 {
   .water-img img {
     width: 400px;
     height: 250px;
+  }
+  .arrow-water img {
+    width: 201px;
+  }
+  .arrow-water::after {
+    width: 90px;
+    height: 90px;
+    bottom: -27px;
+    right: 150px;
+  }
+  .arrow-water:hover::after {
+    display: block;
+    bottom: -44px;
+    right: 160px;
+    -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
   }
   .photosession {
     font-size: calc(84px + 2.1052631579vw);
@@ -1319,6 +1341,9 @@ h6 {
     margin-top: 50px;
     width: 50%;
     height: 600px;
+  }
+  .studio-title {
+    width: 455px;
   }
   .studio-title h2 {
     font-size: calc(26px + 1.3223140496vw);
