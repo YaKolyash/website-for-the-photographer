@@ -151,41 +151,6 @@
     transition-duration: 0.3s;
 }
 
-.arrow-block .arrow-red {
-    width: 100%;
-    position: relative;
-    top: -98px;
-    left: 40px;
-    cursor: pointer;
-    z-index: 5;
-    color: #6d0602;
-
-    & img {
-        position: absolute;
-        width: 201 px;
-        top: -170px;
-    }
-}
-
-.arrow-block::after {
-    position: absolute;
-    content: "";
-    width: 90px;
-    height: 90px;
-    bottom: -20px;
-    right: 453px;
-    border: 2px solid $smoke-white;
-    border-radius: 50%;
-    transition-duration: 0.3s;
-}
-
-.arrow-block:hover::after {
-    display: block;
-    bottom: -41px;
-    right: 42px;
-    transition-duration: 0.3s;
-}
-
 .price-wrapper-mobile {
     display: none;
 }

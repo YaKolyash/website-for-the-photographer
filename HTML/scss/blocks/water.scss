@@ -1,13 +1,24 @@
 .water {
     background: $background-block;
+    position: relative;
 }
 .water-wrapper {
     display: flex;
+}
+.rectangle-water {
+    position: absolute;
+    left: 0;
+    top: 70px;
+    width: 75vw;
+    height: 120vh;
+    background-color: $rectangle-color;
 }
 .water-text {
     padding-top: 170px;
 }
 .water-title {
+    position: relative;
+    z-index: 1;
     & h2 {
         font-family: "RoundedElegance";
         font-size: 46px;
@@ -19,6 +30,8 @@
     }
 }
 .water-subtitle {
+    position: relative;
+    z-index: 1;
     margin-top: 43px;
 
     & p {
@@ -31,6 +44,8 @@
     }
 }
 .photosession {
+    position: relative;
+    z-index: 1;
     margin-top: -125px;
 
     font-family: "RoundedElegance";
@@ -39,15 +54,65 @@
     line-height: 180px;
     text-align: left;
 
-    color: black;
+    color: $background-block;
 }
 .water-img {
     padding-left: 40px;
     object-fit: cover;
+    position: relative;
+    z-index: 1;
 
     & img {
         width: 700px;
         height: 400px;
+    }
+}
+
+.arrow-water {
+    width: 100%;
+    position: relative;
+    top: -98px;
+    left: 40px;
+    cursor: pointer;
+    z-index: 5;
+    color: #6d0602;
+
+    & img {
+        position: absolute;
+        width: 201px;
+        top: -110px;
+    }
+}
+
+.arrow-text {
+    text-transform: uppercase;
+    font-family: "Gravity-Regular";
+    font-size: 22px;
+    font-weight: 400;
+    color: $white;
+}
+
+.arrow-water::after {
+    position: absolute;
+    content: "";
+    width: 90px;
+    height: 90px;
+    bottom: -20px;
+    right: 453px;
+    border: 2px solid $smoke-white;
+    border-radius: 50%;
+    transition-duration: 0.3s;
+}
+
+.arrow-water:hover::after {
+    display: block;
+    bottom: -41px;
+    right: 453px;
+    transition-duration: 0.3s;
+}
+@media (max-width: 1350px) {
+    .photosession {
+        font-size: calc(82px + 16 * (100vw / 760));
     }
 }
 
@@ -78,8 +143,30 @@
         }
     }
 
-    .photosession {
-        font-size: calc(84px + 16 * (100vw / 760));
+    .arrow-water {
+        & img {
+            position: absolute;
+            width: 201px;
+            top: -110px;
+        }
+    }
+
+    .arrow-water::after {
+        width: 90px;
+        height: 90px;
+        bottom: -38px;
+        right: 247px;
+    }
+
+    .arrow-water:hover::after {
+        display: block;
+        bottom: -53px;
+        right: 260px;
+        transition-duration: 0.3s;
+    }
+
+    .rectangle-water {
+        height: 150vh;
     }
 }
 
@@ -169,3 +256,17 @@
         }
     }
 }
+
+// @media (max-width: 1210px) {
+//     .arrow-water {
+//         top: -78px;
+//         left: 190px;
+//     }
+// }
+
+// @media (max-width: 706px) {
+//     .arrow-water {
+//         top: -68px;
+//         left: 90px;
+//     }
+// }
