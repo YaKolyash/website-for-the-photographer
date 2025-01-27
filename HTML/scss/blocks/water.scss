@@ -10,7 +10,7 @@
     left: 0;
     top: 70px;
     width: 75vw;
-    height: 120vh;
+    height: 810px;
     background-color: $rectangle-color;
 }
 .water-text {
@@ -64,12 +64,11 @@
 
     & img {
         width: 700px;
-        height: 400px;
     }
 }
 
 .arrow-water {
-    width: 100%;
+    width: 300px;
     position: relative;
     top: -98px;
     left: 40px;
@@ -80,7 +79,7 @@
     & img {
         position: absolute;
         width: 201px;
-        top: -170px;
+        top: 25px;
     }
 }
 
@@ -97,8 +96,8 @@
     content: "";
     width: 90px;
     height: 90px;
-    bottom: -20px;
-    right: 453px;
+    bottom: -25px;
+    right: 55px;
     border: 2px solid $smoke-white;
     border-radius: 50%;
     transition-duration: 0.3s;
@@ -106,8 +105,8 @@
 
 .arrow-water:hover::after {
     display: block;
-    bottom: -41px;
-    right: 453px;
+    bottom: -48px;
+    right: 57px;
     transition-duration: 0.3s;
 }
 @media (max-width: 1350px) {

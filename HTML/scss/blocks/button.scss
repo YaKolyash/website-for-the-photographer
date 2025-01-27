@@ -23,27 +23,27 @@
         position: sticky;
         z-index: 1;
     }
+}
 
-    & p::after {
-        background: $rectangle-color;
-        cursor: pointer;
-        position: absolute;
-        top: -76px;
-        left: -15px;
-        content: "";
-        width: 160px;
-        height: 160px;
-        border: 2px solid $smoke-white;
-        border-radius: 50%;
-        transition-duration: 0.3s;
-        z-index: -2;
-    }
+.button::after {
+    background: $rectangle-color;
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    left: -18px;
+    content: "";
+    width: 160px;
+    height: 160px;
+    border: 2px solid $smoke-white;
+    border-radius: 50%;
+    transition-duration: 0.3s;
+    z-index: -2;
+}
 
-    & p:hover::after {
-        top: -54px;
-        left: -24px;
-        transition-duration: 0.3s;
-    }
+.button:hover::after {
+    top: 18px;
+    left: -26px;
+    transition-duration: 0.3s;
 }
 
 @media (max-width: 1250px) {

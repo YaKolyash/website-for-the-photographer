@@ -456,12 +456,13 @@ h6 {
   position: sticky;
   z-index: 1;
 }
-.button p::after {
+
+.button::after {
   background: #0f0f0f;
   cursor: pointer;
   position: absolute;
-  top: -76px;
-  left: -15px;
+  top: 0px;
+  left: -18px;
   content: "";
   width: 160px;
   height: 160px;
@@ -471,9 +472,10 @@ h6 {
           transition-duration: 0.3s;
   z-index: -2;
 }
-.button p:hover::after {
-  top: -54px;
-  left: -24px;
+
+.button:hover::after {
+  top: 18px;
+  left: -26px;
   -webkit-transition-duration: 0.3s;
           transition-duration: 0.3s;
 }
@@ -1023,7 +1025,7 @@ h6 {
   left: 0;
   top: 70px;
   width: 75vw;
-  height: 120vh;
+  height: 810px;
   background-color: #0f0f0f;
 }
 
@@ -1080,11 +1082,10 @@ h6 {
 }
 .water-img img {
   width: 700px;
-  height: 400px;
 }
 
 .arrow-water {
-  width: 100%;
+  width: 300px;
   position: relative;
   top: -98px;
   left: 40px;
@@ -1095,7 +1096,7 @@ h6 {
 .arrow-water img {
   position: absolute;
   width: 201px;
-  top: -170px;
+  top: 25px;
 }
 
 .arrow-text {
@@ -1111,8 +1112,8 @@ h6 {
   content: "";
   width: 90px;
   height: 90px;
-  bottom: -20px;
-  right: 453px;
+  bottom: -25px;
+  right: 55px;
   border: 2px solid #f4f4f4;
   border-radius: 50%;
   -webkit-transition-duration: 0.3s;
@@ -1121,8 +1122,8 @@ h6 {
 
 .arrow-water:hover::after {
   display: block;
-  bottom: -41px;
-  right: 453px;
+  bottom: -48px;
+  right: 57px;
   -webkit-transition-duration: 0.3s;
           transition-duration: 0.3s;
 }
