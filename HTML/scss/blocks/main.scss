@@ -9,11 +9,6 @@
   right: 18.5%;
 }
 
-.main-flex {
-  // display: flex;
-  // margin-left: 18vw;
-}
-
 .button {
   & p::after {
     background: $rectangle-color !important;
@@ -29,8 +24,8 @@
   background-color: $rectangle-color;
 }
 .main-text {
-  padding-top: 111px;
   position: relative;
+  top: -820px;
   z-index: 10;
   width: 710px;
 }

@@ -1,117 +1,55 @@
-// .arrow-block {
-//     position: relative;
-//     top: -98px;
-//     left: 40px;
-//     cursor: pointer;
-//     z-index: 5;
+.arrow-block {
+    position: relative;
+    top: -98px;
+    left: 40px;
+    cursor: pointer;
+    z-index: 5;
 
-//     width: 300px;
+    width: 201px;
 
-//     & img {
-//         position: absolute;
-//         width: 280px;
-//         top: -20px;
-//         height: 100px;
-//     }
+    & img {
+        position: absolute;
+        width: 280px;
+        top: -20px;
+        height: 100px;
+    }
+}
 
-//     & ::after {
-//         position: absolute;
-//         content: "";
-//         width: 90px;
-//         height: 90px;
-//         bottom: -40px;
-//         right: 90px;
-//         border: 2px solid $smoke-white;
-//         border-radius: 50%;
-//         transition-duration: 0.3s;
-//     }
+.arrow-red {
+    width: 100%;
+    position: relative;
+    top: -98px;
+    left: 40px;
+    cursor: pointer;
+    z-index: 5;
+    color: #6d0602;
 
-//     & :hover::after {
-//         bottom: -41px;
-//         right: 62px;
-//         transition-duration: 0.3s;
-//     }
-// }
+    & img {
+        position: absolute;
+        width: 201 px;
+        top: -170px;
+    }
+}
 
-// .arrow-red {
-//     width: 100%;
-//     position: relative;
-//     top: -98px;
-//     left: 40px;
-//     cursor: pointer;
-//     z-index: 5;
-//     color: #6d0602;
+.arrow-text {
+    text-transform: uppercase;
+    font-family: "Gravity-Regular";
+    font-size: 22px;
+    font-weight: 400;
+    color: $white;
+    // line-height: 26.4px;
+}
 
-//     & img {
-//         position: absolute;
-//         width: 201 px;
-//         top: -170px;
-//     }
+@media (max-width: 1210px) {
+    .arrow-block {
+        top: -78px;
+        left: 190px;
+    }
+}
 
-//     & ::after {
-//         position: absolute;
-//         content: "";
-//         width: 90px;
-//         height: 90px;
-//         bottom: -20px;
-//         right: 453px;
-//         border: 2px solid $smoke-white;
-//         border-radius: 50%;
-//         transition-duration: 0.3s;
-//     }
-
-//     & :hover::after {
-//         bottom: -41px;
-//         right: 462px;
-//         transition-duration: 0.3s;
-//     }
-// }
-
-// // after элемент. Увеличить область нажатия
-
-// .arrow-text {
-//     text-transform: uppercase;
-//     font-family: "Gravity-Regular";
-//     font-size: 22px;
-//     font-weight: 400;
-//     color: $white;
-//     // line-height: 26.4px;
-// }
-
-// @media (max-width: 1210px) {
-//     .arrow-block {
-//         top: -78px;
-//         left: 190px;
-
-//         & ::after {
-//             width: 90px;
-//             height: 90px;
-//             bottom: -20px;
-//             right: 90px;
-//         }
-
-//         & :hover::after {
-//             bottom: -29px;
-//             right: 113px;
-//         }
-//     }
-// }
-
-// @media (max-width: 706px) {
-//     .arrow-block {
-//         top: -68px;
-//         left: 90px;
-
-//         & ::after {
-//             width: 50px;
-//             height: 50px;
-//             bottom: -20px;
-//             right: 110px;
-//         }
-
-//         & :hover::after {
-//             bottom: -29px;
-//             right: 113px;
-//         }
-//     }
-// }
+@media (max-width: 706px) {
+    .arrow-block {
+        top: -68px;
+        left: 90px;
+    }
+}

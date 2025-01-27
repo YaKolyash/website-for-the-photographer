@@ -315,8 +315,8 @@ h6 {
 }
 
 .main-text {
-  padding-top: 111px;
   position: relative;
+  top: -820px;
   z-index: 10;
   width: 710px;
 }
@@ -587,7 +587,7 @@ h6 {
   height: 900px;
   position: absolute;
   top: -160px;
-  right: 15vw;
+  right: -16.67vw;
 }
 
 .image-slider__image {
@@ -704,8 +704,7 @@ h6 {
   background: #080808;
   padding-top: 228px;
   position: relative;
-  height: 1250px;
-  display: none;
+  height: 1150px;
 }
 
 .author-rectangle {
@@ -863,7 +862,7 @@ h6 {
 }
 .excerpt {
   background: #080808;
-  padding-bottom: 200px;
+  padding-bottom: 120px;
 }
 
 .excerpt-text {
@@ -979,6 +978,9 @@ h6 {
 }
 .project-title {
   background: #080808;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -998,7 +1000,6 @@ h6 {
 }
 .water {
   background: #080808;
-  display: none;
 }
 
 .water-wrapper {
@@ -1147,10 +1148,59 @@ h6 {
     width: 347px;
   }
 }
+.arrow-block {
+  position: relative;
+  top: -98px;
+  left: 40px;
+  cursor: pointer;
+  z-index: 5;
+  width: 201px;
+}
+.arrow-block img {
+  position: absolute;
+  width: 280px;
+  top: -20px;
+  height: 100px;
+}
+
+.arrow-red {
+  width: 100%;
+  position: relative;
+  top: -98px;
+  left: 40px;
+  cursor: pointer;
+  z-index: 5;
+  color: #6d0602;
+}
+.arrow-red img {
+  position: absolute;
+  width: 201 px;
+  top: -170px;
+}
+
+.arrow-text {
+  text-transform: uppercase;
+  font-family: "Gravity-Regular";
+  font-size: 22px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+@media (max-width: 1210px) {
+  .arrow-block {
+    top: -78px;
+    left: 190px;
+  }
+}
+@media (max-width: 706px) {
+  .arrow-block {
+    top: -68px;
+    left: 90px;
+  }
+}
 .studio {
   background: #080808;
   padding: 20px 0;
-  display: none;
 }
 
 .studio-wrapper {
@@ -1329,7 +1379,6 @@ h6 {
   }
 }
 .shooting {
-  display: none;
   background: #080808;
   position: relative;
   height: 1420px;
@@ -1562,7 +1611,7 @@ h6 {
   position: relative;
   width: 100%;
   overflow: hidden;
-  display: none;
+  padding: 150px 0;
 }
 .running-line h3 {
   text-transform: uppercase;
@@ -1622,7 +1671,6 @@ h6 {
 }
 .price {
   background: #080808;
-  display: none;
 }
 
 .price-title {
@@ -2059,7 +2107,6 @@ h6 {
 }
 .contacts {
   background: #080808;
-  display: none;
 }
 
 .contacts-wrapper {
@@ -2173,7 +2220,6 @@ h6 {
   background: #080808;
   padding-top: 90px;
   padding-bottom: 100px;
-  display: none;
 }
 
 .icon-mobile {
