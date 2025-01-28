@@ -1,6 +1,6 @@
 .studio {
     background: $background-block;
-    padding: 20px 0;
+    padding-top: 90px;
 }
 .studio-wrapper {
     display: flex;
@@ -50,6 +50,49 @@
         color: $smoke-white;
         padding: 43px 60px 0 60px;
     }
+}
+
+.arrow-studio {
+    width: 300px;
+    position: relative;
+    top: -125px;
+    left: 190px;
+    cursor: pointer;
+    z-index: 5;
+    color: #6d0602;
+
+    & img {
+        position: absolute;
+        width: 201px;
+        top: 25px;
+    }
+}
+
+.arrow-text {
+    text-transform: uppercase;
+    font-family: "Gravity-Regular";
+    font-size: 22px;
+    font-weight: 400;
+    color: $white;
+}
+
+.arrow-studio::after {
+    position: absolute;
+    content: "";
+    width: 90px;
+    height: 90px;
+    bottom: -25px;
+    right: 55px;
+    border: 2px solid $smoke-white;
+    border-radius: 50%;
+    transition-duration: 0.3s;
+}
+
+.arrow-studio:hover::after {
+    display: block;
+    bottom: -48px;
+    right: 57px;
+    transition-duration: 0.3s;
 }
 
 .studio-button {

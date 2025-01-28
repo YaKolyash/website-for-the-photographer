@@ -84,6 +84,12 @@
     margin-top: -74px !important;
 }
 
+@media (max-width: 1226px) {
+    .author-text {
+        width: 626px;
+    }
+}
+
 @media (max-width: 1140px) {
     .container {
         max-width: 900px;

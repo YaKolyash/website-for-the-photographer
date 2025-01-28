@@ -802,6 +802,11 @@ h6 {
   margin-top: -74px !important;
 }
 
+@media (max-width: 1226px) {
+  .author-text {
+    width: 626px;
+  }
+}
 @media (max-width: 1140px) {
   .container {
     max-width: 900px;
@@ -1012,6 +1017,7 @@ h6 {
 .water {
   background: #080808;
   position: relative;
+  padding-top: 50px;
 }
 
 .water-wrapper {
@@ -1023,7 +1029,7 @@ h6 {
 .rectangle-water {
   position: absolute;
   left: 0;
-  top: 70px;
+  top: 130px;
   width: 75vw;
   height: 810px;
   background-color: #0f0f0f;
@@ -1263,7 +1269,7 @@ h6 {
 }
 .studio {
   background: #080808;
-  padding: 20px 0;
+  padding-top: 90px;
 }
 
 .studio-wrapper {
@@ -1320,6 +1326,50 @@ h6 {
   text-align: left;
   color: #f4f4f4;
   padding: 43px 60px 0 60px;
+}
+
+.arrow-studio {
+  width: 300px;
+  position: relative;
+  top: -125px;
+  left: 190px;
+  cursor: pointer;
+  z-index: 5;
+  color: #6d0602;
+}
+.arrow-studio img {
+  position: absolute;
+  width: 201px;
+  top: 25px;
+}
+
+.arrow-text {
+  text-transform: uppercase;
+  font-family: "Gravity-Regular";
+  font-size: 22px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.arrow-studio::after {
+  position: absolute;
+  content: "";
+  width: 90px;
+  height: 90px;
+  bottom: -25px;
+  right: 55px;
+  border: 2px solid #f4f4f4;
+  border-radius: 50%;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.arrow-studio:hover::after {
+  display: block;
+  bottom: -48px;
+  right: 57px;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
 }
 
 .studio-button {
@@ -1677,7 +1727,6 @@ h6 {
   position: relative;
   width: 100%;
   overflow: hidden;
-  padding: 150px 0;
 }
 .running-line h3 {
   text-transform: uppercase;
@@ -1737,6 +1786,7 @@ h6 {
 }
 .price {
   background: #080808;
+  padding-top: 150px;
 }
 
 .price-title {

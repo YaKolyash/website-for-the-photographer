@@ -1,12 +1,12 @@
-.water {
+.couple {
     background: $background-block;
     position: relative;
     padding-top: 50px;
 }
-.water-wrapper {
+.couple-wrapper {
     display: flex;
 }
-.rectangle-water {
+.rectangle-couple {
     position: absolute;
     left: 0;
     top: 130px;
@@ -14,10 +14,10 @@
     height: 810px;
     background-color: $rectangle-color;
 }
-.water-text {
+.couple-text {
     padding-top: 170px;
 }
-.water-title {
+.couple-title {
     position: relative;
     z-index: 1;
     & h2 {
@@ -30,7 +30,7 @@
         text-transform: uppercase;
     }
 }
-.water-subtitle {
+.couple-subtitle {
     position: relative;
     z-index: 1;
     margin-top: 43px;
@@ -57,7 +57,7 @@
 
     color: $background-block;
 }
-.water-img {
+.couple-img {
     padding-left: 40px;
     object-fit: cover;
     position: relative;
@@ -68,7 +68,7 @@
     }
 }
 
-.arrow-water {
+.arrow-couple {
     width: 300px;
     position: relative;
     top: -98px;
@@ -92,7 +92,7 @@
     color: $white;
 }
 
-.arrow-water::after {
+.arrow-couple::after {
     position: absolute;
     content: "";
     width: 90px;
@@ -104,7 +104,7 @@
     transition-duration: 0.3s;
 }
 
-.arrow-water:hover::after {
+.arrow-couple:hover::after {
     display: block;
     bottom: -48px;
     right: 57px;
@@ -117,16 +117,16 @@
 }
 
 @media (max-width: 1250px) {
-    .water-text {
+    .couple-text {
         padding-top: 120px;
     }
 
-    .water-title {
+    .couple-title {
         & h2 {
             font-size: calc(30px + 16 * (100vw / 1250));
         }
     }
-    .water-subtitle {
+    .couple-subtitle {
         margin-top: 23px;
 
         & p {
@@ -134,7 +134,7 @@
         }
     }
 
-    .water-img {
+    .couple-img {
         padding-left: 40px;
 
         & img {
@@ -143,7 +143,7 @@
         }
     }
 
-    .arrow-water {
+    .arrow-couple {
         & img {
             position: absolute;
             width: 201px;
@@ -151,39 +151,39 @@
         }
     }
 
-    .arrow-water::after {
+    .arrow-couple::after {
         width: 90px;
         height: 90px;
         bottom: -38px;
         right: 247px;
     }
 
-    .arrow-water:hover::after {
+    .arrow-couple:hover::after {
         display: block;
         bottom: -53px;
         right: 260px;
         transition-duration: 0.3s;
     }
 
-    .rectangle-water {
+    .rectangle-couple {
         height: 80vh;
     }
 }
 
 @media (max-width: 980px) {
-    .water-wrapper {
+    .couple-wrapper {
         padding: 0 15px;
     }
-    .water-text {
+    .couple-text {
         padding-top: 70px;
     }
 
-    .water-title {
+    .couple-title {
         & h2 {
             font-size: calc(30px + 16 * (100vw / 980));
         }
     }
-    .water-subtitle {
+    .couple-subtitle {
         margin-top: 23px;
 
         & p {
@@ -191,7 +191,7 @@
         }
     }
 
-    .water-img {
+    .couple-img {
         padding-left: 20px;
 
         & img {
@@ -200,20 +200,20 @@
         }
     }
 
-    .arrow-water {
+    .arrow-couple {
         & img {
             width: 201px;
         }
     }
 
-    .arrow-water::after {
+    .arrow-couple::after {
         width: 90px;
         height: 90px;
         bottom: -27px;
         right: 150px;
     }
 
-    .arrow-water:hover::after {
+    .arrow-couple:hover::after {
         display: block;
         bottom: -44px;
         right: 160px;
@@ -230,13 +230,13 @@
         max-width: 440px;
     }
 
-    .water-wrapper {
+    .couple-wrapper {
         display: block;
     }
-    .water-text {
+    .couple-text {
         padding-top: 0;
     }
-    .water-title {
+    .couple-title {
         width: 350px;
         padding-bottom: 10px;
 
@@ -246,7 +246,7 @@
             padding-left: 20px;
         }
     }
-    .water-subtitle {
+    .couple-subtitle {
         display: none;
     }
     .button-block {
@@ -258,19 +258,19 @@
 }
 
 @media (max-width: 520px) {
-    .water {
+    .couple {
         width: 520px;
     }
 
-    .water-wrapper {
+    .couple-wrapper {
         padding: 0;
     }
 
-    .water-title {
+    .couple-title {
         width: 270px;
     }
 
-    .water-img {
+    .couple-img {
         & img {
             width: 347px;
         }
