@@ -920,6 +920,11 @@ h6 {
   margin: 95px 0 0 27px;
 }
 
+@media (max-width: 1250px) {
+  .excerpt {
+    width: 1240px;
+  }
+}
 @media (max-width: 1145px) {
   .excerpt-text {
     width: 860px;
@@ -1009,6 +1014,11 @@ h6 {
   padding-bottom: 60px;
 }
 
+@media (max-width: 1250px) {
+  .project-title {
+    width: 1240px;
+  }
+}
 @media (max-width: 561px) {
   .project-title {
     font-size: calc(24px + 2.1052631579vw);

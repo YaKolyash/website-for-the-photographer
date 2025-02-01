@@ -40,6 +40,12 @@
     }
 }
 
+@media (max-width: 1250px) {
+    .excerpt {
+        width: 1240px;
+    }
+}
+
 @media (max-width: 1145px) {
     .excerpt-text {
         width: 860px;
