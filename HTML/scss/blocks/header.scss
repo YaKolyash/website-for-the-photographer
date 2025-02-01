@@ -91,6 +91,12 @@
   display: none;
 }
 
+@media (max-width: 1250px) {
+  .header {
+    width: 1240px;
+  }
+}
+
 @media (max-width: 795px) {
   .nav {
     display: none;

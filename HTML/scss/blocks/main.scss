@@ -62,6 +62,12 @@
   }
 }
 
+@media (max-width: 1250px) {
+  .main {
+    width: 1240px;
+  }
+}
+
 @media (max-width: 1441px) {
   .rectangle {
     width: 1140px;

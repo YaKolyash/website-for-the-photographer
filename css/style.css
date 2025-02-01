@@ -174,6 +174,11 @@ h6 {
   display: none;
 }
 
+@media (max-width: 1250px) {
+  .header {
+    width: 1240px;
+  }
+}
 @media (max-width: 795px) {
   .nav {
     display: none;
@@ -355,6 +360,11 @@ h6 {
   color: #f4f4f4;
 }
 
+@media (max-width: 1250px) {
+  .main {
+    width: 1240px;
+  }
+}
 @media (max-width: 1441px) {
   .rectangle {
     width: 1140px;
@@ -803,6 +813,11 @@ h6 {
   margin-top: -74px !important;
 }
 
+@media (max-width: 1250px) {
+  .author {
+    width: 1240px;
+  }
+}
 @media (max-width: 1226px) {
   .author-text {
     width: 626px;
@@ -1932,6 +1947,11 @@ h6 {
     margin-top: 0;
   }
 }
+@media (max-width: 1250px) {
+  .shooting {
+    width: 1240px;
+  }
+}
 @media (max-width: 1000px) {
   .shooting-wrapper {
     padding-left: 20px;
@@ -2047,6 +2067,11 @@ h6 {
   to {
     -webkit-transform: translateX(-100%);
             transform: translateX(-100%);
+  }
+}
+@media (max-width: 1250px) {
+  .running-line {
+    width: 1240px;
   }
 }
 @media (max-width: 800px) {
@@ -2247,6 +2272,11 @@ h6 {
   display: none;
 }
 
+@media (max-width: 1250px) {
+  .price {
+    width: 1240px;
+  }
+}
 @media (max-width: 1141px) {
   .price-item:first-child {
     margin-right: 15px;
@@ -2514,6 +2544,11 @@ h6 {
     padding-left: 40px;
   }
 }
+@media (max-width: 1250px) {
+  .contacts {
+    width: 1240px;
+  }
+}
 @media (max-width: 961px) {
   .contackts-img img {
     width: 400px;
@@ -2620,6 +2655,11 @@ h6 {
   margin-right: 2.083vw;
 }
 
+@media (max-width: 1250px) {
+  .footer {
+    width: 1240px;
+  }
+}
 @media (max-width: 610px) {
   .footer-img {
     display: none;

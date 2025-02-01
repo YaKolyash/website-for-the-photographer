@@ -45,6 +45,12 @@
     margin-right: 2.083vw;
 }
 
+@media (max-width: 1250px) {
+    .footer {
+        width: 1240px;
+    }
+}
+
 @media (max-width: 610px) {
     .footer-img {
         display: none;

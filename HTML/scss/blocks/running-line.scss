@@ -46,6 +46,12 @@
     }
 }
 
+@media (max-width: 1250px) {
+    .running-line {
+        width: 1240px;
+    }
+}
+
 @media (max-width: 800px) {
     .running-line {
         display: none;
