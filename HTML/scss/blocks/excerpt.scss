@@ -69,6 +69,14 @@
     }
 }
 
+@media (max-width: 916px) {
+    .excerpt-text {
+        & p {
+            padding-top: 0;
+        }
+    }
+}
+
 @media (max-width: 770px) {
     .excerpt-text {
         width: 660px;
