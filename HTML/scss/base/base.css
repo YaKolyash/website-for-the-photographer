@@ -1,0 +1,43 @@
+@font-face {
+  font-family: "Gravity-Book";
+  font-style: normal;
+  font-weight: 350;
+  src: url("../../../fonts/Gravity-Book.woff");
+  src: local(""), url("../../../fonts/Gravity-Book.woff") format("woff");
+}
+@font-face {
+  font-family: "Gravity-Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../../fonts/Gravity-Regular.woff");
+  src: local(""), url("../../../fonts/Gravity-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "RoundedElegance";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../../fonts/Rounded_Elegance.woff");
+  src: local(""), url("../../../fonts/Rounded_Elegance.woff") format("woff");
+}
+body {
+  width: 100%;
+  min-width: 900px;
+  max-width: 1920px;
+}
+
+@media (max-width: 560px) {
+  body {
+    min-width: unset;
+  }
+}
+.container {
+  max-width: 1100px;
+  width: 1100px;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.none {
+  display: none;
+}/*# sourceMappingURL=base.css.map */

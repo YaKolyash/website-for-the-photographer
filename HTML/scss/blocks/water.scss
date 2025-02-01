@@ -11,7 +11,7 @@
     left: 0;
     top: 130px;
     width: 75vw;
-    height: 810px;
+    height: 780px;
     background-color: $rectangle-color;
 }
 .water-text {
@@ -117,6 +117,10 @@
 }
 
 @media (max-width: 1250px) {
+    .water {
+        width: 1240px;
+    }
+
     .water-text {
         padding-top: 120px;
     }
@@ -154,14 +158,14 @@
     .arrow-water::after {
         width: 90px;
         height: 90px;
-        bottom: -38px;
-        right: 247px;
+        bottom: -55px;
+        right: 50px;
     }
 
     .arrow-water:hover::after {
         display: block;
-        bottom: -53px;
-        right: 260px;
+        bottom: -70px;
+        right: 70px;
         transition-duration: 0.3s;
     }
 

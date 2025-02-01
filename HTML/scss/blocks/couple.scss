@@ -11,7 +11,7 @@
     left: 0;
     top: 130px;
     width: 75vw;
-    height: 810px;
+    height: 720px;
     background-color: $rectangle-color;
 }
 .couple-text {
@@ -117,6 +117,10 @@
 }
 
 @media (max-width: 1250px) {
+    .couple {
+        width: 1240px;
+    }
+
     .couple-text {
         padding-top: 120px;
     }
@@ -154,14 +158,14 @@
     .arrow-couple::after {
         width: 90px;
         height: 90px;
-        bottom: -38px;
-        right: 247px;
+        bottom: -55px;
+        right: 50px;
     }
 
     .arrow-couple:hover::after {
         display: block;
-        bottom: -53px;
-        right: 260px;
+        bottom: -50px;
+        right: 62px;
         transition-duration: 0.3s;
     }
 
