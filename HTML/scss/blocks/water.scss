@@ -110,6 +110,12 @@
     right: 57px;
     transition-duration: 0.3s;
 }
+
+.water-block {
+    margin-top: 90px;
+    position: relative;
+    z-index: 10;
+}
 @media (max-width: 1350px) {
     .photosession {
         font-size: calc(82px + 16 * (100vw / 760));
@@ -216,28 +222,30 @@
         width: 90px;
         height: 90px;
         bottom: -27px;
-        right: 150px;
+        right: 45px;
     }
 
     .arrow-water:hover::after {
         display: block;
         bottom: -44px;
-        right: 160px;
+        right: 60px;
         transition-duration: 0.3s;
     }
 
     .photosession {
         font-size: calc(84px + 16 * (100vw / 760));
     }
+
+    .rectangle-water {
+        height: 660px;
+    }
 }
 
-@media (max-width: 701px) {
-    .container {
-        max-width: 440px;
-    }
-
+@media (max-width: 707px) {
     .water-wrapper {
-        display: block;
+        display: flex;
+        justify-content: center;
+        padding: 0;
     }
     .water-text {
         padding-top: 0;
@@ -249,13 +257,18 @@
         & h2 {
             font-size: calc(6px + 16 * (100vw / 570));
             line-height: 30px;
-            padding-left: 20px;
         }
     }
+
     .water-subtitle {
-        display: none;
+        display: block;
+        margin-top: 23px;
+
+        & p {
+            font-size: calc(8px + 16 * (100vw / 980));
+        }
     }
-    .button-block {
+    .water-block {
         display: none;
     }
     .photosession {

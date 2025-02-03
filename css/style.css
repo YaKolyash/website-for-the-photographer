@@ -183,9 +183,6 @@ h6 {
   .nav {
     display: none;
   }
-  .container {
-    max-width: 1100px;
-  }
   .header-nav {
     display: none;
   }
@@ -301,6 +298,7 @@ h6 {
 .main {
   background: #080808;
   height: 850px;
+  display: none;
 }
 
 .main-swiper {
@@ -382,9 +380,6 @@ h6 {
   .rectangle {
     display: none;
   }
-  .container {
-    max-width: 820px;
-  }
   .main-text {
     padding-top: 20px;
   }
@@ -407,9 +402,6 @@ h6 {
   .main-text {
     width: 425px;
   }
-  .container {
-    width: 460px;
-  }
   .main-title {
     width: 425px;
   }
@@ -426,9 +418,6 @@ h6 {
 @media (max-width: 380px) {
   .main-text {
     width: 280px;
-  }
-  .container {
-    width: 300px;
   }
   .main-title {
     width: 280px;
@@ -813,7 +802,8 @@ h6 {
 }
 
 .author-button {
-  margin-top: -74px !important;
+  margin-top: -20px !important;
+  margin-left: 20px;
 }
 
 @media (max-width: 1250px) {
@@ -830,9 +820,6 @@ h6 {
   }
 }
 @media (max-width: 1140px) {
-  .container {
-    max-width: 900px;
-  }
   .author-name {
     width: 470px;
   }
@@ -885,9 +872,6 @@ h6 {
 }
 @media (max-width: 560px) {
   .author {
-    width: 543px;
-  }
-  .container {
     width: 543px;
   }
   .author-description {
@@ -1007,9 +991,6 @@ h6 {
 @media (max-width: 562px) {
   .excerpt {
     width: 680px;
-  }
-  .container {
-    max-width: 550px;
   }
   .excerpt-text ::before {
     -webkit-transform: scale(0.6);
@@ -1180,6 +1161,12 @@ h6 {
           transition-duration: 0.3s;
 }
 
+.water-block {
+  margin-top: 90px;
+  position: relative;
+  z-index: 10;
+}
+
 @media (max-width: 1350px) {
   .photosession {
     font-size: calc(82px + 2.1052631579vw);
@@ -1262,25 +1249,31 @@ h6 {
     width: 90px;
     height: 90px;
     bottom: -27px;
-    right: 150px;
+    right: 45px;
   }
   .arrow-water:hover::after {
     display: block;
     bottom: -44px;
-    right: 160px;
+    right: 60px;
     -webkit-transition-duration: 0.3s;
             transition-duration: 0.3s;
   }
   .photosession {
     font-size: calc(84px + 2.1052631579vw);
   }
-}
-@media (max-width: 701px) {
-  .container {
-    max-width: 440px;
+  .rectangle-water {
+    height: 660px;
   }
+}
+@media (max-width: 707px) {
   .water-wrapper {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0;
   }
   .water-text {
     padding-top: 0;
@@ -1292,12 +1285,15 @@ h6 {
   .water-title h2 {
     font-size: calc(6px + 2.8070175439vw);
     line-height: 30px;
-    padding-left: 20px;
   }
   .water-subtitle {
-    display: none;
+    display: block;
+    margin-top: 23px;
   }
-  .button-block {
+  .water-subtitle p {
+    font-size: calc(8px + 1.6326530612vw);
+  }
+  .water-block {
     display: none;
   }
   .photosession {
@@ -1427,8 +1423,8 @@ h6 {
 }
 
 .studio-button {
-  margin-top: 40px;
-  margin-left: 60px;
+  margin-top: 60px;
+  margin-left: 80px;
 }
 
 .studio-arrow__background p::after {
@@ -1468,7 +1464,7 @@ h6 {
 }
 @media (max-width: 706px) {
   .studio {
-    width: 900px;
+    width: 1242px;
   }
   .studio-wrapper {
     display: -webkit-box;
@@ -1477,9 +1473,6 @@ h6 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-  .container {
-    max-width: 770px;
   }
   .studio-img picture img {
     width: 300px;
@@ -1507,6 +1500,10 @@ h6 {
     font-size: calc(8px + 1.3223140496vw);
     line-height: 25px;
   }
+  .button-block,
+  .studio-button {
+    display: none !important;
+  }
 }
 @media (max-width: 540px) {
   .studio {
@@ -1517,9 +1514,6 @@ h6 {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
-  }
-  .container {
-    max-width: 770px;
   }
   .studio-img {
     padding: 0 0 10px 20px;
@@ -1565,7 +1559,7 @@ h6 {
   left: 0;
   top: 130px;
   width: 75vw;
-  height: 720px;
+  height: 780px;
   background-color: #0f0f0f;
 }
 
@@ -1678,7 +1672,7 @@ h6 {
     width: 1240px;
   }
   .couple-text {
-    padding-top: 120px;
+    padding-top: 60px;
   }
   .couple-title h2 {
     font-size: calc(30px + 1.28vw);
@@ -1709,13 +1703,15 @@ h6 {
   }
   .arrow-couple:hover::after {
     display: block;
-    bottom: -50px;
-    right: 62px;
+    bottom: -70px;
+    right: 70px;
     -webkit-transition-duration: 0.3s;
             transition-duration: 0.3s;
   }
   .rectangle-couple {
-    height: 80vh;
+    top: 80px;
+    height: 640px;
+    width: 790px;
   }
 }
 @media (max-width: 980px) {
@@ -1748,23 +1744,66 @@ h6 {
     width: 90px;
     height: 90px;
     bottom: -27px;
-    right: 150px;
+    right: 45px;
   }
   .arrow-couple:hover::after {
     display: block;
     bottom: -44px;
-    right: 160px;
+    right: 60px;
     -webkit-transition-duration: 0.3s;
             transition-duration: 0.3s;
   }
   .photosession {
     font-size: calc(84px + 2.1052631579vw);
   }
+  .rectangle-couple {
+    height: 660px;
+  }
+}
+@media (max-width: 701px) {
+  .water-wrapper {
+    display: block;
+  }
+  .water-text {
+    padding-top: 0;
+  }
+  .water-title {
+    width: 350px;
+    padding-bottom: 10px;
+  }
+  .water-title h2 {
+    font-size: calc(6px + 2.8070175439vw);
+    line-height: 30px;
+    padding-left: 20px;
+  }
+  .water-subtitle {
+    display: none;
+  }
+  .button-block {
+    display: none;
+  }
+  .photosession {
+    display: none;
+  }
+  .rectangle-water {
+    display: none;
+  }
+}
+@media (max-width: 520px) {
+  .water {
+    width: 520px;
+  }
+  .water-wrapper {
+    padding: 0;
+  }
+  .water-title {
+    width: 270px;
+  }
+  .water-img img {
+    width: 347px;
+  }
 }
 @media (max-width: 700px) {
-  .container {
-    max-width: 440px;
-  }
   .couple-wrapper {
     display: block;
   }
@@ -2004,9 +2043,6 @@ h6 {
 @media (max-width: 590px) {
   .shooting {
     width: 500px;
-  }
-  .container {
-    max-width: 560px;
   }
   .shooting-wrapper {
     position: inherit;
@@ -2344,9 +2380,6 @@ h6 {
   }
 }
 @media (max-width: 601px) {
-  .container {
-    max-width: 420px;
-  }
   .price-title p {
     font-size: 30px;
   }
@@ -2505,11 +2538,6 @@ h6 {
     color: #f4f4f4;
   }
 }
-@media (max-width: 421px) {
-  .container {
-    max-width: 300px;
-  }
-}
 .contacts {
   background: #080808;
   padding-top: 150px;
@@ -2582,7 +2610,7 @@ h6 {
 }
 
 .margin {
-  padding-left: 20px;
+  margin-left: 25px;
 }
 
 @media (max-width: 1331px) {

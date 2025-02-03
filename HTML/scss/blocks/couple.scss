@@ -11,7 +11,7 @@
     left: 0;
     top: 130px;
     width: 75vw;
-    height: 720px;
+    height: 780px;
     background-color: $rectangle-color;
 }
 .couple-text {
@@ -122,7 +122,7 @@
     }
 
     .couple-text {
-        padding-top: 120px;
+        padding-top: 60px;
     }
 
     .couple-title {
@@ -164,13 +164,15 @@
 
     .arrow-couple:hover::after {
         display: block;
-        bottom: -50px;
-        right: 62px;
+        bottom: -70px;
+        right: 70px;
         transition-duration: 0.3s;
     }
 
     .rectangle-couple {
-        height: 80vh;
+        top: 80px;
+        height: 640px;
+        width: 790px;
     }
 }
 
@@ -214,26 +216,77 @@
         width: 90px;
         height: 90px;
         bottom: -27px;
-        right: 150px;
+        right: 45px;
     }
 
     .arrow-couple:hover::after {
         display: block;
         bottom: -44px;
-        right: 160px;
+        right: 60px;
         transition-duration: 0.3s;
     }
 
     .photosession {
         font-size: calc(84px + 16 * (100vw / 760));
     }
+
+    .rectangle-couple {
+        height: 660px;
+    }
+}
+
+@media (max-width: 701px) {
+    .water-wrapper {
+        display: block;
+    }
+    .water-text {
+        padding-top: 0;
+    }
+    .water-title {
+        width: 350px;
+        padding-bottom: 10px;
+
+        & h2 {
+            font-size: calc(6px + 16 * (100vw / 570));
+            line-height: 30px;
+            padding-left: 20px;
+        }
+    }
+    .water-subtitle {
+        display: none;
+    }
+    .button-block {
+        display: none;
+    }
+    .photosession {
+        display: none;
+    }
+    .rectangle-water {
+        display: none;
+    }
+}
+
+@media (max-width: 520px) {
+    .water {
+        width: 520px;
+    }
+
+    .water-wrapper {
+        padding: 0;
+    }
+
+    .water-title {
+        width: 270px;
+    }
+
+    .water-img {
+        & img {
+            width: 347px;
+        }
+    }
 }
 
 @media (max-width: 700px) {
-    .container {
-        max-width: 440px;
-    }
-
     .couple-wrapper {
         display: block;
     }

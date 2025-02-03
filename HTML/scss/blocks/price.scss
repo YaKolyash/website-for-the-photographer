@@ -216,10 +216,6 @@
 }
 
 @media (max-width: 601px) {
-    .container {
-        max-width: 420px;
-    }
-
     .price-title {
         & p {
             font-size: 30px;
@@ -375,11 +371,5 @@
 
     a {
         color: $smoke-white;
-    }
-}
-
-@media (max-width: 421px) {
-    .container {
-        max-width: 300px;
     }
 }

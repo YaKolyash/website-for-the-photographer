@@ -81,7 +81,8 @@
 }
 
 .author-button {
-    margin-top: -74px !important;
+    margin-top: -20px !important;
+    margin-left: 20px;
 }
 
 @media (max-width: 1250px) {
@@ -101,10 +102,6 @@
 }
 
 @media (max-width: 1140px) {
-    .container {
-        max-width: 900px;
-    }
-
     .author-name {
         width: 470px;
 
@@ -173,9 +170,6 @@
         width: 543px;
     }
 
-    .container {
-        width: 543px;
-    }
     .author-description {
         width: 543px;
         display: block;

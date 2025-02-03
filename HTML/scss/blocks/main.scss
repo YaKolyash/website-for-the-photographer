@@ -1,6 +1,8 @@
 .main {
   background: $background-block;
   height: 850px;
+
+  display: none;
 }
 
 .main-swiper {
@@ -85,10 +87,6 @@
     display: none;
   }
 
-  .container {
-    max-width: 820px;
-  }
-
   .main-text {
     padding-top: 20px;
   }
@@ -117,10 +115,6 @@
     width: 425px;
   }
 
-  .container {
-    width: 460px;
-  }
-
   .main-title {
     width: 425px;
 
@@ -141,10 +135,6 @@
 @media (max-width: 380px) {
   .main-text {
     width: 280px;
-  }
-
-  .container {
-    width: 300px;
   }
 
   .main-title {
