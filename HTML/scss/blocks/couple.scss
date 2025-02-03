@@ -11,7 +11,7 @@
     left: 0;
     top: 130px;
     width: 75vw;
-    height: 780px;
+    height: 710px;
     background-color: $rectangle-color;
 }
 .couple-text {
@@ -34,6 +34,7 @@
     position: relative;
     z-index: 1;
     margin-top: 43px;
+    width: 437px;
 
     & p {
         font-family: "Gravity-Book";
@@ -44,13 +45,13 @@
         color: $smoke-white;
     }
 }
-.photosession {
+.passion {
     position: relative;
     z-index: 1;
     margin-top: -125px;
 
     font-family: "RoundedElegance";
-    font-size: 140px;
+    font-size: 180px;
     font-weight: 400;
     line-height: 180px;
     text-align: left;
@@ -58,10 +59,11 @@
     color: $background-block;
 }
 .couple-img {
-    padding-left: 40px;
     object-fit: cover;
     position: relative;
-    z-index: 1;
+    top: 250px;
+    right: -70px;
+    z-index: 3;
 
     & img {
         width: 700px;
@@ -110,15 +112,39 @@
     right: 57px;
     transition-duration: 0.3s;
 }
+
+.couple-block {
+    margin-top: 90px;
+    position: relative;
+    z-index: 10;
+}
 @media (max-width: 1350px) {
     .photosession {
         font-size: calc(82px + 16 * (100vw / 760));
+    }
+
+    .arrow-couple {
+        & img {
+            width: 201px !important;
+        }
+    }
+
+    .couple-img {
+        object-fit: cover;
+        position: relative;
+        top: 250px;
+        right: -70px;
+        z-index: 3;
+
+        & img {
+            width: 600px;
+        }
     }
 }
 
 @media (max-width: 1250px) {
     .couple {
-        width: 1240px;
+        width: 1250px;
     }
 
     .couple-text {
@@ -140,18 +166,20 @@
 
     .couple-img {
         padding-left: 40px;
+        right: -30px;
 
         & img {
-            width: 500px;
-            height: 300px;
+            width: 600px;
+            height: 400px;
         }
     }
 
     .arrow-couple {
         & img {
             position: absolute;
-            width: 201px;
-            top: -95px;
+            width: 201px !important;
+            height: 25px !important;
+            top: 30px;
         }
     }
 

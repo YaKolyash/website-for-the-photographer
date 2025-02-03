@@ -96,8 +96,10 @@
 }
 
 .studio-button {
-    margin-top: 60px;
+    margin-top: 70px;
     margin-left: 80px;
+    position: relative;
+    z-index: 10;
 }
 
 .studio-arrow__background {
@@ -108,7 +110,7 @@
 
 @media (max-width: 1250px) {
     .studio {
-        width: 1240px;
+        width: 1250px;
     }
 
     .studio-img {
@@ -155,10 +157,6 @@
         justify-content: center;
     }
 
-    // .container {
-    //     max-width: 770px;
-    // }
-
     .studio-img {
         & picture img {
             width: 300px;
@@ -192,7 +190,6 @@
         }
     }
 
-    .button-block,
     .studio-button {
         display: none !important;
     }

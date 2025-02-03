@@ -860,6 +860,10 @@ h6 {
   .button-block {
     margin-top: 110px;
   }
+  .author-rectangle {
+    width: 950px;
+    height: 640px;
+  }
 }
 @media (max-width: 920px) {
   .author {
@@ -976,7 +980,7 @@ h6 {
   }
   .excerpt-text p {
     width: 600px;
-    padding-top: 200px;
+    padding-top: 50px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -1099,7 +1103,7 @@ h6 {
   z-index: 1;
   margin-top: -125px;
   font-family: "RoundedElegance";
-  font-size: 140px;
+  font-size: 180px;
   font-weight: 400;
   line-height: 180px;
   text-align: left;
@@ -1215,7 +1219,7 @@ h6 {
   }
   .rectangle-water {
     top: 80px;
-    height: 640px;
+    height: 560px;
     width: 790px;
   }
 }
@@ -1237,13 +1241,17 @@ h6 {
   }
   .water-img {
     padding-left: 20px;
+    width: 500px;
+    height: 350px;
   }
   .water-img img {
-    width: 400px;
-    height: 250px;
+    width: 500px;
+    height: 350px;
   }
   .arrow-water img {
+    top: 15px;
     width: 201px;
+    height: 30px;
   }
   .arrow-water::after {
     width: 90px;
@@ -1258,11 +1266,14 @@ h6 {
     -webkit-transition-duration: 0.3s;
             transition-duration: 0.3s;
   }
+  .water-block {
+    margin-top: 50px;
+  }
   .photosession {
     font-size: calc(84px + 2.1052631579vw);
   }
   .rectangle-water {
-    height: 660px;
+    height: 540px;
   }
 }
 @media (max-width: 707px) {
@@ -1292,6 +1303,13 @@ h6 {
   }
   .water-subtitle p {
     font-size: calc(8px + 1.6326530612vw);
+  }
+  .water-img {
+    padding-left: 10px;
+  }
+  .water-img img {
+    width: 400px;
+    height: 250px;
   }
   .water-block {
     display: none;
@@ -1423,8 +1441,10 @@ h6 {
 }
 
 .studio-button {
-  margin-top: 60px;
+  margin-top: 70px;
   margin-left: 80px;
+  position: relative;
+  z-index: 10;
 }
 
 .studio-arrow__background p::after {
@@ -1433,7 +1453,7 @@ h6 {
 
 @media (max-width: 1250px) {
   .studio {
-    width: 1240px;
+    width: 1250px;
   }
   .studio-img picture img {
     height: 700px;
@@ -1500,7 +1520,6 @@ h6 {
     font-size: calc(8px + 1.3223140496vw);
     line-height: 25px;
   }
-  .button-block,
   .studio-button {
     display: none !important;
   }
@@ -1559,7 +1578,7 @@ h6 {
   left: 0;
   top: 130px;
   width: 75vw;
-  height: 780px;
+  height: 710px;
   background-color: #0f0f0f;
 }
 
@@ -1585,6 +1604,7 @@ h6 {
   position: relative;
   z-index: 1;
   margin-top: 43px;
+  width: 437px;
 }
 .couple-subtitle p {
   font-family: "Gravity-Book";
@@ -1595,12 +1615,12 @@ h6 {
   color: #f4f4f4;
 }
 
-.photosession {
+.passion {
   position: relative;
   z-index: 1;
   margin-top: -125px;
   font-family: "RoundedElegance";
-  font-size: 140px;
+  font-size: 180px;
   font-weight: 400;
   line-height: 180px;
   text-align: left;
@@ -1608,11 +1628,12 @@ h6 {
 }
 
 .couple-img {
-  padding-left: 40px;
   -o-object-fit: cover;
      object-fit: cover;
   position: relative;
-  z-index: 1;
+  top: 250px;
+  right: -70px;
+  z-index: 3;
 }
 .couple-img img {
   width: 700px;
@@ -1662,14 +1683,34 @@ h6 {
           transition-duration: 0.3s;
 }
 
+.couple-block {
+  margin-top: 90px;
+  position: relative;
+  z-index: 10;
+}
+
 @media (max-width: 1350px) {
   .photosession {
     font-size: calc(82px + 2.1052631579vw);
   }
+  .arrow-couple img {
+    width: 201px !important;
+  }
+  .couple-img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: relative;
+    top: 250px;
+    right: -70px;
+    z-index: 3;
+  }
+  .couple-img img {
+    width: 600px;
+  }
 }
 @media (max-width: 1250px) {
   .couple {
-    width: 1240px;
+    width: 1250px;
   }
   .couple-text {
     padding-top: 60px;
@@ -1685,15 +1726,17 @@ h6 {
   }
   .couple-img {
     padding-left: 40px;
+    right: -30px;
   }
   .couple-img img {
-    width: 500px;
-    height: 300px;
+    width: 600px;
+    height: 400px;
   }
   .arrow-couple img {
     position: absolute;
-    width: 201px;
-    top: -95px;
+    width: 201px !important;
+    height: 25px !important;
+    top: 30px;
   }
   .arrow-couple::after {
     width: 90px;
@@ -1843,6 +1886,122 @@ h6 {
     width: 347px;
   }
 }
+.woman {
+  background: #080808;
+  padding-top: 90px;
+}
+
+.woman-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+}
+
+.woman-img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.woman-img picture img {
+  width: 100%;
+  height: 900px;
+}
+
+.woman-text {
+  margin-top: 70px;
+  background: #0f0f0f;
+  width: 70%;
+  height: 760px;
+}
+
+.woman-title {
+  display: block;
+  width: 490px;
+}
+.woman-title h2 {
+  font-family: "RoundedElegance";
+  font-size: 46px;
+  font-weight: 400;
+  line-height: 48px;
+  text-align: left;
+  color: #f4f4f4;
+  text-transform: uppercase;
+  padding: 70px 60px 0 60px;
+}
+
+.woman-subtitle {
+  margin-top: 43px;
+  width: 470px;
+  display: block;
+}
+.woman-subtitle p {
+  font-family: "Gravity-Book";
+  font-size: 24px;
+  font-weight: 350;
+  line-height: 33.6px;
+  text-align: left;
+  color: #f4f4f4;
+  padding: 43px 60px 0 60px;
+}
+
+.arrow-woman {
+  width: 300px;
+  position: relative;
+  top: -125px;
+  left: 190px;
+  cursor: pointer;
+  z-index: 5;
+  color: #6d0602;
+}
+.arrow-woman img {
+  position: absolute;
+  width: 201px;
+  top: 25px;
+}
+
+.arrow-text {
+  text-transform: uppercase;
+  font-family: "Gravity-Regular";
+  font-size: 22px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.arrow-woman::after {
+  position: absolute;
+  content: "";
+  width: 90px;
+  height: 90px;
+  bottom: -25px;
+  right: 55px;
+  border: 2px solid #f4f4f4;
+  border-radius: 50%;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.arrow-woman:hover::after {
+  display: block;
+  bottom: -48px;
+  right: 57px;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.woman-button {
+  margin-top: 110px;
+  margin-left: 80px;
+  position: relative;
+  z-index: 10;
+}
+
+.woman-arrow__background p::after {
+  background: #0f0f0f !important;
+}
+
 .shooting {
   background: #080808;
   position: relative;
@@ -1858,7 +2017,7 @@ h6 {
 .background {
   background: #0f0f0f;
   width: 64.583vw;
-  height: 1360px;
+  height: 1240px;
   position: absolute;
   top: 0;
   left: 0;

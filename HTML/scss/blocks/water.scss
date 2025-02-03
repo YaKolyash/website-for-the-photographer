@@ -50,7 +50,7 @@
     margin-top: -125px;
 
     font-family: "RoundedElegance";
-    font-size: 140px;
+    font-size: 180px;
     font-weight: 400;
     line-height: 180px;
     text-align: left;
@@ -177,7 +177,7 @@
 
     .rectangle-water {
         top: 80px;
-        height: 640px;
+        height: 560px;
         width: 790px;
     }
 }
@@ -205,16 +205,20 @@
 
     .water-img {
         padding-left: 20px;
+        width: 500px;
+        height: 350px;
 
         & img {
-            width: 400px;
-            height: 250px;
+            width: 500px;
+            height: 350px;
         }
     }
 
     .arrow-water {
         & img {
+            top: 15px;
             width: 201px;
+            height: 30px;
         }
     }
 
@@ -232,12 +236,16 @@
         transition-duration: 0.3s;
     }
 
+    .water-block {
+        margin-top: 50px;
+    }
+
     .photosession {
         font-size: calc(84px + 16 * (100vw / 760));
     }
 
     .rectangle-water {
-        height: 660px;
+        height: 540px;
     }
 }
 
@@ -266,6 +274,14 @@
 
         & p {
             font-size: calc(8px + 16 * (100vw / 980));
+        }
+    }
+    .water-img {
+        padding-left: 10px;
+
+        & img {
+            width: 400px;
+            height: 250px;
         }
     }
     .water-block {
