@@ -443,7 +443,7 @@ h6 {
   }
 }
 .button-block {
-  margin-top: 90px;
+  margin-top: 60px;
   position: relative;
   z-index: 10;
 }
@@ -1897,6 +1897,7 @@ h6 {
   }
 }
 .woman {
+  position: relative;
   background: #080808;
   padding-top: 90px;
 }
@@ -1972,7 +1973,7 @@ h6 {
   top: 25px;
 }
 
-.arrow-text {
+.woman-arrow-text {
   text-transform: uppercase;
   font-family: "Gravity-Regular";
   font-size: 22px;
@@ -2001,6 +2002,13 @@ h6 {
           transition-duration: 0.3s;
 }
 
+.woman-arrow__block {
+  cursor: pointer;
+  position: absolute;
+  left: 649px;
+  bottom: 98px;
+}
+
 .woman-button {
   margin-top: 110px;
   margin-left: 80px;
@@ -2010,6 +2018,27 @@ h6 {
 
 .woman-arrow__background p::after {
   background: #0f0f0f !important;
+}
+
+.woman-arrow__block::after {
+  position: absolute;
+  content: "";
+  width: 90px;
+  height: 90px;
+  bottom: -16px;
+  right: -44px;
+  border: 2px solid #f4f4f4;
+  border-radius: 50%;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.woman-arrow__block:hover::after {
+  display: block;
+  bottom: -30px;
+  right: -38px;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
 }
 
 @media (max-width: 1250px) {
@@ -2038,7 +2067,6 @@ h6 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  display: none;
 }
 
 .arrow-all {
