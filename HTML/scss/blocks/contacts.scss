@@ -119,11 +119,11 @@
     }
 }
 
-@media (max-width: 961px) {
+@media (max-width: 980px) {
     .contackts-img {
         & img {
-            width: 400px;
-            height: 700px;
+            width: 500px;
+            height: 780px;
         }
     }
     .list-item {
@@ -137,11 +137,19 @@
             font-size: 20px;
         }
     }
+    .contackts-content {
+        padding-left: 100px;
+    }
+
     .contacts-list {
         padding-left: 40px;
     }
     .button-block {
         display: block;
+    }
+    .contacts-rectangle {
+        width: 95vw;
+        height: 780px;
     }
 }
 

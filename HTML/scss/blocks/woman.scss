@@ -113,3 +113,26 @@
         width: 1250px;
     }
 }
+
+@media (max-width: 980px) {
+    .woman-950 {
+        width: 600px !important;
+        height: 900px;
+    }
+
+    .woman-title {
+        & h2 {
+            padding: 70px 60px 0 30px !important;
+        }
+    }
+
+    .woman-subtitle {
+        & p {
+            padding: 43px 60px 0 30px;
+        }
+    }
+
+    .woman-button {
+        margin-left: 30px;
+    }
+}

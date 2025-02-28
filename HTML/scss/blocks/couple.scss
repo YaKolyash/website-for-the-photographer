@@ -219,7 +219,6 @@
     }
     .couple-subtitle {
         margin-top: 23px;
-
         & p {
             font-size: calc(8px + 16 * (100vw / 980));
         }
@@ -227,10 +226,11 @@
 
     .couple-img {
         padding-left: 20px;
+        margin: -100px;
 
         & img {
-            width: 400px;
-            height: 250px;
+            width: 600px;
+            height: 450px;
         }
     }
 
@@ -259,7 +259,7 @@
     }
 
     .rectangle-couple {
-        height: 660px;
+        height: 606px;
     }
 }
 

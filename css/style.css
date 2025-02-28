@@ -803,7 +803,7 @@ h6 {
 }
 .author-subtitle div {
   font-family: "Gravity-Book";
-  font-size: 24px;
+  font-size: 32px;
   font-weight: 350;
   line-height: 33.6px;
   text-align: left;
@@ -846,8 +846,8 @@ h6 {
        object-fit: cover;
   }
   .author-photo img {
-    width: 400px;
-    height: 500px;
+    width: 600px;
+    height: 700px;
   }
   .author-text {
     padding-left: 35px;
@@ -1784,10 +1784,11 @@ h6 {
   }
   .couple-img {
     padding-left: 20px;
+    margin: -100px;
   }
   .couple-img img {
-    width: 400px;
-    height: 250px;
+    width: 600px;
+    height: 450px;
   }
   .arrow-couple img {
     width: 201px;
@@ -1809,7 +1810,7 @@ h6 {
     font-size: calc(84px + 2.1052631579vw);
   }
   .rectangle-couple {
-    height: 660px;
+    height: 606px;
   }
 }
 @media (max-width: 701px) {
@@ -2016,6 +2017,146 @@ h6 {
     width: 1250px;
   }
 }
+@media (max-width: 980px) {
+  .woman-950 {
+    width: 600px !important;
+    height: 900px;
+  }
+  .woman-title h2 {
+    padding: 70px 60px 0 30px !important;
+  }
+  .woman-subtitle p {
+    padding: 43px 60px 0 30px;
+  }
+  .woman-button {
+    margin-left: 30px;
+  }
+}
+.arrow {
+  width: 100%;
+  overflow: hidden;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: none;
+}
+
+.arrow-all {
+  width: 1872px;
+  padding: 35px 0 35px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #080808;
+  position: relative;
+  cursor: pointer;
+  z-index: 5;
+  top: -18px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.arrow-all img {
+  width: 228px;
+}
+.arrow-all ::after {
+  position: absolute;
+  top: 10px;
+  right: 648px;
+  content: "";
+  width: 90px;
+  height: 90px;
+  border: 2px solid #f4f4f4;
+  border-radius: 50%;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+.arrow-all :hover::after {
+  bottom: -41px;
+  top: 23px;
+  right: 778px;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.arrow-text {
+  text-transform: uppercase;
+  font-family: "Gravity-Regular";
+  font-size: 22px;
+  font-weight: 400;
+  color: #ffffff;
+  margin-left: -65px;
+}
+
+.arrow-red {
+  width: 100%;
+  position: relative;
+  top: -98px;
+  left: 40px;
+  cursor: pointer;
+  z-index: 5;
+  color: #6d0602;
+}
+.arrow-red img {
+  position: absolute;
+  width: 201 px;
+  top: -170px;
+}
+.arrow-red ::after {
+  position: absolute;
+  content: "";
+  width: 90px;
+  height: 90px;
+  bottom: -20px;
+  right: 453px;
+  border: 2px solid #f4f4f4;
+  border-radius: 50%;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+.arrow-red :hover::after {
+  bottom: -41px;
+  right: 462px;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+@media (max-width: 1210px) {
+  .arrow-block {
+    top: -78px;
+    left: 190px;
+  }
+  .arrow-block ::after {
+    width: 90px;
+    height: 90px;
+    bottom: -20px;
+    right: 90px;
+  }
+  .arrow-block :hover::after {
+    bottom: -29px;
+    right: 113px;
+  }
+}
+@media (max-width: 706px) {
+  .arrow-block {
+    top: -68px;
+    left: 90px;
+  }
+  .arrow-block ::after {
+    width: 50px;
+    height: 50px;
+    bottom: -20px;
+    right: 110px;
+  }
+  .arrow-block :hover::after {
+    bottom: -29px;
+    right: 113px;
+  }
+}
 .shooting {
   background: #080808;
   position: relative;
@@ -2208,11 +2349,11 @@ h6 {
     top: 230px;
   }
   .shooting-img img {
-    width: 500px;
-    height: 700px;
+    width: 600px;
+    height: 800px;
   }
   .background {
-    width: 700px;
+    width: 900px;
     height: 1000px;
   }
 }
@@ -2831,10 +2972,10 @@ h6 {
     padding-left: 50px;
   }
 }
-@media (max-width: 961px) {
+@media (max-width: 980px) {
   .contackts-img img {
-    width: 400px;
-    height: 700px;
+    width: 500px;
+    height: 780px;
   }
   .list-item {
     display: -webkit-box;
@@ -2847,11 +2988,18 @@ h6 {
   .list-item p {
     font-size: 20px;
   }
+  .contackts-content {
+    padding-left: 100px;
+  }
   .contacts-list {
     padding-left: 40px;
   }
   .button-block {
     display: block;
+  }
+  .contacts-rectangle {
+    width: 95vw;
+    height: 780px;
   }
 }
 @media (max-width: 602px) {
