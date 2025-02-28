@@ -23,7 +23,7 @@
 }
 
 .nav-item:not(:last-child) {
-  margin-right: 3.177vw;
+  margin-right: 61px;
 }
 
 .item-link {
@@ -81,11 +81,15 @@
 // ..................................................................
 
 .header-link {
-  margin-left: 20.802vw;
+  margin-left: 388px;
 }
 .link-icon {
+  // display: flex;
+  // justify-content: flex-end;
 }
 .icon-style {
+  display: flex;
+  justify-content: flex-end;
 }
 .popup {
   display: none;
@@ -93,7 +97,7 @@
 
 @media (max-width: 1250px) {
   .header {
-    width: 1240px;
+    width: 1250px;
   }
 }
 

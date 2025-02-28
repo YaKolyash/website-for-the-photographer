@@ -35,17 +35,17 @@
     }
 }
 .footer-item {
-    margin-right: 3.177vw;
+    margin-right: 61px;
 }
 
 .footer-img:not(:last-child) {
-    margin-left: 13.542vw;
+    margin-left: 210px;
     margin-right: 2.083vw;
 }
 
 @media (max-width: 1250px) {
     .footer {
-        width: 1240px;
+        width: 1250px;
     }
 }
 
@@ -54,8 +54,9 @@
         display: none;
     }
     .icon-mobile {
+        width: 152px;
         display: flex;
-        justify-content: center;
+        margin: 0 auto;
         align-items: center;
         & img {
             margin-right: 15px;

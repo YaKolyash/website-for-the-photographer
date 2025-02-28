@@ -112,7 +112,7 @@ h6 {
 }
 
 .nav-item:not(:last-child) {
-  margin-right: 3.177vw;
+  margin-right: 61px;
 }
 
 .item-link {
@@ -167,7 +167,16 @@ h6 {
 }
 
 .header-link {
-  margin-left: 20.802vw;
+  margin-left: 388px;
+}
+
+.icon-style {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .popup {
@@ -176,7 +185,7 @@ h6 {
 
 @media (max-width: 1250px) {
   .header {
-    width: 1240px;
+    width: 1250px;
   }
 }
 @media (max-width: 795px) {
@@ -808,7 +817,7 @@ h6 {
 
 @media (max-width: 1250px) {
   .author {
-    width: 1240px;
+    width: 1250px;
   }
   .button-block {
     margin-top: 135px;
@@ -940,7 +949,7 @@ h6 {
 
 @media (max-width: 1250px) {
   .excerpt {
-    width: 1240px;
+    width: 1250px;
   }
 }
 @media (max-width: 1145px) {
@@ -1036,7 +1045,7 @@ h6 {
 
 @media (max-width: 1250px) {
   .project-title {
-    width: 1240px;
+    width: 1250px;
   }
 }
 @media (max-width: 561px) {
@@ -1178,7 +1187,7 @@ h6 {
 }
 @media (max-width: 1250px) {
   .water {
-    width: 1240px;
+    width: 1250px;
   }
   .water-text {
     padding-top: 60px;
@@ -2002,6 +2011,11 @@ h6 {
   background: #0f0f0f !important;
 }
 
+@media (max-width: 1250px) {
+  .woman {
+    width: 1250px;
+  }
+}
 .shooting {
   background: #080808;
   position: relative;
@@ -2172,7 +2186,10 @@ h6 {
 }
 @media (max-width: 1250px) {
   .shooting {
-    width: 1240px;
+    width: 1250px;
+  }
+  .shooting-img {
+    right: 100px;
   }
 }
 @media (max-width: 1000px) {
@@ -2291,7 +2308,7 @@ h6 {
 }
 @media (max-width: 1250px) {
   .running-line {
-    width: 1240px;
+    width: 1250px;
   }
 }
 @media (max-width: 800px) {
@@ -2494,7 +2511,7 @@ h6 {
 
 @media (max-width: 1250px) {
   .price {
-    width: 1240px;
+    width: 1250px;
   }
 }
 @media (max-width: 1141px) {
@@ -2720,7 +2737,7 @@ h6 {
 
 .contackts-img {
   position: relative;
-  left: -180px;
+  left: -140px;
   z-index: 2;
 }
 .contackts-img img {
@@ -2792,7 +2809,7 @@ h6 {
 }
 @media (max-width: 1250px) {
   .contacts {
-    width: 1240px;
+    width: 1250px;
   }
   .contacts-title {
     padding-left: 26px;
@@ -2912,17 +2929,17 @@ h6 {
 }
 
 .footer-item {
-  margin-right: 3.177vw;
+  margin-right: 61px;
 }
 
 .footer-img:not(:last-child) {
-  margin-left: 13.542vw;
+  margin-left: 210px;
   margin-right: 2.083vw;
 }
 
 @media (max-width: 1250px) {
   .footer {
-    width: 1240px;
+    width: 1250px;
   }
 }
 @media (max-width: 610px) {
@@ -2930,12 +2947,11 @@ h6 {
     display: none;
   }
   .icon-mobile {
+    width: 152px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    margin: 0 auto;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
