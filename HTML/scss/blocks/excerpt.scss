@@ -70,6 +70,10 @@
 }
 
 @media (max-width: 916px) {
+    .excerpt {
+        padding-top: 80px;
+    }
+
     .excerpt-text {
         & p {
             padding-top: 0;
