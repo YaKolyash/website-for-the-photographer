@@ -1,7 +1,7 @@
 .woman {
     position: relative;
     background: $background-block;
-    padding-top: 90px;
+    padding-top: 200px;
 }
 .woman-wrapper {
     display: flex;
@@ -99,7 +99,7 @@
 .woman-arrow__block {
     cursor: pointer;
     position: absolute;
-    left: 649px;
+    margin-left: 228px;
     bottom: 98px;
 }
 
@@ -135,9 +135,9 @@
     transition-duration: 0.3s;
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1263px) {
     .woman {
-        width: 1250px;
+        width: 1263px;
     }
 }
 

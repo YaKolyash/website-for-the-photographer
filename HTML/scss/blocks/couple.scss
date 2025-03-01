@@ -20,6 +20,7 @@
 .couple-title {
     position: relative;
     z-index: 1;
+    width: 540px;
     & h2 {
         font-family: "RoundedElegance";
         font-size: 46px;
@@ -62,11 +63,12 @@
     object-fit: cover;
     position: relative;
     top: 250px;
-    right: -70px;
+    right: 85px;
     z-index: 3;
 
     & img {
-        width: 700px;
+        width: 880px;
+        height: 600px;
     }
 }
 
@@ -81,8 +83,8 @@
 
     & img {
         position: absolute;
-        width: 201px;
-        top: 25px;
+        width: 201px !important;
+        top: -267px;
     }
 }
 
@@ -118,6 +120,36 @@
     position: relative;
     z-index: 10;
 }
+@media (max-width: 1611px) {
+    .couple-img {
+        & img {
+            width: 800px;
+            height: 500px;
+        }
+    }
+
+    .arrow-couple {
+        & img {
+            height: 600px;
+        }
+    }
+}
+
+@media (max-width: 1443px) {
+    .couple-img {
+        & img {
+            width: 700px;
+            height: 500px;
+        }
+    }
+
+    .arrow-couple {
+        & img {
+            height: 600px;
+        }
+    }
+}
+
 @media (max-width: 1350px) {
     .photosession {
         font-size: calc(82px + 16 * (100vw / 760));
@@ -133,18 +165,25 @@
         object-fit: cover;
         position: relative;
         top: 250px;
-        right: -70px;
+        right: 70px;
         z-index: 3;
 
         & img {
             width: 600px;
+            height: 420px;
+        }
+    }
+
+    .arrow-couple {
+        & img {
+            height: 600px;
         }
     }
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1263px) {
     .couple {
-        width: 1250px;
+        width: 1263px;
     }
 
     .couple-text {

@@ -1,121 +1,120 @@
-.arrow {
-    width: 100%;
-    overflow: hidden;
-    justify-content: center;
-}
-.arrow-all {
-    width: 1872px;
-    padding: 35px 0 35px 0;
-    display: flex;
-    align-items: center;
-    background: $background-block;
-    position: relative;
-    cursor: pointer;
-    z-index: 5;
-    top: -18px;
-    flex-direction: column;
+// .arrow {
+//     width: 100%;
+//     overflow: hidden;
+//     justify-content: center;
+// }
+// .arrow-all {
+//     width: 1872px;
+//     padding: 35px 0 35px 0;
+//     display: flex;
+//     align-items: center;
+//     background: $background-block;
+//     position: relative;
+//     cursor: pointer;
+//     z-index: 5;
+//     top: -18px;
+//     flex-direction: column;
 
-    & img {
-        width: 228px;
-    }
+//     & img {
+//         width: 228px;
+//     }
 
-    & ::after {
-        position: absolute;
-        top: 10px;
-        right: 648px;
-        content: "";
-        width: 90px;
-        height: 90px;
-        border: 2px solid $smoke-white;
-        border-radius: 50%;
-        transition-duration: 0.3s;
-    }
+//     & ::after {
+//         position: absolute;
+//         top: 10px;
+//         right: 648px;
+//         content: "";
+//         width: 90px;
+//         height: 90px;
+//         border: 2px solid $smoke-white;
+//         border-radius: 50%;
+//         transition-duration: 0.3s;
+//     }
 
-    & :hover::after {
-        bottom: -41px;
-        top: 23px;
-        right: 778px;
-        transition-duration: 0.3s;
-    }
-}
+//     & :hover::after {
+//         bottom: -41px;
+//         top: 23px;
+//         right: 778px;
+//         transition-duration: 0.3s;
+//     }
+// }
 
-.arrow-text {
-    text-transform: uppercase;
-    font-family: "Gravity-Regular";
-    font-size: 22px;
-    font-weight: 400;
-    color: $white;
-    margin-left: -65px;
-}
+// .arrow-text {
+//     text-transform: uppercase;
+//     font-family: "Gravity-Regular";
+//     font-size: 22px;
+//     font-weight: 400;
+//     color: $white;
+// }
 
-.arrow-red {
-    width: 100%;
-    position: relative;
-    top: -98px;
-    left: 40px;
-    cursor: pointer;
-    z-index: 5;
-    color: #6d0602;
+// .arrow-red {
+//     width: 100%;
+//     position: relative;
+//     top: -98px;
+//     left: 40px;
+//     cursor: pointer;
+//     z-index: 5;
+//     color: #6d0602;
 
-    & img {
-        position: absolute;
-        width: 201 px;
-        top: -170px;
-    }
+//     & img {
+//         position: absolute;
+//         width: 201 px;
+//         top: -170px;
+//     }
 
-    & ::after {
-        position: absolute;
-        content: "";
-        width: 90px;
-        height: 90px;
-        bottom: -20px;
-        right: 453px;
-        border: 2px solid #f4f4f4;
-        border-radius: 50%;
-        transition-duration: 0.3s;
-    }
+//     & ::after {
+//         position: absolute;
+//         content: "";
+//         width: 90px;
+//         height: 90px;
+//         bottom: -20px;
+//         right: 453px;
+//         border: 2px solid #f4f4f4;
+//         border-radius: 50%;
+//         transition-duration: 0.3s;
+//     }
 
-    & :hover::after {
-        bottom: -41px;
-        right: 462px;
-        transition-duration: 0.3s;
-    }
-}
+//     & :hover::after {
+//         bottom: -41px;
+//         right: 462px;
+//         transition-duration: 0.3s;
+//     }
+// }
 
-@media (max-width: 1210px) {
-    .arrow-block {
-        top: -78px;
-        left: 190px;
+// @media (max-width: 1210px) {
+//     .arrow-block {
+//         top: -78px;
+//         left: 190px;
 
-        & ::after {
-            width: 90px;
-            height: 90px;
-            bottom: -20px;
-            right: 90px;
-        }
+//         & ::after {
+//             width: 90px;
+//             height: 90px;
+//             bottom: -20px;
+//             right: 90px;
+//         }
 
-        & :hover::after {
-            bottom: -29px;
-            right: 113px;
-        }
-    }
-}
+//         & :hover::after {
+//             bottom: -29px;
+//             right: 113px;
+//         }
+//     }
+// }
 
-@media (max-width: 706px) {
-    .arrow-block {
-        top: -68px;
-        left: 90px;
+// @media (max-width: 706px) {
+//     .arrow-block {
+//         top: -68px;
+//         left: 90px;
 
-        & ::after {
-            width: 50px;
-            height: 50px;
-            bottom: -20px;
-            right: 110px;
-        }
+//         & ::after {
+//             width: 50px;
+//             height: 50px;
+//             bottom: -20px;
+//             right: 110px;
+//         }
 
-        & :hover::after {
-            bottom: -29px;
-            right: 113px;
-        }
-    }
-}
+//         & :hover::after {
+//             bottom: -29px;
+//             right: 113px;
+//         }
+//     }
+// }

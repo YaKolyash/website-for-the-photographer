@@ -122,9 +122,9 @@
     }
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1263px) {
     .water {
-        width: 1250px;
+        width: 1263px;
     }
 
     .water-text {
@@ -150,6 +150,16 @@
         & img {
             width: 500px;
             height: 300px;
+        }
+    }
+    .water-img {
+        padding-left: 40px;
+        object-fit: cover;
+        position: relative;
+        z-index: 1;
+
+        & img {
+            width: 700px;
         }
     }
 
