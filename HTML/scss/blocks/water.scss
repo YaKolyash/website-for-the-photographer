@@ -259,9 +259,9 @@
     }
 }
 
-@media (max-width: 707px) {
+@media (max-width: 708px) {
     .water-wrapper {
-        display: flex;
+        display: flex !important;
         justify-content: center;
         padding: 0;
     }
@@ -275,11 +275,13 @@
         & h2 {
             font-size: calc(6px + 16 * (100vw / 570));
             line-height: 30px;
+            padding-left: 0 !important;
         }
     }
 
     .water-subtitle {
-        display: block;
+        width: 400px;
+        display: block !important;
         margin-top: 23px;
 
         & p {
@@ -300,9 +302,26 @@
     .photosession {
         display: none;
     }
-    .rectangle-water {
-        display: none;
+
+    .arrow-water {
+        & img {
+            width: 201px;
+            height: 30px;
+        }
     }
+
+    .arrow-water::after {
+        bottom: -45px;
+        right: 60px;
+    }
+
+    .arrow-water::after:hover {
+        bottom: -45px;
+        right: 60px;
+    }
+    // .rectangle-water {
+    //     display: none;
+    // }
 }
 
 @media (max-width: 520px) {

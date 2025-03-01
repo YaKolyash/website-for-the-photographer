@@ -1299,11 +1299,11 @@ h6 {
     height: 540px;
   }
 }
-@media (max-width: 707px) {
+@media (max-width: 708px) {
   .water-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1319,9 +1319,11 @@ h6 {
   .water-title h2 {
     font-size: calc(6px + 2.8070175439vw);
     line-height: 30px;
+    padding-left: 0 !important;
   }
   .water-subtitle {
-    display: block;
+    width: 400px;
+    display: block !important;
     margin-top: 23px;
   }
   .water-subtitle p {
@@ -1340,8 +1342,17 @@ h6 {
   .photosession {
     display: none;
   }
-  .rectangle-water {
-    display: none;
+  .arrow-water img {
+    width: 201px;
+    height: 30px;
+  }
+  .arrow-water::after {
+    bottom: -45px;
+    right: 60px;
+  }
+  .arrow-water::after:hover {
+    bottom: -45px;
+    right: 60px;
   }
 }
 @media (max-width: 520px) {
@@ -1505,7 +1516,7 @@ h6 {
     margin-left: 60px;
   }
 }
-@media (max-width: 706px) {
+@media (max-width: 708px) {
   .studio {
     width: 1242px;
   }
@@ -1850,7 +1861,7 @@ h6 {
     height: 606px;
   }
 }
-@media (max-width: 701px) {
+@media (max-width: 708px) {
   .water-wrapper {
     display: block;
   }
