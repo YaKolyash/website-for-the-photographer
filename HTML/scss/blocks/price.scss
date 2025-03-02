@@ -215,6 +215,18 @@
     }
 }
 
+@media (max-width: 708px) {
+    .price-arrow::after {
+        bottom: -44px;
+        right: -30px;
+    }
+
+    .price-arrow::after:hover {
+        bottom: -44px;
+        right: -30px;
+    }
+}
+
 @media (max-width: 601px) {
     .price-title {
         & p {

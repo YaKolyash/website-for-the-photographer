@@ -187,6 +187,28 @@
         right: 0;
         top: 280px;
     }
+
+    .author-button {
+        padding-top: 20px;
+        margin-left: 0;
+    }
+    button {
+        & p {
+            font-size: 16px !important;
+        }
+    }
+
+    .button::after {
+        width: 100px;
+        height: 100px;
+        top: 53px;
+        left: 6px;
+    }
+
+    .button::after:hover {
+        top: 53px !important;
+        left: 6px !important;
+    }
 }
 
 @media (max-width: 560px) {
