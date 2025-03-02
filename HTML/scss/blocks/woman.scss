@@ -167,6 +167,7 @@
 @media (max-width: 708px) {
     .woman-text {
         background: 0;
+        z-index: 2;
     }
 
     .woman-wrapper {
@@ -197,11 +198,15 @@
     .woman-950 {
         width: 556px;
         height: 335px !important;
+        margin-left: 180px;
+        position: relative;
+        z-index: 2;
     }
 
     .woman-arrow__block {
-        margin-left: 330px;
+        margin-left: 510px;
         bottom: 58px;
+        z-index: 2;
     }
 
     .woman-arrow__block::after {

@@ -108,6 +108,14 @@
     }
 }
 
+@media (max-width: 708px) {
+    .excerpt-text {
+        & p {
+            margin: 0 auto;
+        }
+    }
+}
+
 @media (max-width: 562px) {
     .excerpt {
         width: 680px;

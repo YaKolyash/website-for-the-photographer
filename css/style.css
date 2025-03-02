@@ -887,6 +887,21 @@ h6 {
     height: 620px;
   }
 }
+@media (max-width: 708px) {
+  .author-photo {
+    margin-left: 100px;
+  }
+  .author-photo img {
+    width: 300px;
+    height: 360px;
+  }
+  .author-rectangle {
+    width: 980px;
+    height: 490px;
+    right: 0;
+    top: 280px;
+  }
+}
 @media (max-width: 560px) {
   .author {
     width: 543px;
@@ -1006,6 +1021,11 @@ h6 {
     width: 22px;
     height: 22px;
     margin: 65px 0 0 27px;
+  }
+}
+@media (max-width: 708px) {
+  .excerpt-text p {
+    margin: 0 auto;
   }
 }
 @media (max-width: 562px) {
@@ -1359,7 +1379,11 @@ h6 {
     right: 60px;
   }
   .rectangle-water {
-    display: none;
+    width: 1110px;
+    height: 1890px;
+    top: 0;
+    left: 93px;
+    z-index: 1;
   }
 }
 @media (max-width: 520px) {
@@ -1540,8 +1564,10 @@ h6 {
     height: 335px;
   }
   .studio-img-708 {
+    z-index: 2;
+    position: relative;
     padding-left: 20px;
-    width: 556px;
+    width: 556px !important;
     height: 335px !important;
   }
   .studio-text {
@@ -1549,6 +1575,7 @@ h6 {
     width: 430px;
     height: 205px;
     background: 0;
+    z-index: 2;
   }
   .studio-title {
     width: 190px;
@@ -1575,6 +1602,10 @@ h6 {
     left: 260px;
   }
   .arrow-studio::after {
+    bottom: -47px;
+    right: 60px;
+  }
+  .arrow-studio::after:hover {
     bottom: -47px;
     right: 60px;
   }
@@ -1907,9 +1938,18 @@ h6 {
     font-size: calc(12px + 1.6326530612vw);
     line-height: 40px;
   }
+  .arrow-couple::after {
+    right: 60px;
+    bottom: -57px;
+  }
+  .arrow-couple::after:hover {
+    right: 60px;
+    bottom: -57px;
+  }
   .couple-img {
     margin-left: 86px;
     margin-top: -74px;
+    height: 335px;
   }
   .couple-img img {
     width: 556px;
@@ -2107,6 +2147,7 @@ h6 {
 @media (max-width: 708px) {
   .woman-text {
     background: 0;
+    z-index: 2;
   }
   .woman-wrapper {
     height: 340px;
@@ -2131,10 +2172,14 @@ h6 {
   .woman-950 {
     width: 556px;
     height: 335px !important;
+    margin-left: 180px;
+    position: relative;
+    z-index: 2;
   }
   .woman-arrow__block {
-    margin-left: 330px;
+    margin-left: 510px;
     bottom: 58px;
+    z-index: 2;
   }
   .woman-arrow__block::after {
     bottom: -31px;

@@ -165,8 +165,10 @@
     }
 
     .studio-img-708 {
+        z-index: 2;
+        position: relative;
         padding-left: 20px;
-        width: 556px;
+        width: 556px !important;
         height: 335px !important;
     }
 
@@ -175,6 +177,7 @@
         width: 430px;
         height: 205px;
         background: 0;
+        z-index: 2;
     }
 
     .studio-title {
@@ -211,7 +214,9 @@
         right: 60px;
     }
 
-    .studio-arrow__block {
+    .arrow-studio::after:hover {
+        bottom: -47px;
+        right: 60px;
     }
 }
 

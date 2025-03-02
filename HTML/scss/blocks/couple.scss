@@ -329,9 +329,20 @@
         }
     }
 
+    .arrow-couple::after {
+        right: 60px;
+        bottom: -57px;
+    }
+
+    .arrow-couple::after:hover {
+        right: 60px;
+        bottom: -57px;
+    }
+
     .couple-img {
         margin-left: 86px;
         margin-top: -74px;
+        height: 335px;
 
         & img {
             width: 556px;
