@@ -2391,6 +2391,22 @@ h6 {
     margin-top: 100px;
   }
 }
+@media (max-width: 708px) {
+  .shooting-wrapper {
+    padding-top: 40px;
+  }
+  .shooting-title__open {
+    padding-top: 150px;
+    margin: 0 auto;
+    width: 1150px;
+  }
+  .shooting-title__open p {
+    font-size: calc(58px + 5.5084745763vw);
+  }
+  .shooting-img {
+    top: 320px;
+  }
+}
 @media (max-width: 590px) {
   .shooting {
     width: 500px;

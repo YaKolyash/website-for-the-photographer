@@ -220,6 +220,24 @@
     }
 }
 
+@media (max-width: 708px) {
+    .shooting-wrapper {
+        padding-top: 40px;
+    }
+    .shooting-title__open {
+        padding-top: 150px;
+        margin: 0 auto;
+        width: 1150px;
+
+        & p {
+            font-size: calc(58px + 26 * (150vw / 708));
+        }
+    }
+    .shooting-img {
+        top: 320px;
+    }
+}
+
 @media (max-width: 590px) {
     .shooting {
         width: 500px;
