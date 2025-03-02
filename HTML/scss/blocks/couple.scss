@@ -305,30 +305,47 @@
     .water-wrapper {
         display: block;
     }
-    .water-text {
-        padding-top: 0;
+    .couple-text {
+        margin-left: 70px;
     }
-    .water-title {
+    .couple-title {
         width: 350px;
         padding-bottom: 10px;
 
         & h2 {
-            font-size: calc(6px + 16 * (100vw / 570));
-            line-height: 30px;
-            padding-left: 20px;
+            font-size: calc(8px + 16 * (100vw / 570));
+            line-height: 40px;
+            padding-left: 0 !important;
         }
     }
-    .water-subtitle {
+    .couple-subtitle {
+        width: 400px;
+        display: block !important;
+        margin-top: 23px;
+
+        & p {
+            font-size: calc(12px + 16 * (100vw / 980));
+            line-height: 40px;
+        }
+    }
+
+    .couple-img {
+        margin-left: 86px;
+        margin-top: -74px;
+
+        & img {
+            width: 556px;
+            height: 335px;
+        }
+    }
+    .rectangle-couple {
+        display: none;
+    }
+    .passion {
         display: none;
     }
     .button-block {
-        display: none;
-    }
-    .photosession {
-        display: none;
-    }
-    .rectangle-water {
-        display: none;
+        display: none !important;
     }
 }
 
@@ -346,54 +363,6 @@
     }
 
     .water-img {
-        & img {
-            width: 347px;
-        }
-    }
-}
-
-@media (max-width: 700px) {
-    .couple-wrapper {
-        display: block;
-    }
-    .couple-text {
-        padding-top: 0;
-    }
-    .couple-title {
-        width: 350px;
-        padding-bottom: 10px;
-
-        & h2 {
-            font-size: calc(6px + 16 * (100vw / 570));
-            line-height: 30px;
-            padding-left: 20px;
-        }
-    }
-    .couple-subtitle {
-        display: none;
-    }
-    .button-block {
-        display: none;
-    }
-    .photosession {
-        display: none;
-    }
-}
-
-@media (max-width: 520px) {
-    .couple {
-        width: 520px;
-    }
-
-    .couple-wrapper {
-        padding: 0;
-    }
-
-    .couple-title {
-        width: 270px;
-    }
-
-    .couple-img {
         & img {
             width: 347px;
         }

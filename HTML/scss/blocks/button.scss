@@ -54,7 +54,11 @@
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 708px) {
+    .nutton-block {
+        display: none !important;
+    }
+
     .button {
         & p::after {
             top: -54px;
