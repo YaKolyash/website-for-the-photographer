@@ -43,10 +43,21 @@
 @media (max-width: 1263px) {
     .excerpt {
         width: 1263px;
+        padding-bottom: 90px;
+    }
+
+    .excerpt-text {
+        & p {
+            padding-top: 60px;
+        }
     }
 }
 
 @media (max-width: 1145px) {
+    .excerpt {
+        padding-bottom: 70px;
+    }
+
     .excerpt-text {
         width: 860px;
 
@@ -57,7 +68,7 @@
 
         & p {
             width: 817px;
-            padding-top: 200px;
+            padding-top: 140px;
             font-size: 28px;
             line-height: 40px;
         }
@@ -70,10 +81,6 @@
 }
 
 @media (max-width: 916px) {
-    .excerpt {
-        padding-top: 150px;
-    }
-
     .excerpt-text {
         & p {
             padding-top: 0;
