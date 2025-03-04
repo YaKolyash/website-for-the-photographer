@@ -171,21 +171,10 @@
         margin-top: -135px;
     }
 
-    .contackts-img {
-        margin-left: 250px;
-        display: none;
-        & img {
-            width: 300px;
-            height: 600px;
-        }
-    }
     .contackts-img-708 {
-        margin-left: 250px;
-        display: block;
-        & img {
-            width: 300px;
-            height: 600px;
-        }
+        margin-left: 160px;
+        width: 300px !important;
+        height: 400px !important;
     }
     .contackts-content {
         padding-top: 20px;
@@ -201,6 +190,10 @@
             font-size: 16px;
         }
     }
+
+    .list-item:not(:first-child) {
+        padding-top: 20px;
+    }
     .contacts-list {
         padding-top: 75px;
         padding-left: 0;
@@ -210,10 +203,11 @@
     }
     .margin {
         padding-left: 10px;
-        padding-top: 60px;
+        margin: 0;
     }
 
     .contacts-rectangle {
+        width: 880px;
         height: 552px;
     }
 }

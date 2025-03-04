@@ -492,26 +492,6 @@ h6 {
           transition-duration: 0.3s;
 }
 
-@media (max-width: 1250px) {
-  .button-block {
-    margin-top: 70px;
-    padding-left: 20px;
-  }
-}
-@media (max-width: 708px) {
-  .nutton-block {
-    display: none !important;
-  }
-  .button p::after {
-    top: -54px;
-    left: -24px;
-  }
-}
-@media (max-width: 603px) {
-  .button p::after {
-    background: #080808 !important;
-  }
-}
 .order__item {
   cursor: pointer;
   width: 160px;
@@ -818,12 +798,57 @@ h6 {
   margin-left: 20px;
 }
 
+.author-button-block {
+  cursor: pointer;
+  position: relative;
+  width: 110px;
+  height: 160px;
+  border: none;
+  background: inherit;
+  padding-top: 50px;
+}
+.author-button-block p {
+  text-transform: uppercase;
+  font-family: "Gravity-Regular";
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 30.8px;
+  text-align: center;
+  color: #f4f4f4;
+  position: sticky;
+  z-index: 1;
+}
+
+.author-button-block::after {
+  background: #0f0f0f;
+  cursor: pointer;
+  position: absolute;
+  top: 0px;
+  left: -18px;
+  content: "";
+  width: 160px;
+  height: 160px;
+  border: 2px solid #f4f4f4;
+  border-radius: 50%;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  z-index: -2;
+}
+
+.author-button-block:hover::after {
+  top: 18px;
+  left: -26px;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
 @media (max-width: 1263px) {
   .author {
     width: 1263px;
   }
-  .button-block {
-    margin-top: 135px;
+  .author-button {
+    margin-top: 80px;
+    margin-left: 20px;
   }
 }
 @media (max-width: 1226px) {
@@ -856,7 +881,7 @@ h6 {
     padding-left: 35px;
   }
   .author-name {
-    margin-top: 10px;
+    margin-top: 80px;
   }
   .author-name div {
     font-size: 26px;
@@ -869,12 +894,12 @@ h6 {
     font-size: calc(16px + 8.4 * (100vw - 320px) / 1200);
     line-height: 25px;
   }
-  .button-block {
-    margin-top: 110px;
+  .author-button {
+    margin-top: 130px;
   }
   .author-rectangle {
     width: 950px;
-    height: 640px;
+    height: 840px;
   }
 }
 @media (max-width: 920px) {
@@ -882,9 +907,16 @@ h6 {
     height: 1060px;
     padding-top: 128px;
   }
+  .author-subtitle div {
+    font-size: calc(20px + 10 * (100vw - 320px) / 1200);
+    line-height: 30px;
+  }
   .author-rectangle {
     width: 900px;
-    height: 620px;
+    height: 760px;
+  }
+  .author-button {
+    margin-top: 80px;
   }
 }
 @media (max-width: 708px) {
@@ -898,6 +930,12 @@ h6 {
     width: 300px;
     height: 360px;
   }
+  .author-name {
+    margin-top: 0;
+  }
+  .author-subtitle div {
+    font-size: calc(12px + 10 * (100vw - 320px) / 708);
+  }
   .author-rectangle {
     width: 980px;
     height: 490px;
@@ -905,19 +943,15 @@ h6 {
     top: 280px;
   }
   .author-button {
-    margin-top: 0;
+    margin-top: -33px;
     margin-left: 0;
   }
-  button p {
-    font-size: 16px !important;
+  .author-button-block p {
+    font-size: 16px;
   }
-  .button::after {
+  .author-button-block::after {
     width: 100px;
     height: 100px;
-    top: 53px;
-    left: 6px;
-  }
-  .button::after:hover {
     top: 53px !important;
     left: 6px !important;
   }
@@ -1012,7 +1046,7 @@ h6 {
 }
 @media (max-width: 916px) {
   .excerpt {
-    padding-top: 80px;
+    padding-top: 150px;
   }
   .excerpt-text p {
     padding-top: 0;
@@ -1221,7 +1255,7 @@ h6 {
           transition-duration: 0.3s;
 }
 
-.water-block {
+.water-button {
   margin-top: 90px;
   position: relative;
   z-index: 10;
@@ -3120,21 +3154,10 @@ h6 {
     margin-left: -190px;
     margin-top: -135px;
   }
-  .contackts-img {
-    margin-left: 250px;
-    display: none;
-  }
-  .contackts-img img {
-    width: 300px;
-    height: 600px;
-  }
   .contackts-img-708 {
-    margin-left: 250px;
-    display: block;
-  }
-  .contackts-img-708 img {
-    width: 300px;
-    height: 600px;
+    margin-left: 160px;
+    width: 300px !important;
+    height: 400px !important;
   }
   .contackts-content {
     padding-top: 20px;
@@ -3150,6 +3173,9 @@ h6 {
   .list-item p {
     font-size: 16px;
   }
+  .list-item:not(:first-child) {
+    padding-top: 20px;
+  }
   .contacts-list {
     padding-top: 75px;
     padding-left: 0;
@@ -3159,9 +3185,10 @@ h6 {
   }
   .margin {
     padding-left: 10px;
-    padding-top: 60px;
+    margin: 0;
   }
   .contacts-rectangle {
+    width: 880px;
     height: 552px;
   }
 }

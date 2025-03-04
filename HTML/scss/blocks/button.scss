@@ -47,34 +47,6 @@
     transition-duration: 0.3s;
 }
 
-@media (max-width: 1250px) {
-    .button-block {
-        margin-top: 70px;
-        padding-left: 20px;
-    }
-}
-
-@media (max-width: 708px) {
-    .nutton-block {
-        display: none !important;
-    }
-
-    .button {
-        & p::after {
-            top: -54px;
-            left: -24px;
-        }
-    }
-}
-
-@media (max-width: 603px) {
-    .button {
-        & p::after {
-            background: $background-block !important;
-        }
-    }
-}
-
 // ======================
 .order__item {
     cursor: pointer;

@@ -144,11 +144,9 @@
         </div>
 
         <div class="author-button">
-          <div class="author-button-block">
-            <button class="button">
-              <p>Заказать съемку</p>
-            </button>
-          </div>
+          <button class="author-button-block">
+            <p>Заказать съемку</p>
+          </button>
         </div>
       </div>
     </div>
@@ -180,8 +178,8 @@
             необычные образы
           </p>
         </div>
-        <div class="water-block">
-          <button class="button">
+        <div class="water-button">
+          <button class="water-button-block">
             <p>Заказать съемку</p>
           </button>
         </div>
@@ -586,14 +584,26 @@
   <div class="container">
     <div class="contacts-wrapper">
       <div class="contackts-img">
-        <img src="../img/worth.png" alt="" />
+        <!-- <img src="../img/worth.png" alt="" /> -->
 
         <picture>
           <source
-            class="contackts-img-708"
+            media="(min-width: 708px)"
+            sizes="50vw"
+            srcset="../img/worth.png"
+            type=""
+          />
+          <source
             sizes="(min-width: 708px)"
             srcset="../img/worth-708.png"
             type=""
+          />
+          <img
+            class="contackts-img-708"
+            src="../img/worth-708.png"
+            alt=""
+            sizes="(min-width: 708px)"
+            srcset="../img/worth-708.png"
           />
         </picture>
       </div>
