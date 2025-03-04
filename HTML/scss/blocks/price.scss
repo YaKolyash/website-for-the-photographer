@@ -203,7 +203,7 @@
 
     .description-article {
         & p {
-            font-size: calc(4px + 16 * (100vw / 760));
+            font-size: 25px;
         }
     }
 
@@ -224,6 +224,10 @@
     .price-arrow::after:hover {
         bottom: -44px;
         right: -30px;
+    }
+
+    .price-item {
+        height: 920px;
     }
 }
 

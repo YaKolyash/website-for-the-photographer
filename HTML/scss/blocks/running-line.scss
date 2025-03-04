@@ -50,6 +50,20 @@
     .running-line {
         width: 1263px;
     }
+
+    .running-wrapper {
+        padding-top: 70px;
+        background: $background-block;
+        width: 1263px;
+    }
+}
+
+@media (max-width: 990px) {
+    .running-wrapper {
+        padding-top: 150px;
+        background: $background-block;
+        width: 1263px;
+    }
 }
 
 @media (max-width: 800px) {

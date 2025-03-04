@@ -72,7 +72,7 @@
 
     & div {
         font-family: "Gravity-Book";
-        font-size: 32px;
+        font-size: 24px;
         font-weight: 350;
         line-height: 33.6px;
         text-align: left;
@@ -81,7 +81,7 @@
 }
 
 .author-button {
-    margin-top: -20px !important;
+    margin-top: 64px;
     margin-left: 20px;
 }
 
@@ -172,6 +172,10 @@
 }
 
 @media (max-width: 708px) {
+    .author {
+        height: 770px;
+    }
+
     .author-photo {
         margin-left: 100px;
 
@@ -189,7 +193,7 @@
     }
 
     .author-button {
-        padding-top: 20px;
+        margin-top: 0;
         margin-left: 0;
     }
     button {

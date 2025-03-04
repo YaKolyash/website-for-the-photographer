@@ -84,7 +84,8 @@
     & img {
         position: absolute;
         width: 201px !important;
-        top: -267px;
+        height: 20px !important;
+        top: 20px;
     }
 }
 
@@ -110,8 +111,8 @@
 
 .arrow-couple:hover::after {
     display: block;
-    bottom: -48px;
-    right: 57px;
+    bottom: -46px;
+    right: 59px;
     transition-duration: 0.3s;
 }
 
@@ -281,14 +282,14 @@
     .arrow-couple::after {
         width: 90px;
         height: 90px;
-        bottom: -27px;
-        right: 45px;
+        bottom: -38px;
+        right: 50px;
     }
 
     .arrow-couple:hover::after {
         display: block;
-        bottom: -44px;
-        right: 60px;
+        bottom: -56px;
+        right: 59px;
         transition-duration: 0.3s;
     }
 
