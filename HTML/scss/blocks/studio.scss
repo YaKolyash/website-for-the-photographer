@@ -1,6 +1,6 @@
 .studio {
     background: $background-block;
-    padding-top: 90px;
+    padding-top: 100px;
 }
 .studio-wrapper {
     display: flex;
@@ -16,10 +16,10 @@
     }
 }
 .studio-text {
-    margin-top: 70px;
+    margin-top: 56px;
     background: #0f0f0f;
     width: 70%;
-    height: 760px;
+    height: 790px;
 }
 .studio-title {
     display: block;
@@ -96,7 +96,7 @@
 }
 
 .studio-button {
-    margin-top: 70px;
+    margin-top: 85px;
     margin-left: 80px;
     position: relative;
     z-index: 10;
@@ -179,7 +179,7 @@
         margin-top: 20px;
 
         & p {
-            font-size: calc(8px + 16 * (100vw / 1210));
+            font-size: calc(7px + 16 * (100vw / 1210));
             padding: 5px 60px 0 60px;
         }
     }
@@ -192,7 +192,7 @@
 
 @media (max-width: 980px) {
     .studio-button {
-        margin-top: 40px;
+        margin-top: 45px;
     }
 }
 

@@ -442,56 +442,6 @@ h6 {
     font-size: calc(8px + 2.2857142857vw);
   }
 }
-.button-block {
-  margin-top: 60px;
-  position: relative;
-  z-index: 10;
-}
-
-.button {
-  cursor: pointer;
-  position: relative;
-  width: 110px;
-  height: 160px;
-  border: none;
-  background: inherit;
-  padding-top: 50px;
-}
-.button p {
-  text-transform: uppercase;
-  font-family: "Gravity-Regular";
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 30.8px;
-  text-align: center;
-  color: #f4f4f4;
-  position: sticky;
-  z-index: 1;
-}
-
-.button::after {
-  background: #0f0f0f;
-  cursor: pointer;
-  position: absolute;
-  top: 0px;
-  left: -18px;
-  content: "";
-  width: 160px;
-  height: 160px;
-  border: 2px solid #f4f4f4;
-  border-radius: 50%;
-  -webkit-transition-duration: 0.3s;
-          transition-duration: 0.3s;
-  z-index: -2;
-}
-
-.button:hover::after {
-  top: 18px;
-  left: -26px;
-  -webkit-transition-duration: 0.3s;
-          transition-duration: 0.3s;
-}
-
 .order__item {
   cursor: pointer;
   width: 160px;
@@ -1508,7 +1458,7 @@ h6 {
 }
 .studio {
   background: #080808;
-  padding-top: 90px;
+  padding-top: 100px;
 }
 
 .studio-wrapper {
@@ -1531,10 +1481,10 @@ h6 {
 }
 
 .studio-text {
-  margin-top: 70px;
+  margin-top: 56px;
   background: #0f0f0f;
   width: 70%;
-  height: 760px;
+  height: 790px;
 }
 
 .studio-title {
@@ -1612,7 +1562,7 @@ h6 {
 }
 
 .studio-button {
-  margin-top: 70px;
+  margin-top: 85px;
   margin-left: 80px;
   position: relative;
   z-index: 10;
@@ -1689,7 +1639,7 @@ h6 {
     margin-top: 20px;
   }
   .studio-subtitle p {
-    font-size: calc(8px + 1.3223140496vw);
+    font-size: calc(7px + 1.3223140496vw);
     padding: 5px 60px 0 60px;
   }
   .studio-button {
@@ -1699,7 +1649,7 @@ h6 {
 }
 @media (max-width: 980px) {
   .studio-button {
-    margin-top: 40px;
+    margin-top: 45px;
   }
 }
 @media (max-width: 708px) {
@@ -1805,7 +1755,6 @@ h6 {
 .couple {
   background: #080808;
   position: relative;
-  padding-top: 50px;
 }
 
 .couple-wrapper {
@@ -1817,9 +1766,10 @@ h6 {
 .rectangle-couple {
   position: absolute;
   left: 0;
-  top: 130px;
+  top: 57px;
   width: 75vw;
-  height: 710px;
+  height: 780px;
+  z-index: 1;
   background-color: #0f0f0f;
 }
 
@@ -1860,7 +1810,7 @@ h6 {
 .passion {
   position: relative;
   z-index: 1;
-  margin-top: -125px;
+  margin-top: 17px;
   font-family: "RoundedElegance";
   font-size: 180px;
   font-weight: 400;
@@ -1873,7 +1823,7 @@ h6 {
   -o-object-fit: cover;
      object-fit: cover;
   position: relative;
-  top: 250px;
+  top: 301px;
   right: 85px;
   z-index: 3;
 }
@@ -1927,28 +1877,78 @@ h6 {
           transition-duration: 0.3s;
 }
 
-.couple-block {
-  margin-top: 90px;
+.couple-button {
+  margin-top: 60px;
   position: relative;
   z-index: 10;
+}
+
+.couple-button-block {
+  cursor: pointer;
+  position: relative;
+  width: 110px;
+  height: 160px;
+  border: none;
+  background: inherit;
+  padding-top: 50px;
+}
+.couple-button-block p {
+  text-transform: uppercase;
+  font-family: "Gravity-Regular";
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 30.8px;
+  text-align: center;
+  color: #f4f4f4;
+  position: sticky;
+  z-index: 1;
+}
+
+.couple-button-block::after {
+  background: #0f0f0f;
+  cursor: pointer;
+  position: absolute;
+  top: 0px;
+  left: -18px;
+  content: "";
+  width: 160px;
+  height: 160px;
+  border: 2px solid #f4f4f4;
+  border-radius: 50%;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  z-index: -2;
+}
+
+.couple-button-block:hover::after {
+  top: 18px;
+  left: -26px;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
 }
 
 @media (max-width: 1611px) {
   .couple-img img {
     width: 800px;
-    height: 500px;
+    height: 580px;
   }
   .arrow-couple img {
     height: 600px;
   }
 }
 @media (max-width: 1443px) {
+  .rectangle-couple {
+    height: 710px;
+  }
   .couple-img img {
     width: 700px;
     height: 500px;
   }
   .arrow-couple img {
     height: 600px;
+  }
+  .passion {
+    margin-top: -55px;
   }
 }
 @media (max-width: 1350px) {
@@ -1967,11 +1967,20 @@ h6 {
     z-index: 3;
   }
   .couple-img img {
-    width: 600px;
-    height: 420px;
+    width: 700px;
+    height: 460px;
   }
   .arrow-couple img {
     height: 600px;
+  }
+  .rectangle-couple {
+    height: 610px;
+  }
+  .passion {
+    margin-top: -145px;
+  }
+  .couple-button {
+    margin-top: 44px;
   }
 }
 @media (max-width: 1263px) {
@@ -1979,7 +1988,7 @@ h6 {
     width: 1263px;
   }
   .couple-text {
-    padding-top: 60px;
+    padding-top: 125px;
   }
   .couple-title h2 {
     font-size: calc(30px + 1.28vw);
@@ -1991,12 +2000,12 @@ h6 {
     font-size: calc(8px + 1.28vw);
   }
   .couple-img {
-    top: 140px;
+    top: 235px;
     right: 70px;
   }
   .couple-img img {
-    width: 600px;
-    height: 400px;
+    width: 664px;
+    height: 495px;
   }
   .arrow-couple img {
     position: absolute;
@@ -2019,8 +2028,11 @@ h6 {
   }
   .rectangle-couple {
     top: 80px;
-    height: 640px;
+    height: 616px;
     width: 790px;
+  }
+  .couple-button {
+    margin-top: 140px;
   }
 }
 @media (max-width: 981px) {
@@ -2028,7 +2040,7 @@ h6 {
     padding: 0 15px;
   }
   .couple-text {
-    padding-top: 70px;
+    padding-top: 120px;
   }
   .couple-title h2 {
     font-size: calc(30px + 1.6326530612vw);
@@ -2041,10 +2053,11 @@ h6 {
   }
   .couple-img {
     right: 70px;
+    top: 196px;
   }
   .couple-img img {
-    width: 600px;
-    height: 450px;
+    width: 650px;
+    height: 480px;
   }
   .arrow-couple img {
     width: 201px;
@@ -2066,7 +2079,10 @@ h6 {
     font-size: calc(84px + 2.1052631579vw);
   }
   .rectangle-couple {
-    height: 606px;
+    height: 536px;
+  }
+  .couple-button {
+    margin-top: 82px;
   }
 }
 @media (max-width: 708px) {
@@ -2120,6 +2136,9 @@ h6 {
   .button-block {
     display: none !important;
   }
+  .couple-button {
+    display: none;
+  }
 }
 @media (max-width: 520px) {
   .water {
@@ -2138,7 +2157,7 @@ h6 {
 .woman {
   position: relative;
   background: #080808;
-  padding-top: 200px;
+  padding-top: 170px;
 }
 
 .woman-wrapper {
@@ -2249,10 +2268,54 @@ h6 {
 }
 
 .woman-button {
-  margin-top: 110px;
-  margin-left: 80px;
+  margin-top: 90px;
+  margin-left: 90px;
   position: relative;
   z-index: 10;
+}
+
+.woman-button-block {
+  cursor: pointer;
+  position: relative;
+  width: 110px;
+  height: 160px;
+  border: none;
+  background: inherit;
+  padding-top: 50px;
+}
+.woman-button-block p {
+  text-transform: uppercase;
+  font-family: "Gravity-Regular";
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 30.8px;
+  text-align: center;
+  color: #f4f4f4;
+  position: sticky;
+  z-index: 1;
+}
+
+.woman-button-block::after {
+  background: #0f0f0f;
+  cursor: pointer;
+  position: absolute;
+  top: 0px;
+  left: -18px;
+  content: "";
+  width: 160px;
+  height: 160px;
+  border: 2px solid #f4f4f4;
+  border-radius: 50%;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  z-index: -2;
+}
+
+.woman-button-block:hover::after {
+  top: 18px;
+  left: -26px;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
 }
 
 .woman-arrow__background p::after {
@@ -2297,7 +2360,7 @@ h6 {
     padding: 43px 60px 0 30px;
   }
   .woman-button {
-    margin-left: 30px;
+    margin-left: 60px;
   }
   .woman-arrow__block {
     margin-left: 315px;
@@ -2347,6 +2410,9 @@ h6 {
   .woman-arrow__block::after:hover {
     bottom: -31px;
     right: -38px;
+  }
+  .woman-button {
+    display: none;
   }
 }
 .shooting {
@@ -3167,8 +3233,54 @@ h6 {
   padding-top: 40px;
 }
 
-.margin {
-  margin-left: 25px;
+.contacts-button {
+  margin-top: 60px;
+  position: relative;
+  z-index: 10;
+}
+
+.contacts-button-block {
+  cursor: pointer;
+  position: relative;
+  width: 110px;
+  height: 160px;
+  border: none;
+  background: inherit;
+  padding-top: 50px;
+}
+.contacts-button-block p {
+  text-transform: uppercase;
+  font-family: "Gravity-Regular";
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 30.8px;
+  text-align: center;
+  color: #f4f4f4;
+  position: sticky;
+  z-index: 1;
+}
+
+.contacts-button-block::after {
+  background: #0f0f0f;
+  cursor: pointer;
+  position: absolute;
+  top: 0px;
+  left: -18px;
+  content: "";
+  width: 160px;
+  height: 160px;
+  border: 2px solid #f4f4f4;
+  border-radius: 50%;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  z-index: -2;
+}
+
+.contacts-button-block:hover::after {
+  top: 18px;
+  left: -26px;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
 }
 
 @media (max-width: 1331px) {
@@ -3184,6 +3296,9 @@ h6 {
   }
   .contacts-list {
     padding-left: 80px;
+  }
+  .contacts-button {
+    margin-left: 105px;
   }
 }
 @media (max-width: 1263px) {
@@ -3206,8 +3321,8 @@ h6 {
   .contackts-content {
     padding-left: 142px;
   }
-  .margin {
-    margin-top: 80px;
+  .contacts-button {
+    margin-left: 50px;
   }
 }
 @media (max-width: 980px) {
