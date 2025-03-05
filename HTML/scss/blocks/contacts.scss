@@ -249,7 +249,17 @@
     }
     .contacts-button {
         margin-left: 25px;
-        margin-top: 20px;
+        margin-top: 40px;
+    }
+
+    .contacts-button-block {
+        padding-top: 0;
+        & p {
+            font-size: 16px;
+            margin-top: -50px;
+            margin-left: -17px;
+            width: 100px;
+        }
     }
 
     .contacts-button-block::after {
