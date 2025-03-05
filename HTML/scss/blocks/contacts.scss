@@ -247,12 +247,21 @@
         padding-top: 75px;
         padding-left: 0;
     }
-    .button-block {
-        display: block !important;
+    .contacts-button {
+        margin-left: 25px;
+        margin-top: 20px;
     }
-    .margin {
-        padding-left: 10px;
-        margin: 0;
+
+    .contacts-button-block::after {
+        width: 100px;
+        height: 100px;
+        top: 0px;
+        left: -18px;
+    }
+
+    .contacts-button-block:hover::after {
+        top: 18px;
+        left: -26px;
     }
 
     .contacts-rectangle {

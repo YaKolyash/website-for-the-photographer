@@ -442,95 +442,6 @@ h6 {
     font-size: calc(8px + 2.2857142857vw);
   }
 }
-.order__item {
-  cursor: pointer;
-  width: 160px;
-  height: 100px;
-  margin-top: 345px;
-  margin-left: 26px;
-  position: relative;
-  z-index: 2;
-}
-
-.order__btn {
-  position: relative;
-  outline: none;
-  background-color: inherit;
-  color: #ffffff;
-  border-radius: 50%;
-  border: none;
-  cursor: pointer;
-  z-index: 1;
-}
-
-.order__btn2 {
-  position: relative;
-  outline: none;
-  cursor: pointer;
-  background-color: inherit;
-  color: #ffffff;
-  border-radius: 50%;
-  border: none;
-  cursor: pointer;
-  z-index: 2;
-}
-
-.order__btn::after {
-  position: absolute;
-  content: "";
-  top: -74px;
-  left: -21px;
-  width: 160px;
-  height: 160px;
-  border: 2px solid #f4f4f4;
-  background-color: #0f0f0f;
-  border-radius: 50%;
-  -webkit-transition-duration: 0.3s;
-          transition-duration: 0.3s;
-  z-index: 2;
-}
-
-.order__btn2::after {
-  position: absolute;
-  content: "";
-  top: -74px;
-  left: -21px;
-  width: 160px;
-  height: 160px;
-  border: 2px solid red;
-  background-color: #0f0f0f;
-  border-radius: 50%;
-  -webkit-transition-duration: 0.3s;
-          transition-duration: 0.3s;
-  z-index: 2;
-}
-
-.order__btn:hover::after {
-  top: -56px;
-  left: -30px;
-  -webkit-transition-duration: 0.3s;
-          transition-duration: 0.3s;
-  z-index: 2;
-}
-
-.order__btn2:hover::after {
-  top: -56px;
-  left: -30px;
-  -webkit-transition-duration: 0.3s;
-          transition-duration: 0.3s;
-  z-index: 2;
-}
-
-.order__btn-text {
-  width: 114px;
-  position: relative;
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 30px;
-  font-style: normal;
-  z-index: 4;
-}
-
 .swiper {
   width: 600px;
   height: 900px;
@@ -1435,10 +1346,9 @@ h6 {
     right: 60px;
   }
   .rectangle-water {
-    width: 1110px;
+    width: 11px;
     height: 1890px;
     top: 0;
-    left: 93px;
     z-index: 1;
   }
 }
@@ -3398,12 +3308,19 @@ h6 {
     padding-top: 75px;
     padding-left: 0;
   }
-  .button-block {
-    display: block !important;
+  .contacts-button {
+    margin-left: 25px;
+    margin-top: 20px;
   }
-  .margin {
-    padding-left: 10px;
-    margin: 0;
+  .contacts-button-block::after {
+    width: 100px;
+    height: 100px;
+    top: 0px;
+    left: -18px;
+  }
+  .contacts-button-block:hover::after {
+    top: 18px;
+    left: -26px;
   }
   .contacts-rectangle {
     width: 880px;
