@@ -197,3 +197,13 @@
     left: 0;
   }
 }
+
+@media (max-width: 591px) {
+  .header {
+    width: 1265px;
+  }
+
+  .header-burger {
+    margin-left: -70px;
+  }
+}

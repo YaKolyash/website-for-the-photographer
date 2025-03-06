@@ -272,9 +272,17 @@
     }
 }
 
-@media (max-width: 560px) {
+@media (max-width: 591px) {
     .author {
-        width: 543px;
+        width: 1265px;
+    }
+
+    .author-title {
+        margin-left: -70px;
+    }
+
+    .author-text {
+        margin-left: -90px;
     }
 
     .author-description {
