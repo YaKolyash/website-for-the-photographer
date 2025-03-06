@@ -45,13 +45,9 @@ body {
   padding-right: 10px;
 }
 
-@media (max-width: 591px) {
+@media (max-width: 590px) {
   .container {
-    max-width: 590px;
-    width: 100%;
-    margin: 0 auto;
-    padding-left: 10px;
-    padding-right: 10px;
+    margin: 0;
   }
 }
 
