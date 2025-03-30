@@ -275,7 +275,7 @@
 
     .shooting-title__open {
         padding-top: 200px;
-        width: 600px;
+        width: 1223px;
 
         & p {
             text-align: center;
@@ -283,10 +283,19 @@
         }
     }
 
+    .shooting-title {
+        h2 {
+            font-size: 43px;
+            line-height: 50px;
+        }
+    }
+
     .shooting-subtitle {
         width: 300px;
 
         & p {
+            font-size: calc(20px + 1.6vw);
+            line-height: 34px;
         }
     }
 

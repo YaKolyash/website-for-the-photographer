@@ -399,3 +399,78 @@
         color: $smoke-white;
     }
 }
+
+@media (max-width: 590px) {
+    .price-title {
+        padding-top: 230px;
+        p {
+            font-size: 75px;
+            margin: 0 auto;
+            width: 180px;
+        }
+    }
+
+    .table-title {
+        width: 350px;
+    }
+
+    .price-wrapper-mobile {
+        padding-left: 125px;
+    }
+
+    .table-title {
+        a {
+            font-size: 30px;
+        }
+    }
+
+    .table-item-title {
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        padding-top: 40px;
+        margin: 0 auto;
+    }
+
+    .table-string {
+        margin-top: 30px;
+        font-size: 28px;
+        line-height: 44.4px;
+    }
+
+    .table-string {
+        font-size: 28px;
+        line-height: 44.4px;
+    }
+
+    .price-arrow {
+        width: 350px;
+        p {
+            font-size: 40px;
+        }
+    }
+
+    .price-arrow img {
+        width: 453px;
+        top: 12px;
+        left: -10px;
+    }
+
+    .price-arrow::after {
+        width: 130px;
+        height: 130px;
+        bottom: -106px;
+        right: -110px;
+    }
+
+    .price-arrow:hover::after {
+        width: 130px;
+        height: 130px;
+        bottom: -106px;
+        right: -110px;
+    }
+
+    .arrow {
+        margin: 85px 0 140px 0;
+    }
+}

@@ -283,3 +283,32 @@
         height: 552px;
     }
 }
+
+@media (max-width: 590px) {
+    .contacts-title {
+        display: flex;
+        justify-content: center;
+        margin-left: -370px;
+    }
+
+    .list-item p {
+        font-size: 32px;
+    }
+
+    .contacts-button-block p {
+        font-size: 24px;
+        margin-top: -3px;
+        margin-left: -2px;
+    }
+
+    .contacts-button-block::after {
+        width: 150px;
+        height: 150px;
+        top: 0px;
+        left: -18px;
+    }
+
+    .contacts-rectangle {
+        height: 600px;
+    }
+}

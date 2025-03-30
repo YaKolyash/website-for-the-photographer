@@ -278,3 +278,9 @@
         display: none;
     }
 }
+
+@media (max-width: 708px) {
+    .woman-wrapper {
+        justify-content: flex-start;
+    }
+}

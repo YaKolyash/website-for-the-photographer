@@ -381,6 +381,12 @@
     }
 }
 
+@media (max-width: 590px) {
+    .water-wrapper {
+        justify-content: end;
+    }
+}
+
 @media (max-width: 520px) {
     .water {
         width: 520px;

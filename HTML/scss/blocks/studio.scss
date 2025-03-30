@@ -269,6 +269,13 @@
     }
 }
 
+@media (max-width: 590px) {
+    .studio-wrapper {
+        justify-content: end;
+        margin-right: -65px;
+    }
+}
+
 @media (max-width: 540px) {
     .studio {
         width: 900px;
