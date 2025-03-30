@@ -20,6 +20,13 @@
     }
 }
 
+@media (max-width: 709px) {
+    .project-title {
+        width: 1265px;
+        padding-bottom: 40px;
+    }
+}
+
 @media (max-width: 561px) {
     .project-title {
         font-size: calc(24px + 16 * (100vw / 760));

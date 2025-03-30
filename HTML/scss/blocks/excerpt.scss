@@ -100,10 +100,10 @@
         }
 
         & p {
-            width: 600px;
+            width: 850px;
             padding-top: 50px;
-            font-size: 20px;
-            line-height: 30px;
+            font-size: 30px;
+            line-height: 35px;
         }
 
         & ::after {
@@ -116,16 +116,22 @@
 }
 
 @media (max-width: 708px) {
+    .excerpt {
+        width: 1265px;
+    }
+
     .excerpt-text {
+        width: 830px;
+
         & p {
             margin: 0 auto;
         }
     }
 }
 
-@media (max-width: 562px) {
+@media (max-width: 591px) {
     .excerpt {
-        width: 680px;
+        width: 1265px;
     }
 
     .excerpt-text {
@@ -137,7 +143,8 @@
         }
 
         & p {
-            width: 530px;
+            margin-left: 130px;
+            width: 730px;
             padding-top: 200px;
             font-size: 18px;
             line-height: 30px;

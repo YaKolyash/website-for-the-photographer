@@ -97,7 +97,7 @@
 
 @media (max-width: 1263px) {
   .header {
-    width: 1263px;
+    width: 1265px;
   }
 }
 
@@ -128,8 +128,8 @@
   }
   .navbar__hamb-bar {
     display: block;
-    width: 30px;
-    height: 2px;
+    width: 45px;
+    height: 4px;
     margin: 6px auto;
     background-color: $smoke-white;
     transition: 0.2s;
@@ -195,6 +195,12 @@
   }
   .popup.open {
     left: 0;
+  }
+}
+
+@media (max-width: 708px) {
+  .header {
+    width: 1265px;
   }
 }
 

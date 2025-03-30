@@ -180,7 +180,7 @@
 
 @media (max-width: 1263px) {
     .woman {
-        width: 1263px;
+        width: 1265px;
     }
 }
 
@@ -212,6 +212,10 @@
 }
 
 @media (max-width: 708px) {
+    .woman {
+        width: 1265px;
+    }
+
     .woman-text {
         background: 0;
         z-index: 2;

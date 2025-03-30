@@ -62,7 +62,11 @@
     .running-wrapper {
         padding-top: 150px;
         background: $background-block;
-        width: 1263px;
+        width: 1265px;
+    }
+
+    .running-line {
+        display: none;
     }
 }
 

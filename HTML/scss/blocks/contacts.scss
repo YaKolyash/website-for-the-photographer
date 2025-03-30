@@ -134,7 +134,7 @@
 
 @media (max-width: 1263px) {
     .contacts {
-        width: 1263px;
+        width: 1265px;
     }
 
     .contacts-title {
@@ -200,6 +200,10 @@
 }
 
 @media (max-width: 708px) {
+    .contacts {
+        width: 1265px;
+    }
+
     .contacts-rectangle {
         width: 840px;
     }
